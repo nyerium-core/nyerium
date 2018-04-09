@@ -1,0 +1,26 @@
+[Unit]
+Description=Nyerium's distributed currency daemon
+After=network.target
+
+[Service]
+User=nyerium
+Group=nyerium
+
+Type=forking
+PIDFile=/var/lib/nyeriumd/nyeriumd.pid
+
+ExecStart=/usr/bin/nyeriumd -daemon -pid=/var/lib/nyeriumd/nyeriumd.pid \
+          -conf=/etc/nyerium/nyerium.conf -datadir=/var/lib/nyeriumd
+
+ExecStop=-/usr/bin/nyerium-cli -conf=/etc/nyerium/nyerium.conf \
+         -datadir=/var/lib/nyeriumd stop
+
+Restart=always
+PrivateTmp=true
+TimeoutStopSec=60s
+TimeoutStartSec=2s
+StartLimitInterval=120s
+StartLimitBurst=5
+
+[Install]
+WantedBy=multi-user.target

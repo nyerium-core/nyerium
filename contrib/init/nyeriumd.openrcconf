@@ -1,0 +1,26 @@
+# /etc/conf.d/nyeriumd: config file for /etc/init.d/nyeriumd
+
+# Config file location
+#BITCOIND_CONFIGFILE="/etc/nyerium/nyerium.conf"
+
+# What directory to write pidfile to?  (created and owned by $BITCOIND_USER)
+#BITCOIND_PIDDIR="/var/run/nyeriumd"
+
+# What filename to give the pidfile
+#BITCOIND_PIDFILE="${BITCOIND_PIDDIR}/nyeriumd.pid"
+
+# Where to write nyeriumd data (be mindful that the blockchain is large)
+#BITCOIND_DATADIR="/var/lib/nyeriumd"
+
+# User and group to own nyeriumd process
+#BITCOIND_USER="nyerium"
+#BITCOIND_GROUP="nyerium"
+
+# Path to nyeriumd executable
+#BITCOIND_BIN="/usr/bin/nyeriumd"
+
+# Nice value to run nyeriumd under
+#BITCOIND_NICE=0
+
+# Additional options (avoid -conf and -datadir, use flags above)
+BITCOIND_OPTS=""

@@ -33,6 +33,8 @@ These dependencies are required:
  ------------|------------------|----------------------
  libssl      | SSL Support      | Secure communications
  libboost    | Boost            | C++ Library
+ libevent    | Event            | C++ Library
+
 
 Optional dependencies:
 
@@ -59,9 +61,9 @@ Build requirements:
 
 	sudo apt-get install build-essential libtool autotools-dev autoconf pkg-config libssl-dev
 
-For Ubuntu 12.04 and later or Debian 7 and later libboost-all-dev has to be installed:
+For Ubuntu 12.04 and later or Debian 7 and later libboost-all-dev and libevent have to be installed:
 
-	sudo apt-get install libboost-all-dev
+	sudo apt-get install libboost-all-dev libevent-dev
 
  db4.8 packages are available [here](https://launchpad.net/~bitcoin/+archive/bitcoin).
  You can add the repository using the following command:

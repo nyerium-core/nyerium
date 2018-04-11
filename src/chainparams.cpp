@@ -105,7 +105,7 @@ public:
         pchMessageStart[2] = 0x4c;
         pchMessageStart[3] = 0x5d;
         vAlertPubKey = ParseHex("049020f785c6eafdc1fa96335104e5c7d8d2d57c616b9137011dbce6e83952bc5021a15025fdd689172fb73c0f092003b3da8b64d96d41d6efe6f1cc00e0c622dd");
-        nDefaultPort = 14875;
+        nDefaultPort = 57418;
         bnProofOfWorkLimit = ~uint256(0) >> 20; // Nyerium starting difficulty is 1 / 2^12
         nSubsidyHalvingInterval = 210000;
         nMaxReorganizationDepth = 100;

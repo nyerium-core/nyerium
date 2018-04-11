@@ -1,4 +1,4 @@
-Name "Nyerium Core (-bit)"
+Name "Nyerium Core (64-bit)"
 
 RequestExecutionLevel highest
 SetCompressor /SOLID lzma
@@ -20,7 +20,7 @@ SetCompressor /SOLID lzma
 !define MUI_STARTMENUPAGE_REGISTRY_KEY ${REGKEY}
 !define MUI_STARTMENUPAGE_REGISTRY_VALUENAME StartMenuGroup
 !define MUI_STARTMENUPAGE_DEFAULTFOLDER "Nyerium Core"
-!define MUI_FINISHPAGE_RUN $INSTDIR\nyerium-qt
+!define MUI_FINISHPAGE_RUN $INSTDIR\nyerium-qt.exe
 !define MUI_UNICON "${NSISDIR}\Contrib\Graphics\Icons\modern-uninstall.ico"
 !define MUI_UNWELCOMEFINISHPAGE_BITMAP "/home/a/nyerium/share/pixmaps/nsis-wizard.bmp"
 !define MUI_UNFINISHPAGE_NOAUTOCLOSE
@@ -28,7 +28,7 @@ SetCompressor /SOLID lzma
 # Included files
 !include Sections.nsh
 !include MUI2.nsh
-!if "" == "64"
+!if "64" == "64"
 !include x64.nsh
 !endif
 
@@ -48,8 +48,8 @@ Var StartMenuGroup
 !insertmacro MUI_LANGUAGE English
 
 # Installer attributes
-OutFile /home/a/nyerium/nyerium-${VERSION}-win-setup.exe
-!if "" == "64"
+OutFile /home/a/nyerium/nyerium-${VERSION}-win64-setup.exe
+!if "64" == "64"
 InstallDir $PROGRAMFILES64\Nyerium
 !else
 InstallDir $PROGRAMFILES\Nyerium
@@ -73,12 +73,12 @@ ShowUninstDetails show
 Section -Main SEC0000
     SetOutPath $INSTDIR
     SetOverwrite on
-    File /home/a/nyerium/release/nyerium-qt
+    File /home/a/nyerium/release/nyerium-qt.exe
     File /oname=COPYING.txt /home/a/nyerium/COPYING
     File /oname=readme.txt /home/a/nyerium/doc/README_windows.txt
     SetOutPath $INSTDIR\daemon
-    File /home/a/nyerium/release/nyeriumd
-    File /home/a/nyerium/release/nyerium-cli
+    File /home/a/nyerium/release/nyeriumd.exe
+    File /home/a/nyerium/release/nyerium-cli.exe
     SetOutPath $INSTDIR\doc
     File /r /home/a/nyerium/doc\*.*
     SetOutPath $INSTDIR
@@ -91,8 +91,8 @@ Section -post SEC0001
     WriteUninstaller $INSTDIR\uninstall.exe
     !insertmacro MUI_STARTMENU_WRITE_BEGIN Application
     CreateDirectory $SMPROGRAMS\$StartMenuGroup
-    CreateShortcut "$SMPROGRAMS\$StartMenuGroup\$(^Name).lnk" $INSTDIR\nyerium-qt
-    CreateShortcut "$SMPROGRAMS\$StartMenuGroup\Nyerium Core (testnet, -bit).lnk" "$INSTDIR\nyerium-qt" "-testnet" "$INSTDIR\nyerium-qt" 1
+    CreateShortcut "$SMPROGRAMS\$StartMenuGroup\$(^Name).lnk" $INSTDIR\nyerium-qt.exe
+    CreateShortcut "$SMPROGRAMS\$StartMenuGroup\Nyerium Core (testnet, 64-bit).lnk" "$INSTDIR\nyerium-qt.exe" "-testnet" "$INSTDIR\nyerium-qt.exe" 1
     CreateShortcut "$SMPROGRAMS\$StartMenuGroup\Uninstall $(^Name).lnk" $INSTDIR\uninstall.exe
     !insertmacro MUI_STARTMENU_WRITE_END
     WriteRegStr HKCU "SOFTWARE\Microsoft\Windows\CurrentVersion\Uninstall\$(^Name)" DisplayName "$(^Name)"
@@ -105,8 +105,8 @@ Section -post SEC0001
     WriteRegDWORD HKCU "SOFTWARE\Microsoft\Windows\CurrentVersion\Uninstall\$(^Name)" NoRepair 1
     WriteRegStr HKCR "nyerium" "URL Protocol" ""
     WriteRegStr HKCR "nyerium" "" "URL:Nyerium"
-    WriteRegStr HKCR "nyerium\DefaultIcon" "" $INSTDIR\nyerium-qt
-    WriteRegStr HKCR "nyerium\shell\open\command" "" '"$INSTDIR\nyerium-qt" "%1"'
+    WriteRegStr HKCR "nyerium\DefaultIcon" "" $INSTDIR\nyerium-qt.exe
+    WriteRegStr HKCR "nyerium\shell\open\command" "" '"$INSTDIR\nyerium-qt.exe" "%1"'
 SectionEnd
 
 # Macro for selecting uninstaller sections
@@ -124,7 +124,7 @@ done${UNSECTION_ID}:
 
 # Uninstaller sections
 Section /o -un.Main UNSEC0000
-    Delete /REBOOTOK $INSTDIR\nyerium-qt
+    Delete /REBOOTOK $INSTDIR\nyerium-qt.exe
     Delete /REBOOTOK $INSTDIR\COPYING.txt
     Delete /REBOOTOK $INSTDIR\readme.txt
     RMDir /r /REBOOTOK $INSTDIR\daemon
@@ -136,7 +136,7 @@ Section -un.post UNSEC0001
     DeleteRegKey HKCU "SOFTWARE\Microsoft\Windows\CurrentVersion\Uninstall\$(^Name)"
     Delete /REBOOTOK "$SMPROGRAMS\$StartMenuGroup\Uninstall $(^Name).lnk"
     Delete /REBOOTOK "$SMPROGRAMS\$StartMenuGroup\$(^Name).lnk"
-    Delete /REBOOTOK "$SMPROGRAMS\$StartMenuGroup\Nyerium Core (testnet, -bit).lnk"
+    Delete /REBOOTOK "$SMPROGRAMS\$StartMenuGroup\Nyerium Core (testnet, 64-bit).lnk"
     Delete /REBOOTOK "$SMSTARTUP\Nyerium.lnk"
     Delete /REBOOTOK $INSTDIR\uninstall.exe
     Delete /REBOOTOK $INSTDIR\debug.log
@@ -158,7 +158,7 @@ SectionEnd
 # Installer functions
 Function .onInit
     InitPluginsDir
-!if "" == "64"
+!if "64" == "64"
     ${If} ${RunningX64}
       ; disable registry redirection (enable access to 64-bit portion of registry)
       SetRegView 64

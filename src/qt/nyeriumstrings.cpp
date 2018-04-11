@@ -226,10 +226,10 @@ QT_TRANSLATE_NOOP("nyerium-core", ""
 QT_TRANSLATE_NOOP("nyerium-core", ""
 "You must specify a masternodeprivkey in the configuration. Please see "
 "documentation for help."),
-QT_TRANSLATE_NOOP("nyerium-core", "(14875 could be used only on mainnet)"),
+QT_TRANSLATE_NOOP("nyerium-core", "(57418 could be used only on mainnet)"),
 QT_TRANSLATE_NOOP("nyerium-core", "(default: %s)"),
 QT_TRANSLATE_NOOP("nyerium-core", "(default: 1)"),
-QT_TRANSLATE_NOOP("nyerium-core", "(must be 14875 for mainnet)"),
+QT_TRANSLATE_NOOP("nyerium-core", "(must be 57418 for mainnet)"),
 QT_TRANSLATE_NOOP("nyerium-core", "<category> can be:"),
 QT_TRANSLATE_NOOP("nyerium-core", "Accept command line and JSON-RPC commands"),
 QT_TRANSLATE_NOOP("nyerium-core", "Accept connections from outside (default: 1 if no -proxy or -connect)"),

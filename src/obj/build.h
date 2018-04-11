@@ -1,1 +1,2 @@
-// No build information available
+#define BUILD_SUFFIX ad120c0-dirty
+#define BUILD_DATE "2018-04-11 00:39:48 +0300"

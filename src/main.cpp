@@ -5743,8 +5743,7 @@ bool static ProcessMessage(CNode* pfrom, string strCommand, CDataStream& vRecv, 
 			return false;
 		}
 
-		// Nyerium: We use certain sporks during IBD, so check to see if they are
-		available. If not, ask the first peer connected for them.
+		// Nyerium: We use certain sporks during IBD, so check to see if they are available. If not, ask the first peer connected for them.
 		if (!pSporkDB->SporkExists(SPORK_14_NEW_PROTOCOL_ENFORCEMENT) &&
 		    !pSporkDB->SporkExists(SPORK_15_NEW_PROTOCOL_ENFORCEMENT_2) &&
 		    !pSporkDB->SporkExists(SPORK_11_LOCK_INVALID_UTXO) &&

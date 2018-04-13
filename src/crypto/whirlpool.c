@@ -3441,7 +3441,7 @@ ROUND_FUN(whirlpool1, old1)
 
 #define RFUN   whirlpool_round
 #define HASH   whirlpool
-#include "src/crypto/md_helper.c"
+#include "/home/travis/build/nyerium-core/nyerium/src/crypto/md_helper.c"
 #undef RFUN
 #undef HASH
 

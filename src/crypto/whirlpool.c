@@ -3434,6 +3434,9 @@ ROUND_FUN(whirlpool1, old1)
  * Internally, our encoding/decoding is little-endian, which is not a
  * problem here since we also deactivate output in md_helper.c.
  */
+
+///home/travis/build/nyerium-core/nyerium/src/crypto/
+
 #define BE64   1
 #define SVAL   sc->state
 #define BLEN   64U
@@ -3441,19 +3444,19 @@ ROUND_FUN(whirlpool1, old1)
 
 #define RFUN   whirlpool_round
 #define HASH   whirlpool
-#include "/home/travis/build/nyerium-core/nyerium/src/crypto/md_helper.c"
+#include "md_helper.c"
 #undef RFUN
 #undef HASH
 
 #define RFUN   whirlpool0_round
 #define HASH   whirlpool0
-#include "/home/travis/build/nyerium-core/nyerium/src/crypto/md_helper.c"
+#include "md_helper.c"
 #undef RFUN
 #undef HASH
 
 #define RFUN   whirlpool1_round
 #define HASH   whirlpool1
-#include "/home/travis/build/nyerium-core/nyerium/src/crypto/md_helper.c"
+#include "md_helper.c"
 #undef RFUN
 #undef HASH
 

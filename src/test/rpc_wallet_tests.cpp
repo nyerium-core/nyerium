@@ -87,11 +87,11 @@ BOOST_AUTO_TEST_CASE(rpc_wallet)
      * 			setaccount
      *********************************/
     BOOST_CHECK_NO_THROW(CallRPC("setaccount " + setaccountDemoAddress.ToString() + " nullaccount"));
-    /* D8w12Vu3WVhn543dgrUUf9uYu6HLwnPm5R is not owned by the test wallet. */
-    BOOST_CHECK_THROW(CallRPC("setaccount D8w12Vu3WVhn543dgrUUf9uYu6HLwnPm5R nullaccount"), runtime_error);
+    /* NvTiW8GVqS9cyqcNSPNLKt8zj9xRu7iL4H is not owned by the test wallet. */
+    BOOST_CHECK_THROW(CallRPC("setaccount NvTiW8GVqS9cyqcNSPNLKt8zj9xRu7iL4H nullaccount"), runtime_error); //ek
     BOOST_CHECK_THROW(CallRPC("setaccount"), runtime_error);
-    /* D8w12Vu3WVhn543dgrUUf9uYu6HLwnPm5 (33 chars) is an illegal address (should be 34 chars) */
-    BOOST_CHECK_THROW(CallRPC("setaccount D8w12Vu3WVhn543dgrUUf9uYu6HLwnPm5 nullaccount"), runtime_error);
+    /* NvTiW8GVqS9cyqcNSPNLKt8zj9xRu7iL4 (33 chars) is an illegal address (should be 34 chars) */
+    BOOST_CHECK_THROW(CallRPC("setaccount NvTiW8GVqS9cyqcNSPNLKt8zj9xRu7iL4 nullaccount"), runtime_error); //ek
 
     /*********************************
      * 			listunspent
@@ -161,9 +161,9 @@ BOOST_AUTO_TEST_CASE(rpc_wallet)
     BOOST_CHECK_THROW(CallRPC("verifymessage " + demoAddress.ToString()), runtime_error);
     BOOST_CHECK_THROW(CallRPC("verifymessage " + demoAddress.ToString() + " " + retValue.get_str()), runtime_error);
     /* Illegal address */
-    BOOST_CHECK_THROW(CallRPC("verifymessage D8w12Vu3WVhn543dgrUUf9uYu6HLwnPm5 " + retValue.get_str() + " mymessage"), runtime_error);
+    BOOST_CHECK_THROW(CallRPC("verifymessage NvTiW8GVqS9cyqcNSPNLKt8zj9xRu7iL4 " + retValue.get_str() + " mymessage"), runtime_error);
     /* wrong address */
-    BOOST_CHECK(CallRPC("verifymessage D8w12Vu3WVhn543dgrUUf9uYu6HLwnPm5R " + retValue.get_str() + " mymessage").get_bool() == false);
+    BOOST_CHECK(CallRPC("verifymessage NvTiW8GVqS9cyqcNSPNLKt8zj9xRu7iL4H " + retValue.get_str() + " mymessage").get_bool() == false);
     /* Correct address and signature but wrong message */
     BOOST_CHECK(CallRPC("verifymessage " + demoAddress.ToString() + " " + retValue.get_str() + " wrongmessage").get_bool() == false);
     /* Correct address, message and signature*/

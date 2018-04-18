@@ -1,5 +1,7 @@
 # NYERIUM is based on [PIVX]
 
+[![Join the chat at https://gitter.im/nyerium/Lobby](https://badges.gitter.im/nyerium/Lobby.svg)](https://gitter.im/nyerium/Lobby?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
+
 [![Build Status](https://travis-ci.org/nyerium-core/nyerium.svg?branch=master)](https://travis-ci.org/nyerium-core/nyerium)
 
 # Nyerium Core integration/staging repository

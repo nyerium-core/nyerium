@@ -1,5 +1,6 @@
-### NYERIUM is a fork of [PIVX]
+# NYERIUM is based on [PIVX]
 
+[![Build Status](https://travis-ci.org/nyerium-core/nyerium.svg?branch=master)](https://travis-ci.org/nyerium-core/nyerium)
 
 # Nyerium Core integration/staging repository
 

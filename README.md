@@ -1,8 +1,9 @@
-# NYERIUM is based on [PIVX]
+# NYERIUM The Cryptocurrency of Tomorrow
 
-[![Build Status](https://travis-ci.org/nyerium-core/nyerium.svg?branch=master)](https://travis-ci.org/nyerium-core/nyerium)
+[![Build Status](https://travis-ci.org/nyerium-core/nyerium.svg?branch=master)](https://travis-ci.org/nyerium-core/nyerium) [![GitHub version](https://badge.fury.io/gh/nyerium-core%2Fnyerium.svg)](https://badge.fury.io/gh/nyerium-core%2Fnyerium)
 
-# Nyerium Core integration/staging repository
+
+## Nyerium Core integration/staging repository
 
 Ferocious competition rules the crypto market nowadays. Only, the best will make it to the next round. Nyerium aimed to be amongst those who will make the cut and reach the equivalent of the "web 2.0" of crypto-currencies.
 

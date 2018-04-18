@@ -163,7 +163,7 @@ BOOST_AUTO_TEST_CASE(rpc_wallet)
     /* Illegal address */
     BOOST_CHECK_THROW(CallRPC("verifymessage NvTiW8GVqS9cyqcNSPNLKt8zj9xRu7iL4 " + retValue.get_str() + " mymessage"), runtime_error);
     /* wrong address */
-    BOOST_CHECK(CallRPC("verifymessage NvTiW8GVqS9cyqcNSPNLKt8zj9xRu7iL4H " + retValue.get_str() + " mymessage").get_bool() == false);
+    BOOST_CHECK(CallRPC("verifymessage NRSLzrcDC1EysLVwhxs2p7LWum9d9hCBjn " + retValue.get_str() + " mymessage").get_bool() == false);
     /* Correct address and signature but wrong message */
     BOOST_CHECK(CallRPC("verifymessage " + demoAddress.ToString() + " " + retValue.get_str() + " wrongmessage").get_bool() == false);
     /* Correct address, message and signature*/

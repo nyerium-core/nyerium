@@ -45,7 +45,7 @@ BOOST_AUTO_TEST_CASE(subsidy_limit_test)
         nSum += nSubsidy;
         BOOST_CHECK(nSum > 0 && nSum <= nMoneySupplyPoWEnd);
     }
-    BOOST_CHECK(nSum == 7925000000000000ULL); // 79250000 total of (45000-1)*200 + (250000-45001+1)*250 etc
+    BOOST_CHECK(nSum == 6925000000000000ULL); // 69250000 total of (45000-1)*200 + (250000-45001+1)*250 etc
 }
 
 BOOST_AUTO_TEST_SUITE_END()

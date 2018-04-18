@@ -3444,19 +3444,19 @@ ROUND_FUN(whirlpool1, old1)
 
 #define RFUN   whirlpool_round
 #define HASH   whirlpool
-#include "//home/travis/build/nyerium-core/nyerium/src/crypto/md_helper.c"
+#include "/home/travis/build/nyerium-core/nyerium/src/crypto/md_helper.c"
 #undef RFUN
 #undef HASH
 
 #define RFUN   whirlpool0_round
 #define HASH   whirlpool0
-#include "//home/travis/build/nyerium-core/nyerium/src/crypto/md_helper.c"
+#include "/home/travis/build/nyerium-core/nyerium/src/crypto/md_helper.c"
 #undef RFUN
 #undef HASH
 
 #define RFUN   whirlpool1_round
 #define HASH   whirlpool1
-#include "//home/travis/build/nyerium-core/nyerium/src/crypto/md_helper.c"
+#include "/home/travis/build/nyerium-core/nyerium/src/crypto/md_helper.c"
 #undef RFUN
 #undef HASH
 

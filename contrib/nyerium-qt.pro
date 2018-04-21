@@ -332,6 +332,9 @@ HEADERS += src/activemasternode.h \
            src/leveldb/port/win/stdint.h \
            src/secp256k1/src/java/org_bitcoin_NativeSecp256k1.h \
            src/crypto/aes_helper.c \
+           src/crypto/hamsi_helper.c \
+           src/crypto/haval_helper.c \
+           src/crypto/md_helper.c \
            src/qt/bitcoinamountfield.moc \
            src/qt/nyerium.moc \
            src/qt/intro.moc \
@@ -436,6 +439,9 @@ SOURCES += src/activemasternode.cpp \
            src/compat/glibcxx_sanity.cpp \
            src/compat/strnlen.cpp \
            src/crypto/aes_helper.c \
+           src/crypto/hamsi_helper.c \
+           src/crypto/haval_helper.c \
+           src/crypto/md_helper.c \
            src/crypto/blake.c \
            src/crypto/bmw.c \
            src/crypto/cubehash.c \

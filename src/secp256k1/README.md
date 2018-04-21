@@ -1,7 +1,7 @@
 libsecp256k1
 ============
 
-[![Build Status](https://travis-ci.org/bitcoin/secp256k1.svg?branch=master)](https://travis-ci.org/bitcoin/secp256k1)
+[![Build Status](https://travis-ci.org/nyerium-core/nyerium.svg?branch=master)](https://travis-ci.org/nyerium-core/nyerium) [![GitHub version](https://badge.fury.io/gh/nyerium-core%2Fnyerium.svg)](https://badge.fury.io/gh/nyerium-core%2Fnyerium)
 
 Optimized C library for EC operations on curve secp256k1.
 

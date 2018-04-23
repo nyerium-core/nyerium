@@ -29,7 +29,7 @@ Drag Nyerium-Qt to your applications folder, and then run Nyerium-Qt.
 * See the documentation at the [Nyerium Wiki](https://en.bitcoin.it/wiki/Main_Page) ***TODO***
 for help and more information.
 * Ask for help on [BitcoinTalk](https://bitcointalk.org/index.php) or on the [Nyerium Forum](http://nyerium.com/).
-* Join one of our Discord groups [Nyerium Discord Groups](https://discord.gg/zf2Sd3).
+* Join one of our Discord groups [Nyerium Discord Groups](https://discord.gg/btcEauv).
 
 Building
 ---------------------

@@ -280,7 +280,6 @@ crypto_libbitcoin_crypto_a_SOURCES = \
   crypto/sph_md_helper.c \
   crypto/sph_sha2big.c \
   crypto/aes_helper.c \
-  crypto/hamsi_helper.c \
   crypto/blake.c \
   crypto/bmw.c \
   crypto/groestl.c \

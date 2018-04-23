@@ -15,7 +15,7 @@
 #define CLIENT_VERSION_IS_RELEASE true
 
 /* Major version */
-#define CLIENT_VERSION_MAJOR 4
+#define CLIENT_VERSION_MAJOR 1
 
 /* Minor version */
 #define CLIENT_VERSION_MINOR 0
@@ -24,7 +24,7 @@
 #define CLIENT_VERSION_REVISION 0
 
 /* Version is release */
-#define COPYRIGHT_YEAR 2017
+#define COPYRIGHT_YEAR 2018
 
 /* Define to 1 to enable wallet functions */
 #define ENABLE_WALLET 1
@@ -33,7 +33,7 @@
 #define ENABLE_ZMQ 1
 
 /* parameter and return value type for __fdelt_chk */
-/* #undef FDELT_TYPE */
+#define FDELT_TYPE long int
 
 /* define if the Boost library is available */
 #define HAVE_BOOST /**/
@@ -274,7 +274,7 @@
 #define PACKAGE_NAME "Nyerium Core"
 
 /* Define to the full name and version of this package. */
-#define PACKAGE_STRING "Nyerium Core 4.0.0"
+#define PACKAGE_STRING "Nyerium Core 1.0.0"
 
 /* Define to the one symbol short name of this package. */
 #define PACKAGE_TARNAME "nyerium"
@@ -283,7 +283,7 @@
 #define PACKAGE_URL ""
 
 /* Define to the version of this package. */
-#define PACKAGE_VERSION "4.0.0"
+#define PACKAGE_VERSION "1.0.0"
 
 /* Define to necessary symbol if this constant uses a non-standard name on
    your system. */

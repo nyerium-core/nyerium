@@ -5,8 +5,6 @@
 
 ## Nyerium Core integration/staging repository
 
-Ferocious competition rules the crypto market nowadays. Only, the best will make it to the next round. Nyerium aimed to be amongst those who will make the cut and reach the equivalent of the "web 2.0" of crypto-currencies.
-
 Nyerium is an open source crypto-currency focused on fast private transactions with low transaction fees.  It utilizes a custom Proof of Stake protocol for securing its network and uses an innovative variable seesaw reward mechanism that dynamically balances 90% of its block reward size between masternodes, 10% for staking nodes, and 10% dedicated for budget proposals. Nyerium aims to achieve a decentralized sustainable crypto currency with near instant full-time private transactions, fair governance and community participation.
 Key functionalities:
 - Anonymized transactions using the [_Zerocoin Protocol_](http://www.nyerium.io/znye).

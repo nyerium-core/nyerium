@@ -675,7 +675,7 @@ if verbose >= 2:
     print("+ Installing qt.conf +")
 
 with open(os.path.join(applicationBundle.resourcesPath, "qt.conf"), "wb") as f:
-f.write(qt_conf.encode())
+    f.write(qt_conf.encode())
 
 # ------------------------------------------------
 

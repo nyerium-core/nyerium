@@ -603,7 +603,7 @@ else:
 
 # ------------------------------------------------
 
-target = os.path.join("dist", "Nyerium-Qt.app")
+target = os.path.join("dist", "NYERIUM-Qt.app")
 
 if verbose >= 2:
     print("+ Copying source bundle +")

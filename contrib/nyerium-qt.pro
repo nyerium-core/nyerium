@@ -439,9 +439,9 @@ SOURCES += src/activemasternode.cpp \
            src/compat/glibcxx_sanity.cpp \
            src/compat/strnlen.cpp \
            src/crypto/aes_helper.c \
-           src/crypto/hamsi_helper.c \
-           src/crypto/haval_helper.c \
-           src/crypto/md_helper.c \
+#           src/crypto/hamsi_helper.c \
+#           src/crypto/haval_helper.c \
+#           src/crypto/md_helper.c \
            src/crypto/blake.c \
            src/crypto/bmw.c \
            src/crypto/cubehash.c \

@@ -865,19 +865,19 @@ haval_out(sph_haval_context *sc, void *dst)
  * use a helper file, included three times, which avoids code copying.
  */
 
-///home/travis/build/nyerium-core/nyerium/src/crypto/
+//src/crypto/
 
 #undef PASSES
 #define PASSES   3
-#include "haval_helper.c"
+#include "src/crypto/haval_helper.c"
 
 #undef PASSES
 #define PASSES   4
-#include "haval_helper.c"
+#include "src/crypto/haval_helper.c"
 
 #undef PASSES
 #define PASSES   5
-#include "haval_helper.c"
+#include "src/crypto/haval_helper.c"
 
 /* ====================================================================== */
 

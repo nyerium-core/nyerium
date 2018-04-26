@@ -5,7 +5,7 @@ SetCompressor /SOLID lzma
 
 # General Symbol Definitions
 !define REGKEY "SOFTWARE\$(^Name)"
-!define VERSION 4.0.0
+!define VERSION 1.0.0
 !define COMPANY "Nyerium Core project"
 !define URL https://www.nyerium.org
 

@@ -869,15 +869,15 @@ haval_out(sph_haval_context *sc, void *dst)
 
 #undef PASSES
 #define PASSES   3
-#include "src/crypto/haval_helper.c"
+#include "/src/crypto/haval_helper.c"
 
 #undef PASSES
 #define PASSES   4
-#include "src/crypto/haval_helper.c"
+#include "/src/crypto/haval_helper.c"
 
 #undef PASSES
 #define PASSES   5
-#include "src/crypto/haval_helper.c"
+#include "/src/crypto/haval_helper.c"
 
 /* ====================================================================== */
 

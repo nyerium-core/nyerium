@@ -54,11 +54,14 @@ static void convertSeed6(std::vector<CAddress>& vSeedsOut, const SeedSpec6* data
 // + Contains no strange transactions
 static Checkpoints::MapCheckpoints mapCheckpoints =
     boost::assign::map_list_of
-    (0, uint256("0x000008b0b6bba489bd1e690a30c44e604f371f8e207db45142155147b079c47d"));
+    (0, uint256("0x000008b0b6bba489bd1e690a30c44e604f371f8e207db45142155147b079c47d"))
+    (2312, uint256("0x000008b0b6bba489bd1e690a30c44e604f371f8e207db45142155147b079c47d"))
+    (2313, uint256("0x000005c0d2681dc69066882f081c1d74d3bca2302a8a99935821171a049b7efc"))
+    (2314, uint256("0x00000ca70803b6c27ad72333da35bb8f646a262e275dd18554c80f4c8c3b0736"));
 static const Checkpoints::CCheckpointData data = {
     &mapCheckpoints,
-    1524656959, // * UNIX timestamp of last checkpoint block
-    5,    // * total number of transactions between genesis and last checkpoint
+    1525194610, // * UNIX timestamp of last checkpoint block
+    2316,    // * total number of transactions between genesis and last checkpoint
                 //   (the tx=... number in the SetBestChain debug.log lines)
     500        // * estimated number of transactions per day after checkpoint
 };
@@ -162,6 +165,8 @@ public:
         //vFixedSeeds.clear();
         //vSeeds.clear();      
         vSeeds.push_back(CDNSSeedData("35.154.221.49", "35.154.221.49"));         // Primary DNS Seeder
+        vSeeds.push_back(CDNSSeedData("13.232.23.164", "13.232.23.164"));         // Primary DNS Seeder
+        vSeeds.push_back(CDNSSeedData("13.127.206.177", "13.127.206.177"));         // Primary DNS Seeder
 
         base58Prefixes[PUBKEY_ADDRESS] = std::vector<unsigned char>(1, 53);
         base58Prefixes[SCRIPT_ADDRESS] = std::vector<unsigned char>(1, 8);
@@ -254,6 +259,8 @@ public:
 
         //vFixedSeeds.clear();
         //vSeeds.clear();      
+        //vSeeds.push_back(CDNSSeedData("35.154.221.49", "35.154.221.49"));         // Primary DNS Seeder
+        //vSeeds.push_back(CDNSSeedData("13.232.23.164", "13.232.23.164"));         // Primary DNS Seeder
         vSeeds.push_back(CDNSSeedData("13.127.206.177", "13.127.206.177"));         // Primary DNS Seeder
 
         base58Prefixes[PUBKEY_ADDRESS] = std::vector<unsigned char>(1, 112); // Testnet nyerium addresses start with 'x' or 'y'

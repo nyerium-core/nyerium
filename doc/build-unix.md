@@ -31,7 +31,7 @@ cd libzmq-4.2.3/
 ./autogen.sh
 ./configure --prefix=/usr
 make
-make install
+sudo make install
 
 check:
 $ ls /usr/lib/libzmq.*

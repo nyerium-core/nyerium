@@ -54,11 +54,12 @@ static void convertSeed6(std::vector<CAddress>& vSeedsOut, const SeedSpec6* data
 // + Contains no strange transactions
 static Checkpoints::MapCheckpoints mapCheckpoints =
     boost::assign::map_list_of
-    (0, uint256("0x00000849fd3704944ef2ef374f70d79dcc3fd58ac29dc459114aa8b0788378f3"));
+    (0, uint256("0x00000849fd3704944ef2ef374f70d79dcc3fd58ac29dc459114aa8b0788378f3"))
+    (41, uint256("0x000008a019d98868a739449fbae61d542bc084ed8ae3cb877c5c5b8f813554d8"));
 static const Checkpoints::CCheckpointData data = {
     &mapCheckpoints,
     1527171315, // * UNIX timestamp of last checkpoint block
-    2316,    // * total number of transactions between genesis and last checkpoint
+    44,    // * total number of transactions between genesis and last checkpoint
                 //   (the tx=... number in the SetBestChain debug.log lines)
     500        // * estimated number of transactions per day after checkpoint
 };
@@ -189,9 +190,9 @@ public:
         assert(hashGenesisBlock == uint256("0x00000849fd3704944ef2ef374f70d79dcc3fd58ac29dc459114aa8b0788378f3"));
         assert(genesis.hashMerkleRoot == uint256("0x1fa76a782dd8eee188cfbe0653fdf81bfd5c105f808bd5c9a42e23cb77635802"));
         
-        vFixedSeeds.clear();
-        vSeeds.clear();      
-        //vSeeds.push_back(CDNSSeedData("35.154.221.49", "35.154.221.49"));         // Primary DNS Seeder
+        //vFixedSeeds.clear();
+        //vSeeds.clear();      
+        vSeeds.push_back(CDNSSeedData("35.154.221.49", "35.154.221.49"));         // Primary DNS Seeder
         //vSeeds.push_back(CDNSSeedData("13.232.23.164", "13.232.23.164"));         // Primary DNS Seeder
         //vSeeds.push_back(CDNSSeedData("13.127.206.177", "13.127.206.177"));         // Primary DNS Seeder
 
@@ -314,9 +315,9 @@ public:
         hashGenesisBlock = genesis.GetHash();
         assert(hashGenesisBlock == uint256("0x00000849fd3704944ef2ef374f70d79dcc3fd58ac29dc459114aa8b0788378f3"));
 
-        vFixedSeeds.clear();
-        vSeeds.clear();      
-        //vSeeds.push_back(CDNSSeedData("35.154.221.49", "35.154.221.49"));         // Primary DNS Seeder
+        //vFixedSeeds.clear();
+        //vSeeds.clear();      
+        vSeeds.push_back(CDNSSeedData("35.154.221.49", "35.154.221.49"));         // Primary DNS Seeder
         //vSeeds.push_back(CDNSSeedData("13.232.23.164", "13.232.23.164"));         // Primary DNS Seeder
         //vSeeds.push_back(CDNSSeedData("13.127.206.177", "13.127.206.177"));         // Primary DNS Seeder
 

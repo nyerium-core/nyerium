@@ -22,6 +22,27 @@ make
 make install # optional
 ```
 
+Run this in case of : "error while loading shared libraries: libzmq.so.5"
+
+Compiling and install zeromq lib:
+wget https://github.com/zeromq/libzmq/archive/v4.2.3.tar.gz
+tar zxvf v4.2.3.tar.gz
+cd libzmq-4.2.3/
+./autogen.sh
+./configure --prefix=/usr
+make
+make install
+
+check:
+$ ls /usr/lib/libzmq.*
+/usr/lib/libzmq.a /usr/lib/libzmq.so /usr/lib/libzmq.so.5.1.3
+/usr/lib/libzmq.la /usr/lib/libzmq.so.5
+
+or the fastest way is download from repository:
+apt-get install libzmq3-dev
+
+
+
 This will build nyerium-qt as well if the dependencies are met.
 
 Dependencies

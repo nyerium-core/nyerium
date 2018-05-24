@@ -156,35 +156,6 @@ public:
         genesis.nBits = 0x1e0ffff0;
         genesis.nNonce = 795796;
 
-        // if (true && genesis.GetHash() != hashGenesisBlock)
-        // {
-        //  printf("MAIN Searching for genesis block...\n");
-        //  uint256 hashTarget = CBigNum().SetCompact(genesis.nBits).getuint256();
-        //  uint256 thash;
-        //  while (true)
-        //  {
-        //      thash = genesis.GetHash();
-        //      if (thash <= hashTarget)
-        //          break;
-        //      if ((genesis.nNonce & 0xFFF) == 0)
-        //      {
-        //          printf("MAIN nonce %08X: hash = %s (target = %s)\n", genesis.nNonce, thash.ToString().c_str(), hashTarget.ToString().c_str());
-        //      }
-        //      ++genesis.nNonce;
-        //      if (genesis.nNonce == 0)
-        //      {
-        //          printf("MAIN NONCE WRAPPED, incrementing time\n");
-        //          ++genesis.nTime;
-        //      }
-        //  }
-        //  printf("MAIN genesis.nTime = %u \n", genesis.nTime);
-        //  printf("MAIN genesis.nNonce = %u \n", genesis.nNonce);
-        //  printf("MAIN genesis.nVersion = %u \n", genesis.nVersion);
-        //  printf("MAIN genesis.nBits = %u \n", genesis.nBits);
-        //  printf("MAIN genesis.GetHash = %s\n", genesis.GetHash().ToString().c_str()); //first this, then comment this line out and uncomment the one under.
-        //  printf("MAIN genesis.hashMerkleRoot = %s \n", genesis.hashMerkleRoot.ToString().c_str()); //improvised. worked for me, to find merkle root
-        //  printf("MAIN min nBit:  %08x\n", bnProofOfWorkLimit.GetCompact());
-        // }
 
         hashGenesisBlock = genesis.GetHash();
         assert(hashGenesisBlock == uint256("0x00000849fd3704944ef2ef374f70d79dcc3fd58ac29dc459114aa8b0788378f3"));
@@ -193,8 +164,8 @@ public:
         //vFixedSeeds.clear();
         //vSeeds.clear();      
         vSeeds.push_back(CDNSSeedData("35.154.221.49", "35.154.221.49"));         // Primary DNS Seeder
-        //vSeeds.push_back(CDNSSeedData("13.232.23.164", "13.232.23.164"));         // Primary DNS Seeder
-        //vSeeds.push_back(CDNSSeedData("13.127.206.177", "13.127.206.177"));         // Primary DNS Seeder
+        vSeeds.push_back(CDNSSeedData("13.232.23.164", "13.232.23.164"));         // Primary DNS Seeder
+        vSeeds.push_back(CDNSSeedData("13.127.206.177", "13.127.206.177"));         // Primary DNS Seeder
 
         base58Prefixes[PUBKEY_ADDRESS] = std::vector<unsigned char>(1, 53);
         base58Prefixes[SCRIPT_ADDRESS] = std::vector<unsigned char>(1, 8);
@@ -282,44 +253,14 @@ public:
         genesis.nTime = 1527171315;
         genesis.nNonce = 795796;
 
-        // if (true && genesis.GetHash() != hashGenesisBlock)
-        // {
-        //  printf("TEST Searching for genesis block...\n");
-        //  uint256 hashTarget = CBigNum().SetCompact(genesis.nBits).getuint256();
-        //  uint256 thash;
-        //  while (true)
-        //  {
-        //      thash = genesis.GetHash();
-        //      if (thash <= hashTarget)
-        //          break;
-        //      if ((genesis.nNonce & 0xFFF) == 0)
-        //      {
-        //          printf("TEST nonce %08X: hash = %s (target = %s)\n", genesis.nNonce, thash.ToString().c_str(), hashTarget.ToString().c_str());
-        //      }
-        //      ++genesis.nNonce;
-        //      if (genesis.nNonce == 0)
-        //      {
-        //          printf("TEST NONCE WRAPPED, incrementing time\n");
-        //          ++genesis.nTime;
-        //      }
-        //  }
-        //  printf("TEST genesis.nTime = %u \n", genesis.nTime);
-        //  printf("TEST genesis.nNonce = %u \n", genesis.nNonce);
-        //  printf("TEST genesis.nVersion = %u \n", genesis.nVersion);
-        //  printf("TEST genesis.nBits = %u \n", genesis.nBits);
-        //  printf("TEST genesis.GetHash = %s\n", genesis.GetHash().ToString().c_str()); //first this, then comment this line out and uncomment the one under.
-        //  printf("TEST genesis.hashMerkleRoot = %s \n", genesis.hashMerkleRoot.ToString().c_str()); //improvised. worked for me, to find merkle root
-        //  printf("TEST min nBit:  %08x\n", bnProofOfWorkLimit.GetCompact());
-        // }
-
         hashGenesisBlock = genesis.GetHash();
         assert(hashGenesisBlock == uint256("0x00000849fd3704944ef2ef374f70d79dcc3fd58ac29dc459114aa8b0788378f3"));
 
         //vFixedSeeds.clear();
         //vSeeds.clear();      
         vSeeds.push_back(CDNSSeedData("35.154.221.49", "35.154.221.49"));         // Primary DNS Seeder
-        //vSeeds.push_back(CDNSSeedData("13.232.23.164", "13.232.23.164"));         // Primary DNS Seeder
-        //vSeeds.push_back(CDNSSeedData("13.127.206.177", "13.127.206.177"));         // Primary DNS Seeder
+        vSeeds.push_back(CDNSSeedData("13.232.23.164", "13.232.23.164"));         // Primary DNS Seeder
+        vSeeds.push_back(CDNSSeedData("13.127.206.177", "13.127.206.177"));         // Primary DNS Seeder
 
         base58Prefixes[PUBKEY_ADDRESS] = std::vector<unsigned char>(1, 112); // Testnet nyerium addresses start with 'x' or 'y'
         base58Prefixes[SCRIPT_ADDRESS] = std::vector<unsigned char>(1, 19);  // Testnet nyerium script addresses start with '8' or '9'
@@ -381,36 +322,6 @@ public:
         genesis.nTime = 1527171315; //April 2018 7:00:00 PM
         genesis.nBits = 0x207fffff;
         genesis.nNonce = 0;
-
-        // if (true && genesis.GetHash() != hashGenesisBlock)
-        // {
-        //  printf("REG Searching for genesis block...\n");
-        //  uint256 hashTarget = CBigNum().SetCompact(genesis.nBits).getuint256();
-        //  uint256 thash;
-        //  while (true)
-        //  {
-        //      thash = genesis.GetHash();
-        //      if (thash <= hashTarget)
-        //          break;
-        //      if ((genesis.nNonce & 0xFFF) == 0)
-        //      {
-        //          printf("REG nonce %08X: hash = %s (target = %s)\n", genesis.nNonce, thash.ToString().c_str(), hashTarget.ToString().c_str());
-        //      }
-        //      ++genesis.nNonce;
-        //      if (genesis.nNonce == 0)
-        //      {
-        //          printf("REG NONCE WRAPPED, incrementing time\n");
-        //          ++genesis.nTime;
-        //      }
-        //  }
-        //  printf("REG genesis.nTime = %u \n", genesis.nTime);
-        //  printf("REG genesis.nNonce = %u \n", genesis.nNonce);
-        //  printf("REG genesis.nVersion = %u \n", genesis.nVersion);
-        //  printf("REG genesis.nBits = %u \n", genesis.nBits);
-        //  printf("REG genesis.GetHash = %s\n", genesis.GetHash().ToString().c_str()); //first this, then comment this line out and uncomment the one under.
-        //  printf("REG genesis.hashMerkleRoot = %s \n", genesis.hashMerkleRoot.ToString().c_str()); //improvised. worked for me, to find merkle root
-        //  printf("REG min nBit:  %08x\n", bnProofOfWorkLimit.GetCompact());
-        // }
 
         hashGenesisBlock = genesis.GetHash();
         nDefaultPort = 34875;

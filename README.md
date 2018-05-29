@@ -11,7 +11,7 @@ Key functionalities:
 - Fast transactions featuring guaranteed zero confirmation transactions, we call it _SwiftX_.
 - Decentralized blockchain voting utilizing Masternode technology to form a DAO. The blockchain will distribute monthly treasury funds based on successful proposals submitted by the community and voted on by the DAO.
 
-More information at [nyerium.org](http://www.nyerium.org) Visit our ANN thread at [BitcoinTalk](http://www.bitcointalk.org/index.php?topic=xxxxxxxx)
+More information at [nyerium.org](http://www.nyerium.org) Visit our ANN thread at [BitcoinTalk](https://bitcointalk.org/index.php?topic=4262979)
 
 ### Coin Specs
 <table>

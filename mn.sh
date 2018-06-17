@@ -265,7 +265,7 @@ function important_information() {
  echo -e "Stop: ${GREEN}systemctl stop $NYEX_NAME.service${NC}"
  echo -e "VPS_IP:PORT ${GREEN}$NODEIP:$NYEX_PORT${NC}"
  echo -e "MASTERNODE PRIVATEKEY is: ${GREEN}$NYEXKEY${NC}"
- echo -e "Please check ${GREEN}$NYEX_NAME${NC} is running with the following command: ${GREEN}systemctl status $NYEX_NAME.service${NC}"
+ echo -e "Please check ${GREEN}$NYEX_NAME${NC} is running with the following command: ${GREEN}nyerium-cli getinfo{NC}"
  echo -e "================================================================================================================================"
 }
 

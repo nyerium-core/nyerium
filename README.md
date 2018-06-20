@@ -94,6 +94,6 @@ More information at [nyerium.org](http://www.nyerium.org) Visit our ANN thread a
 3. Don't put all your eggs in one basket and think of diversifying your portfolio. Don't invest all your life saving in crypto-currencies, unless you know and are willing to take the risk.
 4. First time traders, should be particularly cautious and adopt basic crypto security (no help over Team Viewer) 
 5. Don't fall for the FUD and the hype.
-6. Reward in Masternode Online and other masternode sites and purely indicative and should not be taken as investment advice.
+6. Reward indicated on Masternode Online and other masternode sites and purely indicative and should not be taken as investment advice.
 
 The Nyerium Team

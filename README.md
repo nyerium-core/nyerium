@@ -42,7 +42,6 @@ More information at [nyerium.org](http://www.nyerium.org) Visit our ANN thread a
 
 <table>
 <tr><td>Block Height</td><td>Total Reward</td><td>% MN Reward</td><td>% Staking Reward</td><td>% Governance</td></tr>
-<tr><td>2-8001</td><td>200</td><td>85</td><td>15</td><td>0</td></tr>
 <tr><td>8002-20000</td><td>250</td><td>85</td><td>15</td><td>0</td></tr>
 <tr><td>20001-43200</td><td>100</td><td>80</td><td>20</td><td>0</td></tr>
 <tr><td>43201-86400</td><td>50</td><td>90</td><td>10</td><td>0</td></tr>

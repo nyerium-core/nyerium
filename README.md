@@ -87,7 +87,7 @@ More information at [nyerium.org](http://www.nyerium.org) Visit our ANN thread a
 </table>
 
 
-###IMPORTANT NOTICE!
+### IMPORTANT NOTICE!
 
 1. Reward is in NYEX not in BTC or USD. Get more information from the Team.
 2. We are focus on long term goals for this project. Short term investors should be warry of  wide market fluctuations conditions

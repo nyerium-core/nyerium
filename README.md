@@ -89,7 +89,7 @@ More information at [nyerium.org](http://www.nyerium.org) Visit our ANN thread a
 
 ### IMPORTANT NOTICE!
 
-1. Reward is in NYEX not in BTC or USD. Get more information from the Team.
+1. Reward is in NYEX not in BTC or USD. Get more information from the Team on the discord channel https://discord.gg/btcEauv.
 2. We are focus on long term goals for this project. Short term investors should be warry of  wide market fluctuations conditions
 3. Don't put all your eggs in one basket and think of diversifying your portfolio. Don't invest all your life saving in crypto-currencies, unless you know and are willing to take the risk.
 4. First time traders, should be particularly cautious and adopt basic crypto security (no help over Team Viewer) 

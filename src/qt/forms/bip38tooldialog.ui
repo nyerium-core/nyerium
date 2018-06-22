@@ -12,7 +12,7 @@
   </property>
   <property name="font">
    <font>
-    <family>Ara Hamah 1982</family>
+    
     <pointsize>14</pointsize>
    </font>
   </property>
@@ -26,8 +26,7 @@
    <item>
     <widget class="QTabWidget" name="tabWidget">
      <property name="font">
-      <font>
-       <family>Ara Hamah 1982</family>
+   <font>
        <pointsize>14</pointsize>
       </font>
      </property>
@@ -268,7 +267,7 @@
         <widget class="QLabel" name="infoLabel_DEC">
          <property name="font">
           <font>
-           <family>Ara Hamah 1982</family>
+           
            <pointsize>14</pointsize>
           </font>
          </property>
@@ -292,7 +291,7 @@
           <widget class="QLabel" name="label_2">
            <property name="font">
             <font>
-             <family>Ara Hamah 1982</family>
+             
              <pointsize>14</pointsize>
             </font>
            </property>
@@ -305,7 +304,7 @@
           <widget class="QValidatedLineEdit" name="encryptedKeyIn_DEC">
            <property name="font">
             <font>
-             <family>Ara Hamah 1982</family>
+             
              <pointsize>14</pointsize>
             </font>
            </property>
@@ -322,7 +321,7 @@
           <widget class="QLabel" name="label">
            <property name="font">
             <font>
-             <family>Ara Hamah 1982</family>
+             
              <pointsize>14</pointsize>
             </font>
            </property>
@@ -335,7 +334,7 @@
           <widget class="QLineEdit" name="passphraseIn_DEC">
            <property name="font">
             <font>
-             <family>Ara Hamah 1982</family>
+             
              <pointsize>14</pointsize>
             </font>
            </property>
@@ -352,7 +351,7 @@
           <widget class="QPushButton" name="decryptKeyButton_DEC">
            <property name="font">
             <font>
-             <family>Ara Hamah 1982</family>
+             
              <pointsize>14</pointsize>
             </font>
            </property>
@@ -375,7 +374,7 @@
           <widget class="QPushButton" name="clearButton_DEC">
            <property name="font">
             <font>
-             <family>Ara Hamah 1982</family>
+             
              <pointsize>14</pointsize>
             </font>
            </property>
@@ -398,7 +397,7 @@
           <spacer name="horizontalSpacer_1_DEC">
            <property name="font">
             <font>
-             <family>Ara Hamah 1982</family>
+             
              <pointsize>14</pointsize>
             </font>
            </property>
@@ -417,7 +416,7 @@
           <widget class="QLabel" name="statusLabel_DEC">
            <property name="font">
             <font>
-             <family>Ara Hamah 1982</family>
+             
              <pointsize>14</pointsize>
              <weight>75</weight>
              <bold>true</bold>
@@ -435,7 +434,7 @@
           <spacer name="horizontalSpacer_2_DEC">
            <property name="font">
             <font>
-             <family>Ara Hamah 1982</family>
+             
              <pointsize>14</pointsize>
             </font>
            </property>
@@ -458,7 +457,7 @@
           <widget class="QLabel" name="label_3">
            <property name="font">
             <font>
-             <family>Ara Hamah 1982</family>
+             
              <pointsize>14</pointsize>
             </font>
            </property>
@@ -471,7 +470,7 @@
           <widget class="QValidatedLineEdit" name="decryptedKeyOut_DEC">
            <property name="font">
             <font>
-             <family>Ara Hamah 1982</family>
+             
              <pointsize>14</pointsize>
             </font>
            </property>
@@ -485,7 +484,7 @@
           <widget class="QPushButton" name="importAddressButton_DEC">
            <property name="font">
             <font>
-             <family>Ara Hamah 1982</family>
+             
              <pointsize>14</pointsize>
             </font>
            </property>
@@ -498,7 +497,7 @@
           <widget class="QLabel" name="label_4">
            <property name="font">
             <font>
-             <family>Ara Hamah 1982</family>
+             
              <pointsize>14</pointsize>
             </font>
            </property>
@@ -511,7 +510,7 @@
           <widget class="QLineEdit" name="addressOut_DEC">
            <property name="font">
             <font>
-             <family>Ara Hamah 1982</family>
+             
              <pointsize>14</pointsize>
             </font>
            </property>

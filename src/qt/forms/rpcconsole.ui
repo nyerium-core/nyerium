@@ -12,7 +12,7 @@
   </property>
   <property name="font">
    <font>
-    <family>Ara Hamah 1982</family>
+    
     <pointsize>14</pointsize>
    </font>
   </property>
@@ -731,7 +731,7 @@
          </property>
          <property name="font">
           <font>
-           <pointsize>10</pointsize>
+           <pointsize>14</pointsize>
            <weight>75</weight>
            <bold>true</bold>
           </font>

@@ -12,7 +12,7 @@
   </property>
   <property name="font">
    <font>
-    <family>Ara Hamah 1982</family>
+    
     <pointsize>14</pointsize>
    </font>
   </property>
@@ -85,7 +85,7 @@
             </property>
             <property name="font">
              <font>
-              <family>Ara Hamah 1982</family>
+              
               <pointsize>14</pointsize>
               <weight>75</weight>
               <bold>true</bold>
@@ -136,8 +136,8 @@
            <widget class="QLabel" name="labelCoinControlInsuffFunds">
             <property name="font">
              <font>
-              <family>Ara Hamah 1982</family>
-              <pointsize>12</pointsize>
+              
+              <pointsize>14</pointsize>
               <weight>75</weight>
               <bold>true</bold>
              </font>
@@ -805,7 +805,7 @@
                <widget class="QLabel" name="labelFeeMinimized">
                 <property name="font">
                  <font>
-                  <pointsize>12</pointsize>
+                  <pointsize>14</pointsize>
                  </font>
                 </property>
                 <property name="text">
@@ -934,7 +934,7 @@
                   <widget class="BitcoinAmountField" name="customFee">
                    <property name="font">
                     <font>
-                     <pointsize>12</pointsize>
+                     <pointsize>14</pointsize>
                     </font>
                    </property>
                   </widget>
@@ -973,7 +973,7 @@
                    </property>
                    <property name="font">
                     <font>
-                     <pointsize>12</pointsize>
+                     <pointsize>14</pointsize>
                     </font>
                    </property>
                    <property name="toolTip">
@@ -1081,7 +1081,7 @@
                     <widget class="QLabel" name="labelSmartFee3">
                      <property name="font">
                       <font>
-                       <pointsize>12</pointsize>
+                       <pointsize>14</pointsize>
                       </font>
                      </property>
                      <property name="text">
@@ -1146,7 +1146,7 @@
                       <widget class="QLabel" name="labelSmartFeeNormal">
                        <property name="font">
                         <font>
-                         <pointsize>12</pointsize>
+                         <pointsize>14</pointsize>
                         </font>
                        </property>
                        <property name="text">
@@ -1171,7 +1171,7 @@
                       <widget class="QLabel" name="labelSmartFeeFast">
                        <property name="font">
                         <font>
-                         <pointsize>12</pointsize>
+                         <pointsize>14</pointsize>
                         </font>
                        </property>
                        <property name="text">
@@ -1204,7 +1204,7 @@
               <widget class="QLabel" name="labelSmartFee_2">
                <property name="font">
                 <font>
-                 <pointsize>12</pointsize>
+                 <pointsize>14</pointsize>
                 </font>
                </property>
                <property name="text">
@@ -1229,7 +1229,7 @@
               <widget class="QLabel" name="labelCustomFee">
                <property name="font">
                 <font>
-                 <pointsize>12</pointsize>
+                 <pointsize>14</pointsize>
                 </font>
                </property>
                <property name="text">
@@ -1244,7 +1244,7 @@
               <widget class="QLabel" name="labelSmartFee">
                <property name="font">
                 <font>
-                 <pointsize>12</pointsize>
+                 <pointsize>14</pointsize>
                 </font>
                </property>
                <property name="text">
@@ -1259,7 +1259,7 @@
               <widget class="QLabel" name="labelFeeEstimation">
                <property name="font">
                 <font>
-                 <pointsize>12</pointsize>
+                 <pointsize>14</pointsize>
                 </font>
                </property>
                <property name="text">
@@ -1271,7 +1271,7 @@
               <widget class="QLabel" name="labelSmartFee2">
                <property name="font">
                 <font>
-                 <pointsize>12</pointsize>
+                 <pointsize>14</pointsize>
                 </font>
                </property>
                <property name="text">
@@ -1302,7 +1302,7 @@
               <widget class="QCheckBox" name="checkBoxFreeTx">
                <property name="font">
                 <font>
-                 <pointsize>12</pointsize>
+                 <pointsize>14</pointsize>
                 </font>
                </property>
                <property name="text">
@@ -1314,7 +1314,7 @@
               <widget class="QLabel" name="labelFreeTx">
                <property name="font">
                 <font>
-                 <pointsize>12</pointsize>
+                 <pointsize>14</pointsize>
                 </font>
                </property>
                <property name="text">

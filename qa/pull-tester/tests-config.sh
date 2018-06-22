@@ -3,8 +3,8 @@
 # Distributed under the MIT software license, see the accompanying
 # file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
-BUILDDIR="/mnt/d/difftool/nye_good"
-EXEEXT=""
+BUILDDIR="/home/a/nyenew"
+EXEEXT=".exe"
 
 # These will turn into comments if they were disabled when configuring.
 ENABLE_WALLET=1

@@ -27,7 +27,7 @@
    </property>
    <property name="font">
     <font>
-     <family>Ara Hamah 1982</family>
+     
      <pointsize>14</pointsize>
      <weight>50</weight>
      <bold>false</bold>
@@ -90,8 +90,7 @@
       </palette>
      </property>
      <property name="font">
-      <font>
-       <family>Ara Hamah 1982</family>
+   <font>
        <pointsize>14</pointsize>
        <weight>50</weight>
        <bold>false</bold>
@@ -148,8 +147,7 @@
       </palette>
      </property>
      <property name="font">
-      <font>
-       <family>Ara Hamah 1982</family>
+   <font>
        <pointsize>14</pointsize>
        <weight>50</weight>
        <bold>false</bold>
@@ -169,8 +167,7 @@
       </rect>
      </property>
      <property name="font">
-      <font>
-       <family>Ara Hamah 1982</family>
+   <font>
        <pointsize>14</pointsize>
       </font>
      </property>
@@ -188,8 +185,7 @@
       </rect>
      </property>
      <property name="font">
-      <font>
-       <family>Ara Hamah 1982</family>
+   <font>
        <pointsize>14</pointsize>
       </font>
      </property>
@@ -207,8 +203,7 @@
       </rect>
      </property>
      <property name="font">
-      <font>
-       <family>Ara Hamah 1982</family>
+   <font>
        <pointsize>14</pointsize>
       </font>
      </property>
@@ -229,8 +224,7 @@
       </rect>
      </property>
      <property name="font">
-      <font>
-       <family>Ara Hamah 1982</family>
+   <font>
        <pointsize>14</pointsize>
       </font>
      </property>
@@ -251,8 +245,7 @@
       </rect>
      </property>
      <property name="font">
-      <font>
-       <family>Ara Hamah 1982</family>
+   <font>
        <pointsize>14</pointsize>
       </font>
      </property>
@@ -273,8 +266,7 @@
       </rect>
      </property>
      <property name="font">
-      <font>
-       <family>Ara Hamah 1982</family>
+   <font>
        <pointsize>14</pointsize>
       </font>
      </property>
@@ -295,8 +287,7 @@
       </rect>
      </property>
      <property name="font">
-      <font>
-       <family>Ara Hamah 1982</family>
+   <font>
        <pointsize>14</pointsize>
       </font>
      </property>
@@ -525,7 +516,7 @@
      </property>
      <property name="font">
       <font>
-       <pointsize>9</pointsize>
+       <pointsize>14</pointsize>
        <weight>75</weight>
        <bold>true</bold>
       </font>
@@ -542,7 +533,7 @@
      </property>
      <property name="font">
       <font>
-       <pointsize>9</pointsize>
+       <pointsize>14</pointsize>
        <weight>75</weight>
        <bold>true</bold>
       </font>
@@ -623,7 +614,7 @@
      </property>
      <property name="font">
       <font>
-       <pointsize>10</pointsize>
+       <pointsize>14</pointsize>
       </font>
      </property>
      <property name="text">
@@ -641,7 +632,7 @@
      </property>
      <property name="font">
       <font>
-       <pointsize>10</pointsize>
+       <pointsize>14</pointsize>
       </font>
      </property>
     </widget>
@@ -656,7 +647,7 @@
      </property>
      <property name="font">
       <font>
-       <pointsize>10</pointsize>
+       <pointsize>14</pointsize>
       </font>
      </property>
     </widget>
@@ -1646,7 +1637,7 @@
      </property>
      <property name="font">
       <font>
-       <pointsize>10</pointsize>
+       <pointsize>14</pointsize>
       </font>
      </property>
     </widget>
@@ -1680,7 +1671,7 @@
      </property>
      <property name="font">
       <font>
-       <pointsize>10</pointsize>
+       <pointsize>14</pointsize>
       </font>
      </property>
      <property name="text">
@@ -1717,7 +1708,7 @@
      </property>
      <property name="font">
       <font>
-       <pointsize>10</pointsize>
+       <pointsize>14</pointsize>
       </font>
      </property>
     </widget>
@@ -1764,7 +1755,7 @@
      </property>
      <property name="font">
       <font>
-       <pointsize>9</pointsize>
+       <pointsize>14</pointsize>
        <weight>75</weight>
        <bold>true</bold>
       </font>
@@ -1781,7 +1772,7 @@
      </property>
      <property name="font">
       <font>
-       <pointsize>9</pointsize>
+       <pointsize>14</pointsize>
        <weight>75</weight>
        <bold>true</bold>
       </font>
@@ -3377,7 +3368,7 @@
    </property>
    <property name="font">
     <font>
-     <family>Ara Hamah 1982</family>
+     
      <pointsize>14</pointsize>
     </font>
    </property>
@@ -3398,7 +3389,7 @@
     </property>
     <property name="font">
      <font>
-      <family>Ara Hamah 1982</family>
+      
       <pointsize>14</pointsize>
      </font>
     </property>
@@ -3423,7 +3414,7 @@
     </property>
     <property name="font">
      <font>
-      <family>Ara Hamah 1982</family>
+      
       <pointsize>14</pointsize>
      </font>
     </property>
@@ -3448,7 +3439,7 @@
     </property>
     <property name="font">
      <font>
-      <family>Ara Hamah 1982</family>
+      
       <pointsize>14</pointsize>
      </font>
     </property>
@@ -3473,7 +3464,7 @@
     </property>
     <property name="font">
      <font>
-      <family>Ara Hamah 1982</family>
+      
       <pointsize>14</pointsize>
      </font>
     </property>

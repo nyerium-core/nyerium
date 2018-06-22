@@ -12,7 +12,7 @@
   </property>
   <property name="font">
    <font>
-    <family>Ara Hamah 1982</family>
+    
     <pointsize>14</pointsize>
    </font>
   </property>
@@ -23,8 +23,7 @@
    <item>
     <widget class="QLabel" name="label_2">
      <property name="font">
-      <font>
-       <family>Ara Hamah 1982</family>
+   <font>
        <pointsize>14</pointsize>
       </font>
      </property>
@@ -39,7 +38,7 @@
       <widget class="QLabel" name="label">
        <property name="font">
         <font>
-         <family>Ara Hamah 1982</family>
+         
          <pointsize>14</pointsize>
         </font>
        </property>
@@ -52,7 +51,7 @@
       <widget class="QValidatedLineEdit" name="uriEdit">
        <property name="font">
         <font>
-         <family>Ara Hamah 1982</family>
+         
          <pointsize>14</pointsize>
         </font>
        </property>
@@ -62,7 +61,7 @@
       <widget class="QPushButton" name="selectFileButton">
        <property name="font">
         <font>
-         <family>Ara Hamah 1982</family>
+         
          <pointsize>14</pointsize>
         </font>
        </property>
@@ -82,8 +81,7 @@
    <item>
     <spacer name="verticalSpacer">
      <property name="font">
-      <font>
-       <family>Ara Hamah 1982</family>
+   <font>
        <pointsize>14</pointsize>
       </font>
      </property>
@@ -101,8 +99,7 @@
    <item>
     <widget class="QDialogButtonBox" name="buttonBox">
      <property name="font">
-      <font>
-       <family>Ara Hamah 1982</family>
+   <font>
        <pointsize>14</pointsize>
       </font>
      </property>

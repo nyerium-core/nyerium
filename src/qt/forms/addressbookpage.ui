@@ -12,7 +12,6 @@
   </property>
   <property name="font">
    <font>
-    <family>Ara Hamah 1982</family>
     <pointsize>14</pointsize>
    </font>
   </property>
@@ -20,8 +19,7 @@
    <item>
     <widget class="QLabel" name="labelExplanation">
      <property name="font">
-      <font>
-       <family>Ara Hamah 1982</family>
+   <font>
        <pointsize>14</pointsize>
       </font>
      </property>
@@ -73,8 +71,7 @@
       </palette>
      </property>
      <property name="font">
-      <font>
-       <family>Ara Hamah 1982</family>
+   <font>
        <pointsize>14</pointsize>
       </font>
      </property>
@@ -110,7 +107,7 @@
       <widget class="QPushButton" name="newAddress">
        <property name="font">
         <font>
-         <family>Ara Hamah 1982</family>
+         
          <pointsize>14</pointsize>
         </font>
        </property>
@@ -133,7 +130,7 @@
       <widget class="QPushButton" name="copyAddress">
        <property name="font">
         <font>
-         <family>Ara Hamah 1982</family>
+         
          <pointsize>14</pointsize>
         </font>
        </property>
@@ -156,7 +153,7 @@
       <widget class="QPushButton" name="deleteAddress">
        <property name="font">
         <font>
-         <family>Ara Hamah 1982</family>
+         
          <pointsize>14</pointsize>
         </font>
        </property>
@@ -179,7 +176,7 @@
       <spacer name="horizontalSpacer">
        <property name="font">
         <font>
-         <family>Ara Hamah 1982</family>
+         
          <pointsize>14</pointsize>
         </font>
        </property>
@@ -198,7 +195,7 @@
       <widget class="QPushButton" name="exportButton">
        <property name="font">
         <font>
-         <family>Ara Hamah 1982</family>
+         
          <pointsize>14</pointsize>
         </font>
        </property>
@@ -227,7 +224,7 @@
        </property>
        <property name="font">
         <font>
-         <family>Ara Hamah 1982</family>
+         
          <pointsize>14</pointsize>
         </font>
        </property>

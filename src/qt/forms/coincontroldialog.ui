@@ -12,7 +12,7 @@
   </property>
   <property name="font">
    <font>
-    <family>Ara Hamah 1982</family>
+    
     <pointsize>14</pointsize>
    </font>
   </property>
@@ -46,7 +46,7 @@
         <widget class="QLabel" name="labelCoinControlQuantityText">
          <property name="font">
           <font>
-           <family>Ara Hamah 1982</family>
+           
            <pointsize>14</pointsize>
            <weight>75</weight>
            <bold>true</bold>
@@ -61,7 +61,7 @@
         <widget class="QLabel" name="labelCoinControlQuantity">
          <property name="font">
           <font>
-           <family>Ara Hamah 1982</family>
+           
            <pointsize>14</pointsize>
           </font>
          </property>
@@ -83,7 +83,7 @@
         <widget class="QLabel" name="labelCoinControlBytesText">
          <property name="font">
           <font>
-           <family>Ara Hamah 1982</family>
+           
            <pointsize>14</pointsize>
            <weight>75</weight>
            <bold>true</bold>
@@ -98,7 +98,7 @@
         <widget class="QLabel" name="labelCoinControlBytes">
          <property name="font">
           <font>
-           <family>Ara Hamah 1982</family>
+           
            <pointsize>14</pointsize>
           </font>
          </property>
@@ -136,7 +136,7 @@
         <widget class="QLabel" name="labelCoinControlAmountText">
          <property name="font">
           <font>
-           <family>Ara Hamah 1982</family>
+           
            <pointsize>14</pointsize>
            <weight>75</weight>
            <bold>true</bold>
@@ -151,7 +151,7 @@
         <widget class="QLabel" name="labelCoinControlAmount">
          <property name="font">
           <font>
-           <family>Ara Hamah 1982</family>
+           
            <pointsize>14</pointsize>
           </font>
          </property>
@@ -173,7 +173,7 @@
         <widget class="QLabel" name="labelCoinControlPriorityText">
          <property name="font">
           <font>
-           <family>Ara Hamah 1982</family>
+           
            <pointsize>14</pointsize>
            <weight>75</weight>
            <bold>true</bold>
@@ -188,7 +188,7 @@
         <widget class="QLabel" name="labelCoinControlPriority">
          <property name="font">
           <font>
-           <family>Ara Hamah 1982</family>
+           
            <pointsize>14</pointsize>
           </font>
          </property>
@@ -226,7 +226,7 @@
         <widget class="QLabel" name="labelCoinControlFeeText">
          <property name="font">
           <font>
-           <family>Ara Hamah 1982</family>
+           
            <pointsize>14</pointsize>
            <weight>75</weight>
            <bold>true</bold>
@@ -241,7 +241,7 @@
         <widget class="QLabel" name="labelCoinControlFee">
          <property name="font">
           <font>
-           <family>Ara Hamah 1982</family>
+           
            <pointsize>14</pointsize>
           </font>
          </property>
@@ -266,7 +266,7 @@
          </property>
          <property name="font">
           <font>
-           <family>Ara Hamah 1982</family>
+           
            <pointsize>14</pointsize>
            <weight>75</weight>
            <bold>true</bold>
@@ -284,7 +284,7 @@
          </property>
          <property name="font">
           <font>
-           <family>Ara Hamah 1982</family>
+           
            <pointsize>14</pointsize>
           </font>
          </property>
@@ -322,7 +322,7 @@
         <widget class="QLabel" name="labelCoinControlAfterFeeText">
          <property name="font">
           <font>
-           <family>Ara Hamah 1982</family>
+           
            <pointsize>14</pointsize>
            <weight>75</weight>
            <bold>true</bold>
@@ -337,7 +337,7 @@
         <widget class="QLabel" name="labelCoinControlAfterFee">
          <property name="font">
           <font>
-           <family>Ara Hamah 1982</family>
+           
            <pointsize>14</pointsize>
           </font>
          </property>
@@ -362,7 +362,7 @@
          </property>
          <property name="font">
           <font>
-           <family>Ara Hamah 1982</family>
+           
            <pointsize>14</pointsize>
            <weight>75</weight>
            <bold>true</bold>
@@ -380,7 +380,7 @@
          </property>
          <property name="font">
           <font>
-           <family>Ara Hamah 1982</family>
+           
            <pointsize>14</pointsize>
           </font>
          </property>
@@ -411,8 +411,7 @@
       </size>
      </property>
      <property name="font">
-      <font>
-       <family>Ara Hamah 1982</family>
+   <font>
        <pointsize>14</pointsize>
       </font>
      </property>
@@ -438,7 +437,7 @@
           </property>
           <property name="font">
            <font>
-            <family>Ara Hamah 1982</family>
+            
             <pointsize>14</pointsize>
            </font>
           </property>
@@ -460,7 +459,7 @@
           </property>
           <property name="font">
            <font>
-            <family>Ara Hamah 1982</family>
+            
             <pointsize>14</pointsize>
            </font>
           </property>
@@ -482,7 +481,7 @@
           </property>
           <property name="font">
            <font>
-            <family>Ara Hamah 1982</family>
+            
             <pointsize>14</pointsize>
            </font>
           </property>
@@ -501,7 +500,7 @@
           </property>
           <property name="font">
            <font>
-            <family>Ara Hamah 1982</family>
+            
             <pointsize>14</pointsize>
            </font>
           </property>
@@ -517,7 +516,7 @@
          <widget class="QLabel" name="labelLocked">
           <property name="font">
            <font>
-            <family>Ara Hamah 1982</family>
+            
             <pointsize>14</pointsize>
            </font>
           </property>
@@ -530,7 +529,7 @@
          <spacer name="horizontalSpacer">
           <property name="font">
            <font>
-            <family>Ara Hamah 1982</family>
+            
             <pointsize>14</pointsize>
            </font>
           </property>
@@ -553,8 +552,7 @@
    <item>
     <widget class="CoinControlTreeWidget" name="treeWidget">
      <property name="font">
-      <font>
-       <family>Ara Hamah 1982</family>
+   <font>
        <pointsize>14</pointsize>
       </font>
      </property>
@@ -652,8 +650,7 @@
       </sizepolicy>
      </property>
      <property name="font">
-      <font>
-       <family>Ara Hamah 1982</family>
+   <font>
        <pointsize>14</pointsize>
       </font>
      </property>

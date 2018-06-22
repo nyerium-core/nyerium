@@ -18,7 +18,7 @@
   </property>
   <property name="font">
    <font>
-    <family>Ara Hamah 1982</family>
+    
     <pointsize>14</pointsize>
    </font>
   </property>
@@ -29,8 +29,7 @@
    <item>
     <widget class="QTabWidget" name="multisigTabWidget">
      <property name="font">
-      <font>
-       <family>Ara Hamah 1982</family>
+   <font>
        <pointsize>14</pointsize>
       </font>
      </property>
@@ -66,7 +65,7 @@ QFrame &gt; QLabel{background-color:#f2f0f0;}</string>
            </property>
            <property name="font">
             <font>
-             <family>Ara Hamah 1982</family>
+             
              <pointsize>14</pointsize>
             </font>
            </property>
@@ -88,7 +87,7 @@ QFrame &gt; QLabel{background-color:#f2f0f0;}</string>
           <widget class="QLabel" name="enterMLabel">
            <property name="font">
             <font>
-             <family>Ara Hamah 1982</family>
+             
              <pointsize>14</pointsize>
             </font>
            </property>
@@ -105,7 +104,7 @@ QFrame &gt; QLabel{background-color:#f2f0f0;}</string>
           <widget class="QLabel" name="addressLableLabel">
            <property name="font">
             <font>
-             <family>Ara Hamah 1982</family>
+             
              <pointsize>14</pointsize>
             </font>
            </property>
@@ -118,7 +117,7 @@ QFrame &gt; QLabel{background-color:#f2f0f0;}</string>
           <widget class="QLineEdit" name="multisigAddressLabel">
            <property name="font">
             <font>
-             <family>Ara Hamah 1982</family>
+             
              <pointsize>14</pointsize>
             </font>
            </property>
@@ -132,7 +131,7 @@ QFrame &gt; QLabel{background-color:#f2f0f0;}</string>
           <widget class="QPushButton" name="addAddressButton">
            <property name="font">
             <font>
-             <family>Ara Hamah 1982</family>
+             
              <pointsize>14</pointsize>
             </font>
            </property>
@@ -161,7 +160,7 @@ QFrame &gt; QLabel{background-color:#f2f0f0;}</string>
            </property>
            <property name="font">
             <font>
-             <family>Ara Hamah 1982</family>
+             
              <pointsize>14</pointsize>
             </font>
            </property>
@@ -174,7 +173,7 @@ QFrame &gt; QLabel{background-color:#f2f0f0;}</string>
           <spacer name="addAddressSpacer_2">
            <property name="font">
             <font>
-             <family>Ara Hamah 1982</family>
+             
              <pointsize>14</pointsize>
             </font>
            </property>
@@ -201,7 +200,7 @@ QFrame &gt; QLabel{background-color:#f2f0f0;}</string>
          </property>
          <property name="font">
           <font>
-           <family>Ara Hamah 1982</family>
+           
            <pointsize>14</pointsize>
           </font>
          </property>
@@ -225,7 +224,7 @@ QFrame &gt; QLabel{background-color:#f2f0f0;}</string>
             <spacer name="verticalSpacer">
              <property name="font">
               <font>
-               <family>Ara Hamah 1982</family>
+               
                <pointsize>14</pointsize>
               </font>
              </property>
@@ -256,7 +255,7 @@ QFrame &gt; QLabel{background-color:#f2f0f0;}</string>
            </property>
            <property name="font">
             <font>
-             <family>Ara Hamah 1982</family>
+             
              <pointsize>14</pointsize>
             </font>
            </property>
@@ -282,7 +281,7 @@ QFrame &gt; QLabel{background-color:#f2f0f0;}</string>
           <widget class="QLabel" name="label">
            <property name="font">
             <font>
-             <family>Ara Hamah 1982</family>
+             
              <pointsize>14</pointsize>
             </font>
            </property>
@@ -307,7 +306,7 @@ QFrame &gt; QLabel{background-color:#f2f0f0;}</string>
            </property>
            <property name="font">
             <font>
-             <family>Ara Hamah 1982</family>
+             
              <pointsize>14</pointsize>
             </font>
            </property>
@@ -331,7 +330,7 @@ QFrame &gt; QLabel{background-color:#f2f0f0;}</string>
          </property>
          <property name="font">
           <font>
-           <family>Ara Hamah 1982</family>
+           
            <pointsize>14</pointsize>
           </font>
          </property>
@@ -360,7 +359,7 @@ Please be patient after clicking import.</string>
            </property>
            <property name="font">
             <font>
-             <family>Ara Hamah 1982</family>
+             
              <pointsize>14</pointsize>
             </font>
            </property>
@@ -383,7 +382,7 @@ Please be patient after clicking import.</string>
            </property>
            <property name="font">
             <font>
-             <family>Ara Hamah 1982</family>
+             
              <pointsize>14</pointsize>
             </font>
            </property>

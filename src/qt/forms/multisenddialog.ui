@@ -15,7 +15,7 @@
   </property>
   <property name="font">
    <font>
-    <family>Ara Hamah 1982</family>
+    
     <pointsize>14</pointsize>
    </font>
   </property>
@@ -33,7 +33,7 @@
    </property>
    <property name="font">
     <font>
-     <family>Ara Hamah 1982</family>
+     
      <pointsize>14</pointsize>
     </font>
    </property>
@@ -55,7 +55,7 @@
    </property>
    <property name="font">
     <font>
-     <family>Ara Hamah 1982</family>
+     
      <pointsize>14</pointsize>
     </font>
    </property>
@@ -77,7 +77,7 @@
    </property>
    <property name="font">
     <font>
-     <family>Ara Hamah 1982</family>
+     
      <pointsize>14</pointsize>
     </font>
    </property>
@@ -108,7 +108,7 @@ MultiSend will not be activated unless you have clicked Activate</string>
    </property>
    <property name="font">
     <font>
-     <family>Ara Hamah 1982</family>
+     
      <pointsize>14</pointsize>
     </font>
    </property>
@@ -127,7 +127,7 @@ MultiSend will not be activated unless you have clicked Activate</string>
    </property>
    <property name="font">
     <font>
-     <family>Ara Hamah 1982</family>
+     
      <pointsize>14</pointsize>
     </font>
    </property>
@@ -152,7 +152,7 @@ MultiSend will not be activated unless you have clicked Activate</string>
    </property>
    <property name="font">
     <font>
-     <family>Ara Hamah 1982</family>
+     
      <pointsize>14</pointsize>
     </font>
    </property>
@@ -174,7 +174,7 @@ MultiSend will not be activated unless you have clicked Activate</string>
    </property>
    <property name="font">
     <font>
-     <family>Ara Hamah 1982</family>
+     
      <pointsize>14</pointsize>
     </font>
    </property>
@@ -206,7 +206,7 @@ MultiSend will not be activated unless you have clicked Activate</string>
    </property>
    <property name="font">
     <font>
-     <family>Ara Hamah 1982</family>
+     
      <pointsize>14</pointsize>
     </font>
    </property>
@@ -228,7 +228,7 @@ MultiSend will not be activated unless you have clicked Activate</string>
    </property>
    <property name="font">
     <font>
-     <family>Ara Hamah 1982</family>
+     
      <pointsize>14</pointsize>
     </font>
    </property>
@@ -250,7 +250,7 @@ MultiSend will not be activated unless you have clicked Activate</string>
    </property>
    <property name="font">
     <font>
-     <family>Ara Hamah 1982</family>
+     
      <pointsize>14</pointsize>
     </font>
    </property>
@@ -275,7 +275,7 @@ MultiSend will not be activated unless you have clicked Activate</string>
    </property>
    <property name="font">
     <font>
-     <family>Ara Hamah 1982</family>
+     
      <pointsize>14</pointsize>
     </font>
    </property>
@@ -297,7 +297,7 @@ MultiSend will not be activated unless you have clicked Activate</string>
    </property>
    <property name="font">
     <font>
-     <family>Ara Hamah 1982</family>
+     
      <pointsize>14</pointsize>
     </font>
    </property>
@@ -322,7 +322,7 @@ MultiSend will not be activated unless you have clicked Activate</string>
    </property>
    <property name="font">
     <font>
-     <family>Ara Hamah 1982</family>
+     
      <pointsize>14</pointsize>
     </font>
    </property>
@@ -331,7 +331,7 @@ MultiSend will not be activated unless you have clicked Activate</string>
      <widget class="QCheckBox" name="multiSendStakeCheckBox">
       <property name="font">
        <font>
-        <family>Ara Hamah 1982</family>
+        
         <pointsize>14</pointsize>
        </font>
       </property>
@@ -344,7 +344,7 @@ MultiSend will not be activated unless you have clicked Activate</string>
      <widget class="QCheckBox" name="multiSendMasternodeCheckBox">
       <property name="font">
        <font>
-        <family>Ara Hamah 1982</family>
+        
         <pointsize>14</pointsize>
        </font>
       </property>

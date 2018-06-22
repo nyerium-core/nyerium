@@ -18,7 +18,7 @@
   </property>
   <property name="font">
    <font>
-    <family>Ara Hamah 1982</family>
+    
     <pointsize>14</pointsize>
    </font>
   </property>
@@ -29,8 +29,7 @@
    <item>
     <widget class="QLabel" name="labelAlerts">
      <property name="font">
-      <font>
-       <family>Ara Hamah 1982</family>
+   <font>
        <pointsize>14</pointsize>
       </font>
      </property>
@@ -63,7 +62,7 @@
          <property name="font">
           <font>
            <family>MS Shell Dlg 2</family>
-           <pointsize>12</pointsize>
+           <pointsize>14</pointsize>
           </font>
          </property>
          <property name="frameShape">
@@ -85,11 +84,7 @@
              <widget class="QLabel" name="label_5">
               <property name="font">
                <font>
-                <family>Ara Hamah 1982</family>
-                <pointsize>12</pointsize>
-                <weight>50</weight>
-                <italic>false</italic>
-                <bold>false</bold>
+                <pointsize>14</pointsize>
                </font>
               </property>
               <property name="styleSheet">
@@ -105,11 +100,7 @@ color: rgb(255, 255, 255);</string>
              <widget class="QLabel" name="labelWalletStatus">
               <property name="font">
                <font>
-                <family>Ara Hamah 1982</family>
-                <pointsize>12</pointsize>
-                <weight>50</weight>
-                <italic>false</italic>
-                <bold>false</bold>
+                <pointsize>14</pointsize>
                </font>
               </property>
               <property name="cursor">
@@ -134,7 +125,7 @@ color: rgb(255, 255, 255);</string>
               <property name="font">
                <font>
                 <family>MS Shell Dlg 2</family>
-                <pointsize>12</pointsize>
+                <pointsize>14</pointsize>
                </font>
               </property>
               <property name="orientation">
@@ -157,15 +148,6 @@ color: rgb(255, 255, 255);</string>
             </property>
             <item row="2" column="2">
              <widget class="QLabel" name="labelWatchPending">
-              <property name="font">
-               <font>
-                <family>Ara Hamah 1982</family>
-                <pointsize>12</pointsize>
-                <weight>50</weight>
-                <italic>false</italic>
-                <bold>false</bold>
-               </font>
-              </property>
               <property name="cursor">
                <cursorShape>IBeamCursor</cursorShape>
               </property>
@@ -185,15 +167,6 @@ color: rgb(255, 255, 255);</string>
             </item>
             <item row="2" column="1">
              <widget class="QLabel" name="labelUnconfirmed">
-              <property name="font">
-               <font>
-                <family>Ara Hamah 1982</family>
-                <pointsize>12</pointsize>
-                <weight>50</weight>
-                <italic>false</italic>
-                <bold>false</bold>
-               </font>
-              </property>
               <property name="cursor">
                <cursorShape>IBeamCursor</cursorShape>
               </property>
@@ -213,15 +186,6 @@ color: rgb(255, 255, 255);</string>
             </item>
             <item row="3" column="2">
              <widget class="QLabel" name="labelWatchImmature">
-              <property name="font">
-               <font>
-                <family>Ara Hamah 1982</family>
-                <pointsize>12</pointsize>
-                <weight>50</weight>
-                <italic>false</italic>
-                <bold>false</bold>
-               </font>
-              </property>
               <property name="cursor">
                <cursorShape>IBeamCursor</cursorShape>
               </property>
@@ -244,7 +208,7 @@ color: rgb(255, 255, 255);</string>
               <property name="font">
                <font>
                 <family>MS Shell Dlg 2</family>
-                <pointsize>12</pointsize>
+                <pointsize>14</pointsize>
                </font>
               </property>
               <property name="lineWidth">
@@ -272,7 +236,7 @@ color: rgb(255, 255, 255);</string>
               <property name="font">
                <font>
                 <family>MS Shell Dlg 2</family>
-                <pointsize>12</pointsize>
+                <pointsize>14</pointsize>
                </font>
               </property>
               <property name="orientation">
@@ -282,15 +246,6 @@ color: rgb(255, 255, 255);</string>
             </item>
             <item row="5" column="0">
              <widget class="QLabel" name="labelTotalText">
-              <property name="font">
-               <font>
-                <family>Ara Hamah 1982</family>
-                <pointsize>12</pointsize>
-                <weight>50</weight>
-                <italic>false</italic>
-                <bold>false</bold>
-               </font>
-              </property>
               <property name="text">
                <string>Total:</string>
               </property>
@@ -298,15 +253,6 @@ color: rgb(255, 255, 255);</string>
             </item>
             <item row="3" column="1">
              <widget class="QLabel" name="labelImmature">
-              <property name="font">
-               <font>
-                <family>Ara Hamah 1982</family>
-                <pointsize>12</pointsize>
-                <weight>50</weight>
-                <italic>false</italic>
-                <bold>false</bold>
-               </font>
-              </property>
               <property name="cursor">
                <cursorShape>IBeamCursor</cursorShape>
               </property>
@@ -329,7 +275,7 @@ color: rgb(255, 255, 255);</string>
               <property name="font">
                <font>
                 <family>MS Shell Dlg 2</family>
-                <pointsize>12</pointsize>
+                <pointsize>14</pointsize>
                </font>
               </property>
               <property name="orientation">
@@ -345,15 +291,6 @@ color: rgb(255, 255, 255);</string>
             </item>
             <item row="3" column="0">
              <widget class="QLabel" name="labelImmatureText">
-              <property name="font">
-               <font>
-                <family>Ara Hamah 1982</family>
-                <pointsize>12</pointsize>
-                <weight>50</weight>
-                <italic>false</italic>
-                <bold>false</bold>
-               </font>
-              </property>
               <property name="text">
                <string>Immature:</string>
               </property>
@@ -361,15 +298,6 @@ color: rgb(255, 255, 255);</string>
             </item>
             <item row="5" column="1">
              <widget class="QLabel" name="labelTotal">
-              <property name="font">
-               <font>
-                <family>Ara Hamah 1982</family>
-                <pointsize>12</pointsize>
-                <weight>50</weight>
-                <italic>false</italic>
-                <bold>false</bold>
-               </font>
-              </property>
               <property name="cursor">
                <cursorShape>IBeamCursor</cursorShape>
               </property>
@@ -389,15 +317,6 @@ color: rgb(255, 255, 255);</string>
             </item>
             <item row="5" column="2">
              <widget class="QLabel" name="labelWatchTotal">
-              <property name="font">
-               <font>
-                <family>Ara Hamah 1982</family>
-                <pointsize>12</pointsize>
-                <weight>50</weight>
-                <italic>false</italic>
-                <bold>false</bold>
-               </font>
-              </property>
               <property name="cursor">
                <cursorShape>IBeamCursor</cursorShape>
               </property>
@@ -417,15 +336,6 @@ color: rgb(255, 255, 255);</string>
             </item>
             <item row="0" column="2">
              <widget class="QLabel" name="labelWatchonly">
-              <property name="font">
-               <font>
-                <family>Ara Hamah 1982</family>
-                <pointsize>12</pointsize>
-                <weight>50</weight>
-                <italic>false</italic>
-                <bold>false</bold>
-               </font>
-              </property>
               <property name="text">
                <string>Watch-only:</string>
               </property>
@@ -436,15 +346,6 @@ color: rgb(255, 255, 255);</string>
             </item>
             <item row="1" column="0">
              <widget class="QLabel" name="labelBalanceText">
-              <property name="font">
-               <font>
-                <family>Ara Hamah 1982</family>
-                <pointsize>12</pointsize>
-                <weight>50</weight>
-                <italic>false</italic>
-                <bold>false</bold>
-               </font>
-              </property>
               <property name="text">
                <string>Available:</string>
               </property>
@@ -452,15 +353,6 @@ color: rgb(255, 255, 255);</string>
             </item>
             <item row="1" column="1">
              <widget class="QLabel" name="labelBalance">
-              <property name="font">
-               <font>
-                <family>Ara Hamah 1982</family>
-                <pointsize>12</pointsize>
-                <weight>50</weight>
-                <italic>false</italic>
-                <bold>false</bold>
-               </font>
-              </property>
               <property name="cursor">
                <cursorShape>IBeamCursor</cursorShape>
               </property>
@@ -480,15 +372,6 @@ color: rgb(255, 255, 255);</string>
             </item>
             <item row="1" column="2">
              <widget class="QLabel" name="labelWatchAvailable">
-              <property name="font">
-               <font>
-                <family>Ara Hamah 1982</family>
-                <pointsize>12</pointsize>
-                <weight>50</weight>
-                <italic>false</italic>
-                <bold>false</bold>
-               </font>
-              </property>
               <property name="cursor">
                <cursorShape>IBeamCursor</cursorShape>
               </property>
@@ -508,15 +391,6 @@ color: rgb(255, 255, 255);</string>
             </item>
             <item row="2" column="0">
              <widget class="QLabel" name="labelPendingText">
-              <property name="font">
-               <font>
-                <family>Ara Hamah 1982</family>
-                <pointsize>12</pointsize>
-                <weight>50</weight>
-                <italic>false</italic>
-                <bold>false</bold>
-               </font>
-              </property>
               <property name="text">
                <string>Pending:</string>
               </property>
@@ -524,15 +398,6 @@ color: rgb(255, 255, 255);</string>
             </item>
             <item row="0" column="1">
              <widget class="QLabel" name="labelSpendable">
-              <property name="font">
-               <font>
-                <family>Ara Hamah 1982</family>
-                <pointsize>12</pointsize>
-                <weight>50</weight>
-                <italic>false</italic>
-                <bold>false</bold>
-               </font>
-              </property>
               <property name="text">
                <string>Spendable:</string>
               </property>
@@ -557,7 +422,7 @@ color: rgb(255, 255, 255);</string>
          <property name="font">
           <font>
            <family>MS Shell Dlg 2</family>
-           <pointsize>12</pointsize>
+           <pointsize>14</pointsize>
           </font>
          </property>
          <property name="layoutDirection">
@@ -996,7 +861,7 @@ color: rgb(255, 255, 255);</string>
           <property name="font">
            <font>
             <family>MS Shell Dlg 2</family>
-            <pointsize>12</pointsize>
+            <pointsize>14</pointsize>
            </font>
           </property>
           <property name="focusPolicy">
@@ -1024,7 +889,7 @@ color: rgb(255, 255, 255);</string>
           <property name="font">
            <font>
             <family>MS Shell Dlg 2</family>
-            <pointsize>12</pointsize>
+            <pointsize>14</pointsize>
            </font>
           </property>
           <property name="orientation">
@@ -1043,7 +908,7 @@ color: rgb(255, 255, 255);</string>
           <property name="font">
            <font>
             <family>MS Shell Dlg 2</family>
-            <pointsize>12</pointsize>
+            <pointsize>14</pointsize>
            </font>
           </property>
           <property name="frameShape">
@@ -1059,11 +924,7 @@ color: rgb(255, 255, 255);</string>
               <widget class="QLabel" name="label_5z">
                <property name="font">
                 <font>
-                 <family>Ara Hamah 1982</family>
-                 <pointsize>12</pointsize>
-                 <weight>50</weight>
-                 <italic>false</italic>
-                 <bold>false</bold>
+                 <pointsize>14</pointsize>
                 </font>
                </property>
                <property name="toolTip">
@@ -1093,7 +954,7 @@ color: rgb(255, 255, 255);</string>
                <property name="font">
                 <font>
                  <family>MS Shell Dlg 2</family>
-                 <pointsize>12</pointsize>
+                 <pointsize>14</pointsize>
                 </font>
                </property>
                <property name="orientation">
@@ -1118,7 +979,7 @@ color: rgb(255, 255, 255);</string>
                <property name="font">
                 <font>
                  <family>MS Shell Dlg 2</family>
-                 <pointsize>12</pointsize>
+                 <pointsize>14</pointsize>
                 </font>
                </property>
                <property name="orientation">
@@ -1128,15 +989,6 @@ color: rgb(255, 255, 255);</string>
              </item>
              <item row="4" column="1">
               <widget class="QLabel" name="labelzBalancez">
-               <property name="font">
-                <font>
-                 <family>Ara Hamah 1982</family>
-                 <pointsize>12</pointsize>
-                 <weight>50</weight>
-                 <italic>false</italic>
-                 <bold>false</bold>
-                </font>
-               </property>
                <property name="cursor">
                 <cursorShape>IBeamCursor</cursorShape>
                </property>
@@ -1156,15 +1008,6 @@ color: rgb(255, 255, 255);</string>
              </item>
              <item row="6" column="1">
               <widget class="QLabel" name="labelTotalz">
-               <property name="font">
-                <font>
-                 <family>Ara Hamah 1982</family>
-                 <pointsize>12</pointsize>
-                 <weight>50</weight>
-                 <italic>false</italic>
-                 <bold>false</bold>
-                </font>
-               </property>
                <property name="cursor">
                 <cursorShape>IBeamCursor</cursorShape>
                </property>
@@ -1187,7 +1030,7 @@ color: rgb(255, 255, 255);</string>
                <property name="font">
                 <font>
                  <family>MS Shell Dlg 2</family>
-                 <pointsize>12</pointsize>
+                 <pointsize>14</pointsize>
                 </font>
                </property>
                <property name="orientation">
@@ -1203,15 +1046,6 @@ color: rgb(255, 255, 255);</string>
              </item>
              <item row="6" column="0">
               <widget class="QLabel" name="labelTotalTextz">
-               <property name="font">
-                <font>
-                 <family>Ara Hamah 1982</family>
-                 <pointsize>12</pointsize>
-                 <weight>50</weight>
-                 <italic>false</italic>
-                 <bold>false</bold>
-                </font>
-               </property>
                <property name="text">
                 <string>Total:</string>
                </property>
@@ -1219,15 +1053,6 @@ color: rgb(255, 255, 255);</string>
              </item>
              <item row="1" column="0">
               <widget class="QLabel" name="labelBalanceTextz">
-               <property name="font">
-                <font>
-                 <family>Ara Hamah 1982</family>
-                 <pointsize>12</pointsize>
-                 <weight>50</weight>
-                 <italic>false</italic>
-                 <bold>false</bold>
-                </font>
-               </property>
                <property name="text">
                 <string>NYEX:</string>
                </property>
@@ -1235,15 +1060,6 @@ color: rgb(255, 255, 255);</string>
              </item>
              <item row="1" column="1">
               <widget class="QLabel" name="labelBalancez">
-               <property name="font">
-                <font>
-                 <family>Ara Hamah 1982</family>
-                 <pointsize>12</pointsize>
-                 <weight>50</weight>
-                 <italic>false</italic>
-                 <bold>false</bold>
-                </font>
-               </property>
                <property name="cursor">
                 <cursorShape>IBeamCursor</cursorShape>
                </property>
@@ -1263,15 +1079,6 @@ color: rgb(255, 255, 255);</string>
              </item>
              <item row="4" column="0">
               <widget class="QLabel" name="labelzBalanceTextz">
-               <property name="font">
-                <font>
-                 <family>Ara Hamah 1982</family>
-                 <pointsize>12</pointsize>
-                 <weight>50</weight>
-                 <italic>false</italic>
-                 <bold>false</bold>
-                </font>
-               </property>
                <property name="toolTip">
                 <string/>
                </property>
@@ -1282,15 +1089,6 @@ color: rgb(255, 255, 255);</string>
              </item>
              <item row="4" column="2">
               <widget class="QLabel" name="labelzNYEXPercent">
-               <property name="font">
-                <font>
-                 <family>Ara Hamah 1982</family>
-                 <pointsize>12</pointsize>
-                 <weight>50</weight>
-                 <italic>false</italic>
-                 <bold>false</bold>
-                </font>
-               </property>
                <property name="toolTip">
                 <string>Current percentage of zNYEX.
 If AutoMint is enabled this percentage will settle around the configured AutoMint percentage (default = 10%)</string>
@@ -1307,8 +1105,8 @@ If AutoMint is enabled this percentage will settle around the configured AutoMin
               <widget class="QLabel" name="label100Percent">
                <property name="font">
                 <font>
-                 <family>Ara Hamah 1982</family>
-                 <pointsize>12</pointsize>
+                 
+                 <pointsize>14</pointsize>
                  <weight>50</weight>
                  <italic>false</italic>
                  <bold>false</bold>
@@ -1324,15 +1122,6 @@ If AutoMint is enabled this percentage will settle around the configured AutoMin
              </item>
              <item row="2" column="1">
               <widget class="QLabel" name="labelLockedBalance">
-               <property name="font">
-                <font>
-                 <family>Ara Hamah 1982</family>
-                 <pointsize>12</pointsize>
-                 <weight>50</weight>
-                 <italic>false</italic>
-                 <bold>false</bold>
-                </font>
-               </property>
                <property name="toolTip">
                 <string>Locked NYEX or Masternode collaterals. These are excluded from zNYEX minting.</string>
                </property>
@@ -1346,15 +1135,6 @@ If AutoMint is enabled this percentage will settle around the configured AutoMin
              </item>
              <item row="2" column="0">
               <widget class="QLabel" name="labelLockedBalanceText">
-               <property name="font">
-                <font>
-                 <family>Ara Hamah 1982</family>
-                 <pointsize>12</pointsize>
-                 <weight>50</weight>
-                 <italic>false</italic>
-                 <bold>false</bold>
-                </font>
-               </property>
                <property name="toolTip">
                 <string>Locked NYEX or Masternode collaterals. These are excluded from zNYEX minting.</string>
                </property>
@@ -1365,15 +1145,6 @@ If AutoMint is enabled this percentage will settle around the configured AutoMin
              </item>
              <item row="3" column="0">
               <widget class="QLabel" name="labelUnLockedBalanceText">
-               <property name="font">
-                <font>
-                 <family>Ara Hamah 1982</family>
-                 <pointsize>12</pointsize>
-                 <weight>50</weight>
-                 <italic>false</italic>
-                 <bold>false</bold>
-                </font>
-               </property>
                <property name="toolTip">
                 <string>Unlocked NYEs. These can be used for zNYEX minting.</string>
                </property>
@@ -1384,15 +1155,6 @@ If AutoMint is enabled this percentage will settle around the configured AutoMin
              </item>
              <item row="3" column="1">
               <widget class="QLabel" name="labelUnLockedBalance">
-               <property name="font">
-                <font>
-                 <family>Ara Hamah 1982</family>
-                 <pointsize>12</pointsize>
-                 <weight>50</weight>
-                 <italic>false</italic>
-                 <bold>false</bold>
-                </font>
-               </property>
                <property name="toolTip">
                 <string>Unlocked NYEs. These can be used for zNYEX minting.</string>
                </property>
@@ -1406,15 +1168,6 @@ If AutoMint is enabled this percentage will settle around the configured AutoMin
              </item>
              <item row="3" column="2">
               <widget class="QLabel" name="labelNYEPercent">
-               <property name="font">
-                <font>
-                 <family>Ara Hamah 1982</family>
-                 <pointsize>12</pointsize>
-                 <weight>50</weight>
-                 <italic>false</italic>
-                 <bold>false</bold>
-                </font>
-               </property>
                <property name="text">
                 <string>0 %</string>
                </property>
@@ -1439,7 +1192,7 @@ If AutoMint is enabled this percentage will settle around the configured AutoMin
           <property name="font">
            <font>
             <family>MS Shell Dlg 2</family>
-            <pointsize>12</pointsize>
+            <pointsize>14</pointsize>
            </font>
           </property>
           <property name="frameShape">
@@ -1455,11 +1208,7 @@ If AutoMint is enabled this percentage will settle around the configured AutoMin
               <widget class="QLabel" name="label_5z_3">
                <property name="font">
                 <font>
-                 <family>Ara Hamah 1982</family>
-                 <pointsize>12</pointsize>
-                 <weight>50</weight>
-                 <italic>false</italic>
-                 <bold>false</bold>
+                 <pointsize>14</pointsize>
                 </font>
                </property>
                <property name="styleSheet">
@@ -1480,15 +1229,6 @@ color: rgb(255, 255, 255);</string>
              </property>
              <item row="4" column="0">
               <widget class="QLabel" name="labelzBalanceMatureText">
-               <property name="font">
-                <font>
-                 <family>Ara Hamah 1982</family>
-                 <pointsize>12</pointsize>
-                 <weight>50</weight>
-                 <italic>false</italic>
-                 <bold>false</bold>
-                </font>
-               </property>
                <property name="toolTip">
                 <string>Mature: more than 20 confirmation and more than 1 mints of the same denomination after it was minted.
 These zNYEX are spendable.</string>
@@ -1503,7 +1243,7 @@ These zNYEX are spendable.</string>
                <property name="font">
                 <font>
                  <family>MS Shell Dlg 2</family>
-                 <pointsize>12</pointsize>
+                 <pointsize>14</pointsize>
                 </font>
                </property>
                <property name="orientation">
@@ -1513,15 +1253,6 @@ These zNYEX are spendable.</string>
              </item>
              <item row="1" column="1">
               <widget class="QLabel" name="labelzBalance">
-               <property name="font">
-                <font>
-                 <family>Ara Hamah 1982</family>
-                 <pointsize>12</pointsize>
-                 <weight>50</weight>
-                 <italic>false</italic>
-                 <bold>false</bold>
-                </font>
-               </property>
                <property name="cursor">
                 <cursorShape>IBeamCursor</cursorShape>
                </property>
@@ -1556,7 +1287,7 @@ These zNYEX are spendable.</string>
                <property name="font">
                 <font>
                  <family>MS Shell Dlg 2</family>
-                 <pointsize>12</pointsize>
+                 <pointsize>14</pointsize>
                 </font>
                </property>
                <property name="orientation">
@@ -1566,15 +1297,6 @@ These zNYEX are spendable.</string>
              </item>
              <item row="1" column="0">
               <widget class="QLabel" name="labelzBalanceText">
-               <property name="font">
-                <font>
-                 <family>Ara Hamah 1982</family>
-                 <pointsize>12</pointsize>
-                 <weight>50</weight>
-                 <italic>false</italic>
-                 <bold>false</bold>
-                </font>
-               </property>
                <property name="toolTip">
                 <string>All available zNYEX, unconfirmed and immature zNYEX included.</string>
                </property>
@@ -1588,7 +1310,7 @@ These zNYEX are spendable.</string>
                <property name="font">
                 <font>
                  <family>MS Shell Dlg 2</family>
-                 <pointsize>12</pointsize>
+                 <pointsize>14</pointsize>
                 </font>
                </property>
                <property name="orientation">
@@ -1607,7 +1329,7 @@ These zNYEX are spendable.</string>
                <property name="font">
                 <font>
                  <family>MS Shell Dlg 2</family>
-                 <pointsize>12</pointsize>
+                 <pointsize>14</pointsize>
                 </font>
                </property>
                <property name="orientation">
@@ -1623,15 +1345,6 @@ These zNYEX are spendable.</string>
              </item>
              <item row="4" column="1">
               <widget class="QLabel" name="labelzBalanceMature">
-               <property name="font">
-                <font>
-                 <family>Ara Hamah 1982</family>
-                 <pointsize>12</pointsize>
-                 <weight>50</weight>
-                 <italic>false</italic>
-                 <bold>false</bold>
-                </font>
-               </property>
                <property name="toolTip">
                 <string>Mature: more than 20 confirmation and more than 1 mints of the same denomination after it was minted.
 These zNYEX are spendable.</string>
@@ -1646,15 +1359,6 @@ These zNYEX are spendable.</string>
              </item>
              <item row="2" column="0">
               <widget class="QLabel" name="labelzBalanceUnconfirmedText">
-               <property name="font">
-                <font>
-                 <family>Ara Hamah 1982</family>
-                 <pointsize>12</pointsize>
-                 <weight>50</weight>
-                 <italic>false</italic>
-                 <bold>false</bold>
-                </font>
-               </property>
                <property name="toolTip">
                 <string>Unconfirmed: less than 20 confirmations
 Immature: confirmed, but less than 1 mints of the same denomination after it was minted</string>
@@ -1666,15 +1370,6 @@ Immature: confirmed, but less than 1 mints of the same denomination after it was
              </item>
              <item row="2" column="1">
               <widget class="QLabel" name="labelzBalanceUnconfirmed">
-               <property name="font">
-                <font>
-                 <family>Ara Hamah 1982</family>
-                 <pointsize>12</pointsize>
-                 <weight>50</weight>
-                 <italic>false</italic>
-                 <bold>false</bold>
-                </font>
-               </property>
                <property name="toolTip">
                 <string>Unconfirmed: less than 20 confirmations
 Immature: confirmed, but less than 1 mints of the same denomination after it was minted</string>
@@ -1692,7 +1387,7 @@ Immature: confirmed, but less than 1 mints of the same denomination after it was
                <property name="font">
                 <font>
                  <family>MS Shell Dlg 2</family>
-                 <pointsize>12</pointsize>
+                 <pointsize>14</pointsize>
                 </font>
                </property>
                <property name="orientation">
@@ -1708,15 +1403,6 @@ Immature: confirmed, but less than 1 mints of the same denomination after it was
              </item>
              <item row="3" column="0">
               <widget class="QLabel" name="labelzBalanceImmatureText">
-               <property name="font">
-                <font>
-                 <family>Ara Hamah 1982</family>
-                 <pointsize>12</pointsize>
-                 <weight>50</weight>
-                 <italic>false</italic>
-                 <bold>false</bold>
-                </font>
-               </property>
                <property name="toolTip">
                 <string>Unconfirmed: less than 20 confirmations
 Immature: confirmed, but less than 1 mints of the same denomination after it was minted</string>
@@ -1728,15 +1414,6 @@ Immature: confirmed, but less than 1 mints of the same denomination after it was
              </item>
              <item row="3" column="1">
               <widget class="QLabel" name="labelzBalanceImmature">
-               <property name="font">
-                <font>
-                 <family>Ara Hamah 1982</family>
-                 <pointsize>12</pointsize>
-                 <weight>50</weight>
-                 <italic>false</italic>
-                 <bold>false</bold>
-                </font>
-               </property>
                <property name="toolTip">
                 <string>Unconfirmed: less than 20 confirmations
 Immature: confirmed, but less than 1 mints of the same denomination after it was minted</string>
@@ -1754,7 +1431,7 @@ Immature: confirmed, but less than 1 mints of the same denomination after it was
                <property name="font">
                 <font>
                  <family>MS Shell Dlg 2</family>
-                 <pointsize>12</pointsize>
+                 <pointsize>14</pointsize>
                 </font>
                </property>
                <property name="orientation">
@@ -1783,7 +1460,7 @@ Immature: confirmed, but less than 1 mints of the same denomination after it was
          <property name="font">
           <font>
            <family>MS Shell Dlg 2</family>
-           <pointsize>12</pointsize>
+           <pointsize>14</pointsize>
           </font>
          </property>
          <property name="frameShape">
@@ -1798,7 +1475,7 @@ Immature: confirmed, but less than 1 mints of the same denomination after it was
             <property name="font">
              <font>
               <family>MS Shell Dlg 2</family>
-              <pointsize>12</pointsize>
+              <pointsize>14</pointsize>
              </font>
             </property>
             <property name="orientation">
@@ -1819,15 +1496,6 @@ Immature: confirmed, but less than 1 mints of the same denomination after it was
            <layout class="QHBoxLayout" name="horizontalLayout_2">
             <item>
              <widget class="QLabel" name="label_4">
-              <property name="font">
-               <font>
-                <family>Ara Hamah 1982</family>
-                <pointsize>12</pointsize>
-                <weight>50</weight>
-                <italic>false</italic>
-                <bold>false</bold>
-               </font>
-              </property>
               <property name="text">
                <string>Recent transactions</string>
               </property>
@@ -1835,15 +1503,6 @@ Immature: confirmed, but less than 1 mints of the same denomination after it was
             </item>
             <item>
              <widget class="QLabel" name="labelTransactionsStatus">
-              <property name="font">
-               <font>
-                <family>Ara Hamah 1982</family>
-                <pointsize>12</pointsize>
-                <weight>50</weight>
-                <italic>false</italic>
-                <bold>false</bold>
-               </font>
-              </property>
               <property name="cursor">
                <cursorShape>WhatsThisCursor</cursorShape>
               </property>
@@ -1866,7 +1525,7 @@ Immature: confirmed, but less than 1 mints of the same denomination after it was
               <property name="font">
                <font>
                 <family>MS Shell Dlg 2</family>
-                <pointsize>12</pointsize>
+                <pointsize>14</pointsize>
                </font>
               </property>
               <property name="orientation">
@@ -1886,11 +1545,7 @@ Immature: confirmed, but less than 1 mints of the same denomination after it was
            <widget class="QListView" name="listTransactions">
             <property name="font">
              <font>
-              <family>Ara Hamah 1982</family>
-              <pointsize>12</pointsize>
-              <weight>50</weight>
-              <italic>false</italic>
-              <bold>false</bold>
+              <pointsize>14</pointsize>
              </font>
             </property>
             <property name="styleSheet">
@@ -1918,12 +1573,6 @@ Immature: confirmed, but less than 1 mints of the same denomination after it was
        </item>
        <item>
         <spacer name="verticalSpacer_2">
-         <property name="font">
-          <font>
-           <family>MS Shell Dlg 2</family>
-           <pointsize>12</pointsize>
-          </font>
-         </property>
          <property name="orientation">
           <enum>Qt::Vertical</enum>
          </property>

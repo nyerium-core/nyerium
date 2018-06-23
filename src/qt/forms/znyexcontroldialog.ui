@@ -18,7 +18,7 @@
   </property>
   <property name="font">
    <font>
-    <family>Ara Hamah 1982</family>
+    
     <pointsize>14</pointsize>
    </font>
   </property>
@@ -80,7 +80,7 @@
        </property>
        <property name="font">
         <font>
-         <family>Ara Hamah 1982</family>
+         
          <pointsize>14</pointsize>
         </font>
        </property>

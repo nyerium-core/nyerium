@@ -113,13 +113,13 @@ BitcoinGUI::BitcoinGUI(const NetworkStyle* networkStyle, QWidget* parent) : QMai
                                                                             spinnerFrame(0)
 {
     
-    int id = QFontDatabase::addApplicationFont(":/css/res/css/ara.ttf");
+    //int id = QFontDatabase::addApplicationFont(":/css/res/css/ara.ttf");
     //QMessageBox::information(this,"Message",QString::number(id));
 
-    QFont font;
-    font.setFamily("Ara Hamah 1982");
-    font.setPointSize(14);
-    QApplication::setFont(font);
+    //QFont font;
+    //font.setFamily("Ara Hamah 1982");
+    //font.setPointSize(14);
+   // QApplication::setFont(font);
 
     /* Open CSS when configured */
     this->setStyleSheet(GUIUtil::loadStyleSheet());

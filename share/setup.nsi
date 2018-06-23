@@ -5,16 +5,16 @@ SetCompressor /SOLID lzma
 
 # General Symbol Definitions
 !define REGKEY "SOFTWARE\$(^Name)"
-!define VERSION 1.0.0
+!define VERSION 1.0.2
 !define COMPANY "Nyerium Core project"
 !define URL https://www.nyerium.org
 
 # MUI Symbol Definitions
-!define MUI_ICON "/mnt/d/difftool/nye_good/share/pixmaps/bitcoin.ico"
-!define MUI_WELCOMEFINISHPAGE_BITMAP "/mnt/d/difftool/nye_good/share/pixmaps/nsis-wizard.bmp"
+!define MUI_ICON "/mnt/d/nyenew/share/pixmaps/bitcoin.ico"
+!define MUI_WELCOMEFINISHPAGE_BITMAP "/mnt/d/nyenew/share/pixmaps/nsis-wizard.bmp"
 !define MUI_HEADERIMAGE
 !define MUI_HEADERIMAGE_RIGHT
-!define MUI_HEADERIMAGE_BITMAP "/mnt/d/difftool/nye_good/share/pixmaps/nsis-header.bmp"
+!define MUI_HEADERIMAGE_BITMAP "/mnt/d/nyenew/share/pixmaps/nsis-header.bmp"
 !define MUI_FINISHPAGE_NOAUTOCLOSE
 !define MUI_STARTMENUPAGE_REGISTRY_ROOT HKLM
 !define MUI_STARTMENUPAGE_REGISTRY_KEY ${REGKEY}
@@ -22,7 +22,7 @@ SetCompressor /SOLID lzma
 !define MUI_STARTMENUPAGE_DEFAULTFOLDER "Nyerium Core"
 !define MUI_FINISHPAGE_RUN $INSTDIR\nyerium-qt
 !define MUI_UNICON "${NSISDIR}\Contrib\Graphics\Icons\modern-uninstall.ico"
-!define MUI_UNWELCOMEFINISHPAGE_BITMAP "/mnt/d/difftool/nye_good/share/pixmaps/nsis-wizard.bmp"
+!define MUI_UNWELCOMEFINISHPAGE_BITMAP "/mnt/d/nyenew/share/pixmaps/nsis-wizard.bmp"
 !define MUI_UNFINISHPAGE_NOAUTOCLOSE
 
 # Included files
@@ -48,7 +48,7 @@ Var StartMenuGroup
 !insertmacro MUI_LANGUAGE English
 
 # Installer attributes
-OutFile /mnt/d/difftool/nye_good/nyerium-${VERSION}-win-setup.exe
+OutFile /mnt/d/nyenew/nyerium-${VERSION}-win-setup.exe
 !if "" == "64"
 InstallDir $PROGRAMFILES64\Nyerium
 !else
@@ -73,14 +73,14 @@ ShowUninstDetails show
 Section -Main SEC0000
     SetOutPath $INSTDIR
     SetOverwrite on
-    File /mnt/d/difftool/nye_good/release/nyerium-qt
-    File /oname=COPYING.txt /mnt/d/difftool/nye_good/COPYING
-    File /oname=readme.txt /mnt/d/difftool/nye_good/doc/README_windows.txt
+    File /mnt/d/nyenew/release/nyerium-qt
+    File /oname=COPYING.txt /mnt/d/nyenew/COPYING
+    File /oname=readme.txt /mnt/d/nyenew/doc/README_windows.txt
     SetOutPath $INSTDIR\daemon
-    File /mnt/d/difftool/nye_good/release/nyeriumd
-    File /mnt/d/difftool/nye_good/release/nyerium-cli
+    File /mnt/d/nyenew/release/nyeriumd
+    File /mnt/d/nyenew/release/nyerium-cli
     SetOutPath $INSTDIR\doc
-    File /r /mnt/d/difftool/nye_good/doc\*.*
+    File /r /mnt/d/nyenew/doc\*.*
     SetOutPath $INSTDIR
     WriteRegStr HKCU "${REGKEY}\Components" Main 1
 SectionEnd

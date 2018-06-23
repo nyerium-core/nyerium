@@ -30,7 +30,7 @@ bool CMasternodeConfig::read(std::string& strErr)
         if (configFile != NULL) {
             std::string strHeader = "# Masternode config file\n"
                                     "# Format: alias IP:port masternodeprivkey collateral_output_txid collateral_output_index\n"
-                                    "# Example: mn1 127.0.0.1:57418 Nr2PDd8hEwKk8bEn7BhiME546xmaYPoU3j 4e613bc3c4c04be341924b17f4fbccfdfe08126a523008370fe0df79c21178f2 0\n";
+                                    "# Example: mn1 127.0.0.1:57418 87aM9FpBpzLvKgJpwxQBoyH5W6c8TbuWAGeGfV5ecZaQ2a8i46H 4e613bc3c4c04be341924b17f4fbccfdfe08126a523008370fe0df79c21178f2 0\n";
             fwrite(strHeader.c_str(), std::strlen(strHeader.c_str()), 1, configFile);
             fclose(configFile);
         }

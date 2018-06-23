@@ -22,8 +22,7 @@
    <item>
     <widget class="QTextEdit" name="detailText">
      <property name="font">
-      <font>
-       <family>Ara Hamah 1982</family>
+   <font>
        <pointsize>14</pointsize>
       </font>
      </property>
@@ -38,8 +37,7 @@
    <item>
     <widget class="QDialogButtonBox" name="buttonBox">
      <property name="font">
-      <font>
-       <family>Ara Hamah 1982</family>
+   <font>
        <pointsize>14</pointsize>
       </font>
      </property>

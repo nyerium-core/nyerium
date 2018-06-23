@@ -12,7 +12,7 @@
   </property>
   <property name="font">
    <font>
-    <family>Ara Hamah 1982</family>
+    
     <pointsize>14</pointsize>
    </font>
   </property>
@@ -26,8 +26,7 @@
    <item>
     <widget class="QTabWidget" name="tabWidget">
      <property name="font">
-      <font>
-       <family>Ara Hamah 1982</family>
+   <font>
        <pointsize>14</pointsize>
       </font>
      </property>
@@ -43,7 +42,7 @@
         <widget class="QCheckBox" name="bitcoinAtStartup">
          <property name="font">
           <font>
-           <family>Ara Hamah 1982</family>
+           
            <pointsize>14</pointsize>
           </font>
          </property>
@@ -61,7 +60,7 @@
           <widget class="QLabel" name="databaseCacheLabel">
            <property name="font">
             <font>
-             <family>Ara Hamah 1982</family>
+             
              <pointsize>14</pointsize>
             </font>
            </property>
@@ -80,7 +79,7 @@
           <widget class="QSpinBox" name="databaseCache">
            <property name="font">
             <font>
-             <family>Ara Hamah 1982</family>
+             
              <pointsize>14</pointsize>
             </font>
            </property>
@@ -90,7 +89,7 @@
           <widget class="QLabel" name="databaseCacheUnitLabel">
            <property name="font">
             <font>
-             <family>Ara Hamah 1982</family>
+             
              <pointsize>14</pointsize>
             </font>
            </property>
@@ -106,7 +105,7 @@
           <spacer name="horizontalSpacer_2_Main">
            <property name="font">
             <font>
-             <family>Ara Hamah 1982</family>
+             
              <pointsize>14</pointsize>
             </font>
            </property>
@@ -129,7 +128,7 @@
           <widget class="QLabel" name="threadsScriptVerifLabel">
            <property name="font">
             <font>
-             <family>Ara Hamah 1982</family>
+             
              <pointsize>14</pointsize>
             </font>
            </property>
@@ -148,7 +147,7 @@
           <widget class="QSpinBox" name="threadsScriptVerif">
            <property name="font">
             <font>
-             <family>Ara Hamah 1982</family>
+             
              <pointsize>14</pointsize>
             </font>
            </property>
@@ -161,7 +160,7 @@
           <spacer name="horizontalSpacer_3_Main">
            <property name="font">
             <font>
-             <family>Ara Hamah 1982</family>
+             
              <pointsize>14</pointsize>
             </font>
            </property>
@@ -182,7 +181,7 @@
         <spacer name="verticalSpacer_2">
          <property name="font">
           <font>
-           <family>Ara Hamah 1982</family>
+           
            <pointsize>14</pointsize>
           </font>
          </property>
@@ -203,7 +202,7 @@
           <widget class="QLabel" name="percentage_label">
            <property name="font">
             <font>
-             <family>Ara Hamah 1982</family>
+             
              <pointsize>14</pointsize>
             </font>
            </property>
@@ -219,7 +218,7 @@
           <widget class="QSpinBox" name="zeromintPercentage">
            <property name="font">
             <font>
-             <family>Ara Hamah 1982</family>
+             
              <pointsize>14</pointsize>
             </font>
            </property>
@@ -248,7 +247,7 @@
            </property>
            <property name="font">
             <font>
-             <family>Ara Hamah 1982</family>
+             
              <pointsize>14</pointsize>
             </font>
            </property>
@@ -270,7 +269,7 @@
            </property>
            <property name="font">
             <font>
-             <family>Ara Hamah 1982</family>
+             
              <pointsize>14</pointsize>
             </font>
            </property>
@@ -680,8 +679,7 @@ https://www.transifex.com/nyerium-project/nyerium-project-translations</string>
    <item>
     <widget class="QFrame" name="frame">
      <property name="font">
-      <font>
-       <family>Ara Hamah 1982</family>
+   <font>
        <pointsize>14</pointsize>
       </font>
      </property>
@@ -692,7 +690,7 @@ https://www.transifex.com/nyerium-project/nyerium-project-translations</string>
          <widget class="QLabel" name="overriddenByCommandLineInfoLabel">
           <property name="font">
            <font>
-            <family>Ara Hamah 1982</family>
+            
             <pointsize>14</pointsize>
            </font>
           </property>
@@ -708,7 +706,7 @@ https://www.transifex.com/nyerium-project/nyerium-project-translations</string>
          <spacer name="horizontalSpacer_Bottom">
           <property name="font">
            <font>
-            <family>Ara Hamah 1982</family>
+            
             <pointsize>14</pointsize>
            </font>
           </property>
@@ -729,7 +727,7 @@ https://www.transifex.com/nyerium-project/nyerium-project-translations</string>
        <widget class="QLabel" name="overriddenByCommandLineLabel">
         <property name="font">
          <font>
-          <family>Ara Hamah 1982</family>
+          
           <pointsize>14</pointsize>
          </font>
         </property>
@@ -753,7 +751,7 @@ https://www.transifex.com/nyerium-project/nyerium-project-translations</string>
       <widget class="QPushButton" name="resetButton">
        <property name="font">
         <font>
-         <family>Ara Hamah 1982</family>
+         
          <pointsize>14</pointsize>
         </font>
        </property>
@@ -772,7 +770,7 @@ https://www.transifex.com/nyerium-project/nyerium-project-translations</string>
       <spacer name="horizontalSpacer_1">
        <property name="font">
         <font>
-         <family>Ara Hamah 1982</family>
+         
          <pointsize>14</pointsize>
         </font>
        </property>
@@ -797,7 +795,7 @@ https://www.transifex.com/nyerium-project/nyerium-project-translations</string>
        </property>
        <property name="font">
         <font>
-         <family>Ara Hamah 1982</family>
+         
          <pointsize>14</pointsize>
          <weight>75</weight>
          <bold>true</bold>
@@ -818,7 +816,7 @@ https://www.transifex.com/nyerium-project/nyerium-project-translations</string>
       <spacer name="horizontalSpacer_2">
        <property name="font">
         <font>
-         <family>Ara Hamah 1982</family>
+         
          <pointsize>14</pointsize>
         </font>
        </property>
@@ -837,7 +835,7 @@ https://www.transifex.com/nyerium-project/nyerium-project-translations</string>
       <widget class="QPushButton" name="okButton">
        <property name="font">
         <font>
-         <family>Ara Hamah 1982</family>
+         
          <pointsize>14</pointsize>
         </font>
        </property>
@@ -856,7 +854,7 @@ https://www.transifex.com/nyerium-project/nyerium-project-translations</string>
       <widget class="QPushButton" name="cancelButton">
        <property name="font">
         <font>
-         <family>Ara Hamah 1982</family>
+         
          <pointsize>14</pointsize>
         </font>
        </property>

@@ -56,7 +56,6 @@
     </qresource>
     <qresource prefix="/css">
         <file alias="default">res/css/default.css</file>
-        <file>res/css/ara.ttf</file>
     </qresource>
     <qresource prefix="/images">
         <file alias="about">res/images/about.png</file>

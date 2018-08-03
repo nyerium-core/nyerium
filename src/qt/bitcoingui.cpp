@@ -48,7 +48,6 @@
 #include <QMimeData>
 #include <QProgressBar>
 #include <QProgressDialog>
-#include <QFontDatabase>
 #include <QSettings>
 #include <QStackedWidget>
 #include <QStatusBar>
@@ -112,15 +111,6 @@ BitcoinGUI::BitcoinGUI(const NetworkStyle* networkStyle, QWidget* parent) : QMai
                                                                             prevBlocks(0),
                                                                             spinnerFrame(0)
 {
-    
-    //int id = QFontDatabase::addApplicationFont(":/css/res/css/ara.ttf");
-    //QMessageBox::information(this,"Message",QString::number(id));
-
-    //QFont font;
-    //font.setFamily("Ara Hamah 1982");
-    //font.setPointSize(14);
-   // QApplication::setFont(font);
-
     /* Open CSS when configured */
     this->setStyleSheet(GUIUtil::loadStyleSheet());
 
@@ -1048,7 +1038,7 @@ void BitcoinGUI::message(const QString& title, const QString& message, unsigned 
             break;
         }
     }
-    // Append title to "Nyerium - "
+    // Append title to "Rupaya - "
     if (!msgType.isEmpty())
         strTitle += " - " + msgType;
 

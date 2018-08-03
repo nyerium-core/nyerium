@@ -451,7 +451,7 @@ void PrivacyDialog::sendzNYEX()
 
     CAmount nValueOut = 0;
     for (const CTxOut& txout: wtxNew.vout) {
-        strStats += tr("value out: ") + FormatMoney(txout.nValue).c_str() + " Nye, ";
+        strStats += tr("value out: ") + FormatMoney(txout.nValue).c_str() + " Nyex, ";
         nValueOut += txout.nValue;
 
         strStats += tr("address: ");

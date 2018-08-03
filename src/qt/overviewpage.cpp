@@ -21,7 +21,6 @@
 #include "walletmodel.h"
 
 #include <QAbstractItemDelegate>
-#include <QFontDatabase>
 #include <QPainter>
 #include <QSettings>
 #include <QTimer>
@@ -192,7 +191,6 @@ void OverviewPage::setBalance(const CAmount& balance, const CAmount& unconfirmed
     currentWatchImmatureBalance = watchImmatureBalance;
 
     // NYEX labels
-    //ui->labelBalance->setFont(font);
     ui->labelBalance->setText(BitcoinUnits::floorHtmlWithUnit(nDisplayUnit, balance - immatureBalance, false, BitcoinUnits::separatorAlways));
     ui->labelzBalance->setText(BitcoinUnits::floorHtmlWithUnit(nDisplayUnit, zerocoinBalance, false, BitcoinUnits::separatorAlways));
     ui->labelUnconfirmed->setText(BitcoinUnits::floorHtmlWithUnit(nDisplayUnit, unconfirmedBalance, false, BitcoinUnits::separatorAlways));

@@ -7,7 +7,7 @@
 /* light-:      #7F0000 (sligtly darker for gradients)                            */
 /*                                                                                      */
 /* medium-:     #7F0000 (on hover)                                                */
-/* medium-:     #FF8EB0 (main green for dark backgrounds)                         */
+/* medium-:     #a6dbac (main green for dark backgrounds)                         */
 /* medium-:     #A88C00 (sligtly darker for gradients)                            */
 /*                                                                                      */
 /* background:         #f8f6f6                                                          */
@@ -209,7 +209,7 @@ QLabel { /* Base Text Size & Color */
 /***************************** Global Qt Objects ***********************************************************/
 
 QPushButton { /* Global Button Style */
-        background-color: #FF8EB0;
+        background-color: #a6dbac;
         border-width: 1px;
         border-style: outset;
         /*border-color: #7F0000;*/
@@ -863,7 +863,7 @@ QWidget .QFrame#frame { /* Upper left side */
         /* background-color:#ffffff; */
 }
 
-QWidget .QFrame#frame_RecentTransactions { /* Right side */
+QWidget .QFrame#frame_listTransactions { /* Right side */
         min-width:180px;
         /* background-color:#ffffff; */
 }
@@ -934,30 +934,30 @@ QWidget .QFrame#frame .QLabel#labelWatchTotal { /* Watch-only Total Balance */
 
 /**************************** RECENT TRANSACTIONS ***************************************/
 
-QWidget .QFrame#frame_RecentTransactions { /* Transactions Widget */
+QWidget .QFrame#frame_listTransactions { /* Transactions Widget */
         min-width:210px;
         min-height:100px;
         margin-left:0;
         margin-top:0;
 }
 
-QWidget .QFrame#frame_RecentTransactions .QLabel#label_4 { /* Recent Transactions Label */
+QWidget .QFrame#frame_listTransactions .QLabel#label_4 { /* Recent Transactions Label */
         qproperty-alignment: 'AlignVCenter | AlignLeft';
         min-width:180px;
         background-color:transparent;
         color:#333333;
         font-weight:bold;
-        font-size:20px;
+        font-size:12px;
         margin-right:5px;
         padding-right:5px;
 }
 
-QWidget .QFrame#frame_RecentTransactions .QLabel#labelTransactionsStatus { /* Recent Transactions Sync Status */
+QWidget .QFrame#frame_listTransactions .QLabel#labelTransactionsStatus { /* Recent Transactions Sync Status */
         qproperty-alignment: 'AlignVCenter | AlignLeft';
         margin-left:3px;
 }
 
-QWidget .QFrame#frame_RecentTransactions QListView { /* Transaction List */
+QWidget .QFrame#frame_listTransactions QListView { /* Transaction List */
         font-weight:normal;
         font-size:14px;
         max-width:369px;
@@ -1065,7 +1065,7 @@ QStackedWidget#SendCoinsEntry .QToolButton { /* General Settings for Pay To Icon
         background-color: #7F0000;
         border-width: 1px;
         border-style: outset;
-        border-color: #FF8EB0;
+        border-color: #a6dbac;
         border-radius: 2px;
         color:#ffffff;
         font-size:14px;

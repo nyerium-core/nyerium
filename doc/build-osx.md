@@ -24,8 +24,7 @@ be re-done or updated every time Xcode is updated.
 There's also an assumption that you already have `git` installed. If
 not, it's the path of least resistance to install [Github for Mac](https://mac.github.com/)
 (OS X 10.7+) or
-[Git for OS X](https://code.google.com/p/git-osx-installer/). It is also
-available via Homebrew.
+[Git for OS X](https://code.google.com/p/git-osx-installer/). It is also available via Homebrew.
 
 You will also need to install [Homebrew](http://brew.sh) in order to install library
 dependencies.
@@ -66,6 +65,7 @@ Use Qt Creator as IDE
 You can use Qt Creator as IDE, for debugging and for manipulating forms, etc.
 Download Qt Creator from http://www.qt.io/download/. Download the "community edition" and only install Qt Creator (uncheck the rest during the installation process).
 
+## Prerequisite
 1. Make sure you installed everything through homebrew mentioned above
 2. Do a proper ./configure --with-gui=qt5 --enable-debug
 3. In Qt Creator do "New Project" -> Import Project -> Import Existing Project
@@ -76,6 +76,81 @@ Download Qt Creator from http://www.qt.io/download/. Download the "community edi
 8. Select the default "Desktop" kit and select "Clang (x86 64bit in /usr/bin)" as compiler
 9. Select LLDB as debugger (you might need to set the path to your installtion)
 10. Start debugging with Qt Creator
+## Qt Creator Project Setup
+
+Launch Qt Creator and select **New Project**
+
+Choose the **Import Project** template and then **Import Existing Project**
+
+![](img/build-osx/qt-new-project.png)
+
+Give you project a **name** and set the **location** to the root of your project.
+
+![](img/build-osx/qt-project-name.png)
+
+Leave the default file selections as is.
+
+![](img/build-osx/qt-file-selection.png)
+
+Confirm the summary page. Here you can add your project to Git version control or select `none` if you choose not to.
+
+![](img/build-osx/qt-project-summary.png)
+
+Select **Projects** in the left sidebar and then **Manage Kits**.
+
+![](img/build-osx/qt-sidebar-project.png)
+
+Select the **Desktop (default)** kit and select **Clang (x86 64bit in /usr/bin)** as compiler.
+
+![](img/build-osx/qt-manage-kits.png)
+
+
+![](img/build-osx/qt-clang-compiler.png)
+
+Select **LLDB** as debugger (you might need to set the path to your installtion)
+
+![](img/build-osx/qt-lldb.png)
+
+Select **Projects** in the left sidebar and under **Build & Run** choose  **Build**.
+
+![](img/build-osx/qt-sidebar-project.png)
+
+Select the **Qt version** and click **Ok**.
+
+![](img/build-osx/qt-version.png)
+
+Set the **Build directory** path to the `root` of the clone Rupaya project. Qt Creator needs this to locate the `Makefile`.
+
+![](img/build-osx/qt-sidebar-project.png)
+
+Under **Build & Run** select *Run* and setup a run configuration.
+
+![](img/build-osx/qt-run-configuration.png)
+
+To debug using `testnet`, set `-testnet` as the value of **Command line arguments**. You can pass any other supported wallet arguments here for example setting a custom data directory with `-datadir`.
+
+![](img/build-osx/qt-run-configuration-testnet.png)
+
+To start debugging, locate the following function in `rupaya.cpp` and set a breakpoint.
+
+```c++
+#ifndef BITCOIN_QT_TEST
+int main(int argc, char* argv[])
+{
+    SetupEnvironment();
+
+    ...
+```
+
+![](img/build-osx/qt-debugger-breakpoint.png)
+
+Start your **Debugger**.
+
+![](img/build-osx/qt-start-debugger.png)
+
+Your debugger will stop at the break breakpoint you set.
+
+![](img/build-osx/qt-stop-at-breakpoint.png)
 
 Creating a release build
 ------------------------

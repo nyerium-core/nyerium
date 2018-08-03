@@ -18,7 +18,6 @@
 #endif
 
 #include <QApplication>
-#include <QFontDatabase>
 #include <QCloseEvent>
 #include <QDesktopWidget>
 #include <QPainter>

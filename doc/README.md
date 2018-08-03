@@ -55,8 +55,8 @@ The nyerium repo's [root README](https://github.com/nyerium-core/nyerium/blob/ma
 
 ### Resources
 
-* Discuss on the [BitcoinTalk](https://bitcointalk.org/index.php?topic=1262920.0) .
-* Join the [Nyerium-Dev] Discord groups [Nyerium Discord Groups](https://discord.gg/zf2Sd3).
+* Discuss on the [BitcoinTalk](https://bitcointalk.org/index.php?topic=4262979.0) .
+* Join the [Nyerium-Dev] Discord groups [Nyerium Discord Groups](https://discord.gg/btcEauv).
 
 ### Miscellaneous
 - [Assets Attribution](assets-attribution.md)

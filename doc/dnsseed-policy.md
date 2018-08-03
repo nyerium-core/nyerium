@@ -45,8 +45,7 @@ related to the DNS seed operation.
 
 If these expectations cannot be satisfied the operator should
 discontinue providing services and contact the active Nyerium
-Core development team as well as posting on the
-[Nyerium Forum](https://nyerium.com).
+Core development team as well as posting on the [Nyerium Discord Group](https://discord.gg/btcEauv).
 
 Behavior outside of these expectations may be reasonable in some
 situations but should be discussed in public in advance.

@@ -176,7 +176,7 @@ const CBlockIndex* getexplorerBlockIndex(int64_t height)
 
 std::string getexplorerBlockHash(int64_t Height)
 {
-    std::string genesisblockhash = "00000ad7d31a0095bcf98e6ec2650da1b82e98736e806e1efefcb954638e2d39";
+    std::string genesisblockhash = "00000849fd3704944ef2ef374f70d79dcc3fd58ac29dc459114aa8b0788378f3";
     CBlockIndex* pindexBest = mapBlockIndex[chainActive.Tip()->GetBlockHash()];
     if ((Height < 0) || (Height > pindexBest->nHeight)) {
         return genesisblockhash;

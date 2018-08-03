@@ -49,8 +49,8 @@ def bctester(testDir, input_basename, buildenv):
 	raw_data = open(input_filename).read()
 	input_data = json.loads(raw_data)
 
-	# for testObj in input_data:  # EK to reactivate later
-	# 	bctest(testDir, testObj, buildenv.exeext) # EK to reactivate later
+	for testObj in input_data:  # EK to reactivate later
+		bctest(testDir, testObj, buildenv.exeext) # EK to reactivate later
 
 	sys.exit(0)
 

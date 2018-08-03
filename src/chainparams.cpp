@@ -55,13 +55,21 @@ static void convertSeed6(std::vector<CAddress>& vSeedsOut, const SeedSpec6* data
 static Checkpoints::MapCheckpoints mapCheckpoints =
     boost::assign::map_list_of
     (0, uint256("0x00000849fd3704944ef2ef374f70d79dcc3fd58ac29dc459114aa8b0788378f3"))
-    (41, uint256("0x000008a019d98868a739449fbae61d542bc084ed8ae3cb877c5c5b8f813554d8"));
+    (41, uint256("0x000008a019d98868a739449fbae61d542bc084ed8ae3cb877c5c5b8f813554d8"))
+    (5000, uint256("fc2d1aff0b9f4348ee720f1c5c634c75cfc30b528bd2530bae5d5d54eecac3ed"))
+    (7999, uint256("71a890c048d99659ad9a1156302370c1b94438ac099a3b26dab31dd1e42aa87a"))
+    (20002, uint256("af7dd70e8f5e4cfff5de664fb0d629fe81d1ce7461a86f2f7fefb7572232e6d0"))
+    (60000, uint256("2e4db31c55c99c3e0ccf1afcf4c7e209c330c3ab8beb5705f911e04feba0ca14"))
+    (70015, uint256("59f52323e8cf1a5f3bef64ce06f2518ac93cd82a6b46dcc0ad76f6c027618add"))
+    (80000, uint256("bced4db2a98e39a64391c12cc2d3aac8f732da3d8e7918afb114846c438f8750"))
+    (90002, uint256("283c8a9a9b47bf1db1e6c2d043f155c402457679c0fadbacdf6037116883a913"));
+
 static const Checkpoints::CCheckpointData data = {
     &mapCheckpoints,
-    1527171315, // * UNIX timestamp of last checkpoint block
-    44,    // * total number of transactions between genesis and last checkpoint
+    1532759414, // * UNIX timestamp of last checkpoint block
+    179353,    // * total number of transactions between genesis and last checkpoint
                 //   (the tx=... number in the SetBestChain debug.log lines)
-    500        // * estimated number of transactions per day after checkpoint
+    2000        // * estimated number of transactions per day after checkpoint
 };
 
 static Checkpoints::MapCheckpoints mapCheckpointsTestnet =
@@ -123,9 +131,9 @@ public:
         /** Height or Time Based Activations **/
         nLastPOWBlock = 8000;
         nModifierUpdateBlock = 999999999;
-        nZerocoinStartHeight = 69249801;
+        nZerocoinStartHeight = 100000;
         nAccumulatorStartHeight = 1;
-        nZerocoinStartTime = 1528254417;  
+        nZerocoinStartTime = 1528254417;  //Wednesday, June 6, 2018 3:06:57 AM
         nBlockEnforceSerialRange = 1; //Enforce serial range starting this block
         nBlockRecalculateAccumulators = ~1; //Trigger a recalculation of accumulators
         nBlockFirstFraudulent = ~1; //First block that bad serials emerged
@@ -164,8 +172,9 @@ public:
         //vFixedSeeds.clear();
         //vSeeds.clear();      
         vSeeds.push_back(CDNSSeedData("35.154.221.49", "35.154.221.49"));         // Primary DNS Seeder
-        vSeeds.push_back(CDNSSeedData("13.232.23.164", "13.232.23.164"));         // Primary DNS Seeder
+        vSeeds.push_back(CDNSSeedData("178.62.38.45", "178.62.38.45"));         // Primary DNS Seeder
         vSeeds.push_back(CDNSSeedData("13.127.206.177", "13.127.206.177"));         // Primary DNS Seeder
+        vSeeds.push_back(CDNSSeedData("138.68.189.166", "138.68.189.166"));         // Primary DNS Seeder
 
         base58Prefixes[PUBKEY_ADDRESS] = std::vector<unsigned char>(1, 53);
         base58Prefixes[SCRIPT_ADDRESS] = std::vector<unsigned char>(1, 8);
@@ -200,7 +209,7 @@ public:
             "8441436038339044149526344321901146575444541784240209246165157233507787077498171257724679629263863563732899121548"
             "31438167899885040445364023527381951378636564391212010397122822120720357";
         nMaxZerocoinSpendsPerTransaction = 7; // Assume about 20kb each
-        nMinZerocoinMintFee = 1 * CENT; //high fee required for zerocoin mints
+        nMinZerocoinMintFee = 1 * ZCENT; //high fee required for zerocoin mints
         nMintRequiredConfirmations = 20; //the maximum amount of confirmations until accumulated in 19
         nRequiredAccumulation = 1;
         nDefaultSecurityLevel = 100; //full security level for accumulators
@@ -237,7 +246,7 @@ public:
         nMinerThreads = 0;
         nTargetTimespan = 1 * 60; // Nyerium: 1 day
         nTargetSpacing = 1 * 60;  // Nyerium: 1 minute
-        nLastPOWBlock = 300000;
+        nLastPOWBlock = 35;
         nMaturity = 15;
         nMasternodeCountDrift = 4;
         nModifierUpdateBlock = 51197;
@@ -258,9 +267,7 @@ public:
 
         //vFixedSeeds.clear();
         //vSeeds.clear();      
-        vSeeds.push_back(CDNSSeedData("35.154.221.49", "35.154.221.49"));         // Primary DNS Seeder
-        vSeeds.push_back(CDNSSeedData("13.232.23.164", "13.232.23.164"));         // Primary DNS Seeder
-        vSeeds.push_back(CDNSSeedData("13.127.206.177", "13.127.206.177"));         // Primary DNS Seeder
+        vSeeds.push_back(CDNSSeedData("13.127.26.220", "13.127.26.220"));         // Primary DNS Seeder
 
         base58Prefixes[PUBKEY_ADDRESS] = std::vector<unsigned char>(1, 112); // Testnet nyerium addresses start with 'x' or 'y'
         base58Prefixes[SCRIPT_ADDRESS] = std::vector<unsigned char>(1, 19);  // Testnet nyerium script addresses start with '8' or '9'
@@ -325,7 +332,7 @@ public:
 
         hashGenesisBlock = genesis.GetHash();
         nDefaultPort = 34875;
-        assert(hashGenesisBlock == uint256("0x4a56e6129303202a47732a8846edab3621fb3236c7868105ff52e9bae4605dad"));
+        //assert(hashGenesisBlock == uint256("0x4a56e6129303202a47732a8846edab3621fb3236c7868105ff52e9bae4605dad"));
 
         vFixedSeeds.clear(); //! Testnet mode doesn't have any fixed seeds.
         vSeeds.clear();      //! Testnet mode doesn't have any DNS seeds.

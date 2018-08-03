@@ -6,14 +6,13 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>837</width>
+    <width>868</width>
     <height>457</height>
    </rect>
   </property>
   <property name="font">
    <font>
-    
-    <pointsize>14</pointsize>
+    <pointsize>12</pointsize>
    </font>
   </property>
   <property name="windowTitle">
@@ -100,8 +99,7 @@
          </property>
          <property name="font">
           <font>
-           
-           <pointsize>14</pointsize>
+           <pointsize>10</pointsize>
           </font>
          </property>
          <property name="editTriggers">

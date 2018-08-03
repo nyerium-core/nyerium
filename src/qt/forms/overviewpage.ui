@@ -18,7 +18,6 @@
   </property>
   <property name="font">
    <font>
-    
     <pointsize>14</pointsize>
    </font>
   </property>
@@ -29,7 +28,7 @@
    <item>
     <widget class="QLabel" name="labelAlerts">
      <property name="font">
-   <font>
+      <font>
        <pointsize>14</pointsize>
       </font>
      </property>
@@ -88,7 +87,7 @@
                </font>
               </property>
               <property name="styleSheet">
-               <string notr="true">background-color: rgb(255, 170, 0);
+               <string notr="true">background-color: rgb(166, 219, 172);
 color: rgb(255, 255, 255);</string>
               </property>
               <property name="text">
@@ -931,7 +930,7 @@ color: rgb(255, 255, 255);</string>
                 <string>Combined Balances (including unconfirmed and immature coins)</string>
                </property>
                <property name="styleSheet">
-                <string notr="true">background-color: rgb(255, 170, 0);
+                <string notr="true">background-color: rgb(166, 219, 172);
 color: rgb(255, 255, 255);</string>
                </property>
                <property name="text">
@@ -1105,7 +1104,6 @@ If AutoMint is enabled this percentage will settle around the configured AutoMin
               <widget class="QLabel" name="label100Percent">
                <property name="font">
                 <font>
-                 
                  <pointsize>14</pointsize>
                  <weight>50</weight>
                  <italic>false</italic>
@@ -1212,7 +1210,7 @@ If AutoMint is enabled this percentage will settle around the configured AutoMin
                 </font>
                </property>
                <property name="styleSheet">
-                <string notr="true">background-color: rgb(255, 170, 0);
+                <string notr="true">background-color: rgb(166, 219, 172);
 color: rgb(255, 255, 255);</string>
                </property>
                <property name="text">
@@ -1545,7 +1543,7 @@ Immature: confirmed, but less than 1 mints of the same denomination after it was
            <widget class="QListView" name="listTransactions">
             <property name="font">
              <font>
-              <pointsize>14</pointsize>
+              <pointsize>11</pointsize>
              </font>
             </property>
             <property name="styleSheet">

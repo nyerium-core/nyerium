@@ -1100,7 +1100,7 @@ configure: failed program was:
 configure:20936: result: no
 configure:20834: checking whether pthreads work without any flags
 configure:20927: gcc -o conftest -g -O2    -DBOOST_SPIRIT_THREADSAFE -DHAVE_BUILD_INFO -D__STDC_FORMAT_MACROS  conftest.c   >&5
-/tmp/ccNR5AAx.o: In function `main':
+/tmp/ccOo8vBU.o: In function `main':
 /mnt/d/difftool/nyex103/conftest.c:29: undefined reference to `pthread_create'
 /mnt/d/difftool/nyex103/conftest.c:30: undefined reference to `pthread_join'
 /mnt/d/difftool/nyex103/conftest.c:32: undefined reference to `__pthread_register_cancel'
@@ -1571,7 +1571,7 @@ configure:22131: checking for sys/prctl.h
 configure:22131: result: yes
 configure:22141: checking for library containing getaddrinfo_a
 configure:22172: g++ -std=c++11 -o conftest -g -O2 -Wall -Wextra -Wformat -Wformat-security -Wno-unused-parameter  -Wstack-protector -fstack-protector-all -fPIC  -DBOOST_SPIRIT_THREADSAFE -DHAVE_BUILD_INFO -D__STDC_FORMAT_MACROS  -U_FORTIFY_SOURCE -D_FORTIFY_SOURCE=2   -Wl,-z,relro -Wl,-z,now conftest.cpp  >&5
-/tmp/cccazdH3.o: In function `main':
+/tmp/cckiu5RL.o: In function `main':
 /mnt/d/difftool/nyex103/conftest.cpp:48: undefined reference to `getaddrinfo_a'
 collect2: error: ld returned 1 exit status
 configure:22172: $? = 1
@@ -3160,7 +3160,6 @@ config.status:1372: creating qa/pull-tester/run-bitcoind-for-test.sh
 config.status:1372: creating qa/pull-tester/tests-config.sh
 config.status:1372: creating contrib/devtools/split-debug.sh
 config.status:1372: creating src/config/nyerium-config.h
-config.status:1553: src/config/nyerium-config.h is unchanged
 config.status:1601: executing depfiles commands
 config.status:1601: executing libtool commands
 configure:32192: === configuring in src/secp256k1 (/mnt/d/difftool/nyex103/src/secp256k1)

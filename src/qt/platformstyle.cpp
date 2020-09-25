@@ -1,4 +1,7 @@
 // Copyright (c) 2015 The Bitcoin Core developers
+// Copyright (c) 2016-2019 The PIVX developers
+// Copyright (c) 2018-2020 The Nyerium developers
+
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
@@ -73,8 +76,8 @@ PlatformStyle::PlatformStyle(const QString& name, bool imagesOnButtons, bool col
                                                                                                                     imagesOnButtons(imagesOnButtons),
                                                                                                                     colorizeIcons(colorizeIcons),
                                                                                                                     useExtraSpacing(useExtraSpacing),
-                                                                                                                    singleColor(255, 225, 255),
-                                                                                                                    textColor(255, 225, 255)
+                                                                                                                    singleColor(0, 0, 0),
+                                                                                                                    textColor(0, 0, 0)
 {
     // Determine icon highlighting color
     if (colorizeIcons) {

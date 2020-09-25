@@ -1,2 +1,3 @@
 usr/local/bin/nyeriumd usr/bin
 usr/local/bin/nyerium-cli usr/bin
+debian/examples/nyerium.conf etc/nyerium

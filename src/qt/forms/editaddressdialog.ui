@@ -21,12 +21,6 @@
      </property>
      <item row="0" column="0">
       <widget class="QLabel" name="label">
-       <property name="font">
-        <font>
-         
-         <pointsize>14</pointsize>
-        </font>
-       </property>
        <property name="text">
         <string>&amp;Label</string>
        </property>
@@ -37,12 +31,6 @@
      </item>
      <item row="0" column="1">
       <widget class="QLineEdit" name="labelEdit">
-       <property name="font">
-        <font>
-         
-         <pointsize>14</pointsize>
-        </font>
-       </property>
        <property name="toolTip">
         <string>The label associated with this address list entry</string>
        </property>
@@ -50,12 +38,6 @@
      </item>
      <item row="1" column="0">
       <widget class="QLabel" name="label_2">
-       <property name="font">
-        <font>
-         
-         <pointsize>14</pointsize>
-        </font>
-       </property>
        <property name="text">
         <string>&amp;Address</string>
        </property>
@@ -66,12 +48,6 @@
      </item>
      <item row="1" column="1">
       <widget class="QValidatedLineEdit" name="addressEdit">
-       <property name="font">
-        <font>
-         
-         <pointsize>14</pointsize>
-        </font>
-       </property>
        <property name="toolTip">
         <string>The address associated with this address list entry. This can only be modified for sending addresses.</string>
        </property>
@@ -81,11 +57,6 @@
    </item>
    <item>
     <widget class="QDialogButtonBox" name="buttonBox">
-     <property name="font">
-   <font>
-       <pointsize>14</pointsize>
-      </font>
-     </property>
      <property name="orientation">
       <enum>Qt::Horizontal</enum>
      </property>

@@ -1,0 +1,15 @@
+QT_TS = \
+  qt/locale/nyerium_de.ts \
+  qt/locale/nyerium_en.ts \
+  qt/locale/nyerium_en_US.ts \
+  qt/locale/nyerium_es.ts \
+  qt/locale/nyerium_es_ES.ts \
+  qt/locale/nyerium_fr_FR.ts \
+  qt/locale/nyerium_hr_HR.ts \
+  qt/locale/nyerium_it.ts \
+  qt/locale/nyerium_ko_KR.ts \
+  qt/locale/nyerium_nl.ts \
+  qt/locale/nyerium_pl.ts \
+  qt/locale/nyerium_ru.ts \
+  qt/locale/nyerium_tr.ts \
+  qt/locale/nyerium_zh_CN.ts

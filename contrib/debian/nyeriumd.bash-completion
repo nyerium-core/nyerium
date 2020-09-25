@@ -1,1 +1,2 @@
 contrib/nyeriumd.bash-completion	nyeriumd
+contrib/nyerium-cli.bash-completion nyerium-cli

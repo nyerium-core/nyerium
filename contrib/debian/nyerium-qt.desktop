@@ -1,0 +1,13 @@
+[Desktop Entry]
+Version=1.0
+Name=Nyerium Core
+Comment=Nyerium P2P Cryptocurrency
+Comment[fr]=Nyerium, monnaie virtuelle cryptographique pair à pair
+Comment[tr]=Nyerium, eşten eşe kriptografik sanal para birimi
+Exec=nyerium-qt %u
+Terminal=false
+Type=Application
+Icon=nyerium128
+MimeType=x-scheme-handler/nyerium;
+Categories=Office;Finance;
+StartupWMClass=Nyerium-qt

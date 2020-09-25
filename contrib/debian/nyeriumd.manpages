@@ -1,2 +1,2 @@
-debian/manpages/nyeriumd.1
-debian/manpages/nyerium.conf.5
+doc/man/nyeriumd.1
+doc/man/nyerium-cli.1

@@ -1,0 +1,8 @@
+/usr/bin/nyerium-cli		--	gen_context(system_u:object_r:nyerium_exec_t,s0)
+/usr/sbin/nyeriumd		--	gen_context(system_u:object_r:nyerium_exec_t,s0)
+/usr/lib(64)?/nyerium/nyeriumd		--	gen_context(system_u:object_r:nyerium_exec_t,s0)
+
+/etc/nyerium(/.*)?		gen_context(system_u:object_r:nyerium_conf_t,s0)
+/var/lib/nyerium(/.*)?		gen_context(system_u:object_r:nyerium_var_lib_t,s0)
+
+(/var)?/run/nyeriumd(/.*)?   gen_context(system_u:object_r:nyerium_var_run_t,s0)

@@ -1,4 +1,7 @@
 // Copyright (c) 2009-2014 The Bitcoin developers
+// Copyright (c) 2017-2019 The PIVX developers
+// Copyright (c) 2018-2019 The Nyerium developers
+
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
@@ -13,54 +16,54 @@ void URITests::uriTests()
 {
     SendCoinsRecipient rv;
     QUrl uri;
-    uri.setUrl(QString("nyerium:P4sZQ6m6ja9pnzcuSzPbEWNh7q1nqEXAHz?req-dontexist="));
+    uri.setUrl(QString("nyerium:D72dLgywmL73JyTwQBfuU29CADz9yCJ99v?req-dontexist="));
     QVERIFY(!GUIUtil::parseBitcoinURI(uri, &rv));
 
-    uri.setUrl(QString("nyerium:P4sZQ6m6ja9pnzcuSzPbEWNh7q1nqEXAHz?dontexist="));
+    uri.setUrl(QString("nyerium:D72dLgywmL73JyTwQBfuU29CADz9yCJ99v?dontexist="));
     QVERIFY(GUIUtil::parseBitcoinURI(uri, &rv));
-    QVERIFY(rv.address == QString("P4sZQ6m6ja9pnzcuSzPbEWNh7q1nqEXAHz"));
+    QVERIFY(rv.address == QString("D72dLgywmL73JyTwQBfuU29CADz9yCJ99v"));
     QVERIFY(rv.label == QString());
     QVERIFY(rv.amount == 0);
 
-    uri.setUrl(QString("nyerium:P4sZQ6m6ja9pnzcuSzPbEWNh7q1nqEXAHz?label=Some Example Address"));
+    uri.setUrl(QString("nyerium:D72dLgywmL73JyTwQBfuU29CADz9yCJ99v?label=Some Example Address"));
     QVERIFY(GUIUtil::parseBitcoinURI(uri, &rv));
-    QVERIFY(rv.address == QString("P4sZQ6m6ja9pnzcuSzPbEWNh7q1nqEXAHz"));
+    QVERIFY(rv.address == QString("D72dLgywmL73JyTwQBfuU29CADz9yCJ99v"));
     QVERIFY(rv.label == QString("Some Example Address"));
     QVERIFY(rv.amount == 0);
 
-    uri.setUrl(QString("nyerium:P4sZQ6m6ja9pnzcuSzPbEWNh7q1nqEXAHz?amount=0.001"));
+    uri.setUrl(QString("nyerium:D72dLgywmL73JyTwQBfuU29CADz9yCJ99v?amount=0.001"));
     QVERIFY(GUIUtil::parseBitcoinURI(uri, &rv));
-    QVERIFY(rv.address == QString("P4sZQ6m6ja9pnzcuSzPbEWNh7q1nqEXAHz"));
+    QVERIFY(rv.address == QString("D72dLgywmL73JyTwQBfuU29CADz9yCJ99v"));
     QVERIFY(rv.label == QString());
     QVERIFY(rv.amount == 100000);
 
-    uri.setUrl(QString("nyerium:P4sZQ6m6ja9pnzcuSzPbEWNh7q1nqEXAHz?amount=1.001"));
+    uri.setUrl(QString("nyerium:D72dLgywmL73JyTwQBfuU29CADz9yCJ99v?amount=1.001"));
     QVERIFY(GUIUtil::parseBitcoinURI(uri, &rv));
-    QVERIFY(rv.address == QString("P4sZQ6m6ja9pnzcuSzPbEWNh7q1nqEXAHz"));
+    QVERIFY(rv.address == QString("D72dLgywmL73JyTwQBfuU29CADz9yCJ99v"));
     QVERIFY(rv.label == QString());
     QVERIFY(rv.amount == 100100000);
 
-    uri.setUrl(QString("nyerium:P4sZQ6m6ja9pnzcuSzPbEWNh7q1nqEXAHz?amount=100&label=Some Example"));
+    uri.setUrl(QString("nyerium:D72dLgywmL73JyTwQBfuU29CADz9yCJ99v?amount=100&label=Some Example"));
     QVERIFY(GUIUtil::parseBitcoinURI(uri, &rv));
-    QVERIFY(rv.address == QString("P4sZQ6m6ja9pnzcuSzPbEWNh7q1nqEXAHz"));
+    QVERIFY(rv.address == QString("D72dLgywmL73JyTwQBfuU29CADz9yCJ99v"));
     QVERIFY(rv.amount == 10000000000LL);
     QVERIFY(rv.label == QString("Some Example"));
 
-    uri.setUrl(QString("nyerium:P4sZQ6m6ja9pnzcuSzPbEWNh7q1nqEXAHz?message=Some Example Address"));
+    uri.setUrl(QString("nyerium:D72dLgywmL73JyTwQBfuU29CADz9yCJ99v?message=Some Example Address"));
     QVERIFY(GUIUtil::parseBitcoinURI(uri, &rv));
-    QVERIFY(rv.address == QString("P4sZQ6m6ja9pnzcuSzPbEWNh7q1nqEXAHz"));
+    QVERIFY(rv.address == QString("D72dLgywmL73JyTwQBfuU29CADz9yCJ99v"));
     QVERIFY(rv.label == QString());
 
-    QVERIFY(GUIUtil::parseBitcoinURI("nyerium://P4sZQ6m6ja9pnzcuSzPbEWNh7q1nqEXAHz?message=Some Example Address", &rv));
-    QVERIFY(rv.address == QString("P4sZQ6m6ja9pnzcuSzPbEWNh7q1nqEXAHz"));
+    QVERIFY(GUIUtil::parseBitcoinURI("nyerium://D72dLgywmL73JyTwQBfuU29CADz9yCJ99v?message=Some Example Address", &rv));
+    QVERIFY(rv.address == QString("D72dLgywmL73JyTwQBfuU29CADz9yCJ99v"));
     QVERIFY(rv.label == QString());
 
-    uri.setUrl(QString("nyerium:P4sZQ6m6ja9pnzcuSzPbEWNh7q1nqEXAHz?req-message=Some Example Address"));
+    uri.setUrl(QString("nyerium:D72dLgywmL73JyTwQBfuU29CADz9yCJ99v?req-message=Some Example Address"));
     QVERIFY(GUIUtil::parseBitcoinURI(uri, &rv));
 
-    uri.setUrl(QString("nyerium:P4sZQ6m6ja9pnzcuSzPbEWNh7q1nqEXAHz?amount=1,000&label=Some Example"));
-    QVERIFY(!GUIUtil::parseBitcoinURI(uri, &rv));
+    uri.setUrl(QString("nyerium:D72dLgywmL73JyTwQBfuU29CADz9yCJ99v?amount=1,000&label=Some Example"));
+    QVERIFY(GUIUtil::parseBitcoinURI(uri, &rv));
 
-    uri.setUrl(QString("nyerium:P4sZQ6m6ja9pnzcuSzPbEWNh7q1nqEXAHz?amount=1,000.0&label=Some Example"));
+    uri.setUrl(QString("nyerium:D72dLgywmL73JyTwQBfuU29CADz9yCJ99v?amount=1,000.0&label=Some Example"));
     QVERIFY(!GUIUtil::parseBitcoinURI(uri, &rv));
 }

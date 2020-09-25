@@ -1,6 +1,6 @@
 usr/local/bin/nyerium-qt usr/bin
-share/pixmaps/bitcoin32.xpm usr/share/pixmaps
-share/pixmaps/bitcoin16.xpm usr/share/pixmaps
-share/pixmaps/bitcoin128.png usr/share/pixmaps
+share/pixmaps/nyerium32.xpm usr/share/pixmaps
+share/pixmaps/nyerium16.xpm usr/share/pixmaps
+share/pixmaps/nyerium128.png usr/share/pixmaps
 debian/nyerium-qt.desktop usr/share/applications
 debian/nyerium-qt.protocol usr/share/kde4/services/

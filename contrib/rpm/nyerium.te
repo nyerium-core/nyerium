@@ -1,0 +1,81 @@
+policy_module(nyerium, 1.100.1)
+
+########################################
+#
+# Declarations
+#
+
+type nyerium_t;
+type nyerium_exec_t;
+init_daemon_domain(nyerium_t, nyerium_exec_t)
+
+permissive nyerium_t;
+
+type nyerium_initrc_exec_t;
+init_script_file(nyerium_initrc_exec_t)
+
+type nyerium_conf_t;
+files_type(nyerium_conf_t)
+
+type nyerium_var_lib_t;
+files_type(nyerium_var_lib_t)
+
+type nyerium_var_run_t;
+files_type(nyerium_var_run_t)
+
+type nyerium_port_t;
+corenet_port(nyerium_port_t)
+
+########################################
+#
+# nyerium local policy
+#
+allow nyerium_t self:process { fork };
+
+allow nyerium_t self:fifo_file rw_fifo_file_perms;
+allow nyerium_t self:unix_stream_socket create_stream_socket_perms;
+
+manage_dirs_pattern(nyerium_t, nyerium_conf_t, nyerium_conf_t)
+manage_files_pattern(nyerium_t, nyerium_conf_t, nyerium_conf_t)
+
+manage_dirs_pattern(nyerium_t, nyerium_var_lib_t, nyerium_var_lib_t)
+manage_files_pattern(nyerium_t, nyerium_var_lib_t, nyerium_var_lib_t)
+files_var_lib_filetrans(nyerium_t, nyerium_var_lib_t, { dir file })
+
+manage_dirs_pattern(nyerium_t, nyerium_var_run_t, nyerium_var_run_t)
+manage_files_pattern(nyerium_t, nyerium_var_run_t, nyerium_var_run_t)
+
+sysnet_dns_name_resolve(nyerium_t)
+corenet_all_recvfrom_unlabeled(nyerium_t)
+
+allow nyerium_t self:tcp_socket create_stream_socket_perms;
+corenet_tcp_sendrecv_generic_if(nyerium_t)
+corenet_tcp_sendrecv_generic_node(nyerium_t)
+corenet_tcp_sendrecv_all_ports(nyerium_t)
+corenet_tcp_bind_generic_node(nyerium_t)
+
+gen_require(`
+    type nyerium_port_t;
+')
+allow nyerium_t nyerium_port_t:tcp_socket name_bind;
+
+gen_require(`
+    type nyerium_port_t;
+')
+allow nyerium_t nyerium_port_t:tcp_socket name_connect;
+
+domain_use_interactive_fds(nyerium_t)
+
+files_read_etc_files(nyerium_t)
+
+miscfiles_read_localization(nyerium_t)
+
+sysnet_dns_name_resolve(nyerium_t)
+
+allow nyerium_t nyerium_exec_t:file execute_no_trans;
+allow nyerium_t self:process setsched;
+corecmd_exec_ls(nyerium_t)
+corenet_tcp_connect_http_port(nyerium_t)
+dev_read_urand(nyerium_t)
+fs_getattr_xattr_fs(nyerium_t)
+kernel_read_system_state(nyerium_t)

@@ -5,17 +5,32 @@
 
 #define LIBSECP256K1_CONFIG_H
 
+/* Define if building universal (internal helper macro) */
+/* #undef AC_APPLE_UNIVERSAL_BUILD */
+
+/* Define this symbol to compile out all VERIFY code */
+/* #undef COVERAGE */
+
+/* Define this symbol to enable the ECDH module */
+/* #undef ENABLE_MODULE_ECDH */
+
+/* Define this symbol to enable the ECDSA pubkey recovery module */
+#define ENABLE_MODULE_RECOVERY 1
+
 /* Define this symbol if OpenSSL EC functions are available */
-/* #undef ENABLE_OPENSSL_TESTS */
+#define ENABLE_OPENSSL_TESTS 1
 
 /* Define this symbol if __builtin_expect is available */
 #define HAVE_BUILTIN_EXPECT 1
 
 /* Define to 1 if you have the <dlfcn.h> header file. */
-#define HAVE_DLFCN_H 1
+/* #undef HAVE_DLFCN_H */
 
 /* Define to 1 if you have the <inttypes.h> header file. */
 #define HAVE_INTTYPES_H 1
+
+/* Define this symbol if libcrypto is installed */
+#define HAVE_LIBCRYPTO 1
 
 /* Define this symbol if libgmp is installed */
 /* #undef HAVE_LIBGMP */
@@ -74,25 +89,24 @@
 /* Define to 1 if you have the ANSI C header files. */
 #define STDC_HEADERS 1
 
+/* Define this symbol to enable x86_64 assembly optimizations */
+#define USE_ASM_X86_64 1
+
+/* Define this symbol to use a statically generated ecmult table */
+#define USE_ECMULT_STATIC_PRECOMPUTATION 1
+
 /* Define this symbol to use endomorphism optimization */
 /* #undef USE_ENDOMORPHISM */
 
+/* Define this symbol if an external (non-inline) assembly implementation is
+   used */
+/* #undef USE_EXTERNAL_ASM */
+
 /* Define this symbol to use the FIELD_10X26 implementation */
-#define USE_FIELD_10X26 1
+/* #undef USE_FIELD_10X26 */
 
 /* Define this symbol to use the FIELD_5X52 implementation */
-/* #undef USE_FIELD_5X52 */
-
-/* Define this symbol to use the assembly version for the 5x52 field
-   implementation */
-/* #undef USE_FIELD_5X52_ASM */
-
-/* Define this symbol to use the __int128 version for the 5x52 field
-   implementation */
-/* #undef USE_FIELD_5X52_INT128 */
-
-/* Define this symbol to use the FIELD_GMP implementation */
-/* #undef USE_FIELD_GMP */
+#define USE_FIELD_5X52 1
 
 /* Define this symbol to use the native field inverse implementation */
 #define USE_FIELD_INV_BUILTIN 1
@@ -107,10 +121,10 @@
 #define USE_NUM_NONE 1
 
 /* Define this symbol to use the 4x64 scalar implementation */
-/* #undef USE_SCALAR_4X64 */
+#define USE_SCALAR_4X64 1
 
 /* Define this symbol to use the 8x32 scalar implementation */
-#define USE_SCALAR_8X32 1
+/* #undef USE_SCALAR_8X32 */
 
 /* Define this symbol to use the native scalar inverse implementation */
 #define USE_SCALAR_INV_BUILTIN 1
@@ -121,4 +135,16 @@
 /* Version number of package */
 #define VERSION "0.1"
 
-#endif //LIBSECP256K1_CONFIG_H
+/* Define WORDS_BIGENDIAN to 1 if your processor stores words with the most
+   significant byte first (like Motorola and SPARC, unlike Intel). */
+#if defined AC_APPLE_UNIVERSAL_BUILD
+# if defined __BIG_ENDIAN__
+#  define WORDS_BIGENDIAN 1
+# endif
+#else
+# ifndef WORDS_BIGENDIAN
+/* #  undef WORDS_BIGENDIAN */
+# endif
+#endif
+
+#endif /*LIBSECP256K1_CONFIG_H*/

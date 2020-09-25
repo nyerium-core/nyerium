@@ -1,7 +1,6 @@
 // Copyright (c) 2011-2014 The Bitcoin developers
 // Copyright (c) 2014-2015 The Dash developers
-// Copyright (c) 2015-2018 The PIVX developers
-// Copyright (c) 2018 The Nyerium developers
+// Copyright (c) 2015-2017 The Nyerium developers
 // Distributed under the MIT/X11 software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
@@ -84,8 +83,8 @@ QValidator::State BitcoinAddressCheckValidator::validate(QString& input, int& po
 {
     Q_UNUSED(pos);
     // Validate the passed Nyerium address
-    CBitcoinAddress addr(input.toStdString());
-    if (addr.IsValid())
+    CTxDestination addr = DecodeDestination(input.toStdString());
+    if (IsValidDestination(addr))
         return QValidator::Acceptable;
 
     return QValidator::Invalid;

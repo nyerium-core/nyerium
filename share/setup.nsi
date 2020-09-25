@@ -9,11 +9,11 @@ SetCompressor /SOLID lzma
 !define URL https://www.nyerium.org
 
 # MUI Symbol Definitions
-!define MUI_ICON "/mnt/d/dif/nyex420/share/pixmaps/nyerium.ico"
-!define MUI_WELCOMEFINISHPAGE_BITMAP "/mnt/d/dif/nyex420/share/pixmaps/nsis-wizard.bmp"
+!define MUI_ICON "/mnt/d/dif/nyerium/share/pixmaps/nyerium.ico"
+!define MUI_WELCOMEFINISHPAGE_BITMAP "/mnt/d/dif/nyerium/share/pixmaps/nsis-wizard.bmp"
 !define MUI_HEADERIMAGE
 !define MUI_HEADERIMAGE_RIGHT
-!define MUI_HEADERIMAGE_BITMAP "/mnt/d/dif/nyex420/share/pixmaps/nsis-header.bmp"
+!define MUI_HEADERIMAGE_BITMAP "/mnt/d/dif/nyerium/share/pixmaps/nsis-header.bmp"
 !define MUI_FINISHPAGE_NOAUTOCLOSE
 !define MUI_STARTMENUPAGE_REGISTRY_ROOT HKLM
 !define MUI_STARTMENUPAGE_REGISTRY_KEY ${REGKEY}
@@ -21,7 +21,7 @@ SetCompressor /SOLID lzma
 !define MUI_STARTMENUPAGE_DEFAULTFOLDER "Nyerium Core"
 !define MUI_FINISHPAGE_RUN $INSTDIR\nyerium-qt.exe
 !define MUI_UNICON "${NSISDIR}\Contrib\Graphics\Icons\modern-uninstall.ico"
-!define MUI_UNWELCOMEFINISHPAGE_BITMAP "/mnt/d/dif/nyex420/share/pixmaps/nsis-wizard.bmp"
+!define MUI_UNWELCOMEFINISHPAGE_BITMAP "/mnt/d/dif/nyerium/share/pixmaps/nsis-wizard.bmp"
 !define MUI_UNFINISHPAGE_NOAUTOCLOSE
 
 # Included files
@@ -47,7 +47,7 @@ Var StartMenuGroup
 !insertmacro MUI_LANGUAGE English
 
 # Installer attributes
-OutFile /mnt/d/dif/nyex420/nyerium-1.0.4-win64-setup.exe
+OutFile /mnt/d/dif/nyerium/nyerium-1.0.4-win64-setup.exe
 !if "64" == "64"
 InstallDir $PROGRAMFILES64\Nyerium
 !else
@@ -72,14 +72,14 @@ ShowUninstDetails show
 Section -Main SEC0000
     SetOutPath $INSTDIR
     SetOverwrite on
-    File /mnt/d/dif/nyex420/release/nyerium-qt.exe
-    File /oname=COPYING.txt /mnt/d/dif/nyex420/COPYING
-    File /oname=readme.txt /mnt/d/dif/nyex420/doc/README_windows.txt
+    File /mnt/d/dif/nyerium/release/nyerium-qt.exe
+    File /oname=COPYING.txt /mnt/d/dif/nyerium/COPYING
+    File /oname=readme.txt /mnt/d/dif/nyerium/doc/README_windows.txt
     SetOutPath $INSTDIR\daemon
-    File /mnt/d/dif/nyex420/release/nyeriumd.exe
-    File /mnt/d/dif/nyex420/release/nyerium-cli.exe
+    File /mnt/d/dif/nyerium/release/nyeriumd.exe
+    File /mnt/d/dif/nyerium/release/nyerium-cli.exe
     SetOutPath $INSTDIR\doc
-    File /r /mnt/d/dif/nyex420/doc\*.*
+    File /r /mnt/d/dif/nyerium/doc\*.*
     SetOutPath $INSTDIR
     WriteRegStr HKCU "${REGKEY}\Components" Main 1
 SectionEnd

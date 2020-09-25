@@ -1431,8 +1431,7 @@ rpc/libbitcoin_server_a-budget.o: rpc/budget.cpp activemasternode.h \
  /usr/share/mingw-w64/include/unistd.h /usr/share/mingw-w64/include/io.h \
  /usr/share/mingw-w64/include/getopt.h script/keyorigin.h \
  libzerocoin/Accumulator.h znyex/znyextracker.h znyex/zerocoin.h \
- znyex/znyexmodule.h znyex/znyexwallet.h znyex/mintpool.h \
- /home/a/nye64/x86_64-w64-mingw32/share/../include/db.h init.h \
+ znyex/znyexmodule.h znyex/znyexwallet.h znyex/mintpool.h db.h init.h \
  masternode-budget.h masternode-payments.h masternode-sync.h \
  masternodeconfig.h masternodeman.h activemasternode.h messagesigner.h \
  rpc/server.h rpc/protocol.h univalue/include/univalue.h utilmoneystr.h
@@ -4545,7 +4544,7 @@ znyex/znyexwallet.h:
 
 znyex/mintpool.h:
 
-/home/a/nye64/x86_64-w64-mingw32/share/../include/db.h:
+db.h:
 
 init.h:
 

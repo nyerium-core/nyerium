@@ -171,7 +171,7 @@ public:
 
         // height-based activations
         consensus.height_last_ZC_AccumCheckpoint = 1;
-        consensus.height_last_ZC_WrappedSerials = 212904;
+        consensus.height_last_ZC_WrappedSerials = 99999;
         consensus.height_start_InvalidUTXOsCheck = 0;
         consensus.height_start_ZC_InvalidSerials = 0;
         consensus.height_start_ZC_SerialRangeCheck = 1;

@@ -218,8 +218,8 @@ background:transparent;
              <rect>
               <x>0</x>
               <y>0</y>
-              <width>586</width>
-              <height>644</height>
+              <width>585</width>
+              <height>623</height>
              </rect>
             </property>
             <property name="autoFillBackground">
@@ -469,7 +469,7 @@ background:transparent;
                     <rect>
                      <x>0</x>
                      <y>0</y>
-                     <width>552</width>
+                     <width>551</width>
                      <height>48</height>
                     </rect>
                    </property>
@@ -799,7 +799,7 @@ background:transparent;
                    <item>
                     <widget class="QLabel" name="textChange">
                      <property name="text">
-                      <string>D7VFR83SQbie…BhjcWJtcfip5krte2Z </string>
+                      <string>NR9GCTQcfQ....Zq3BhxfD45d91pM</string>
                      </property>
                     </widget>
                    </item>

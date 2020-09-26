@@ -466,7 +466,7 @@ public:
             READWRITE(nNonce);
             if(this->nVersion > 3) {
                 READWRITE(mapZerocoinSupply);
-                //if(this->nVersion < 7) READWRITE(nAccumulatorCheckpoint);
+                if(this->nVersion < 7) READWRITE(nAccumulatorCheckpoint);
                 READWRITE(nAccumulatorCheckpoint);
             }
 		

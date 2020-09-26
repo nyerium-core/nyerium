@@ -462,11 +462,11 @@ bool UpdateZNYEXSupplyConnect(const CBlock& block, CBlockIndex* pindex, bool fJu
         mapZerocoinSupply.at(denom)--;
         // zerocoin failsafe
         //LogPrintf("UpdateZNYEXSupplyConnect : EK ====================> pindex->nHeight %d consensus.height_last_ZC_AccumCheckpoint %d\n", pindex->nHeight, consensus.height_last_ZC_AccumCheckpoint);
-        //LogPrintf("UpdateZNYEXSupplyDisconnect : EK ====================> denomination %d pubcoin %s\n", denom, mapZerocoinSupply.at(denom));
+        //LogPrintf("UpdateZNYEXSupplyConnect : EK ====================> denomination %d pubcoin %s\n", denom, mapZerocoinSupply.at(denom));
 
-        //if (mapZerocoinSupply.at(denom) < 0){
-        //    return error("UpdateZNYEXSupplyConnect: Block contains zerocoins that spend more than are in the available supply to spend");
-        //}
+        if (mapZerocoinSupply.at(denom) < 0){
+            return error("UpdateZNYEXSupplyConnect: Block contains zerocoins that spend more than are in the available supply to spend");
+        }
     }
 
     // Update Wrapped Serials amount
@@ -477,7 +477,12 @@ bool UpdateZNYEXSupplyConnect(const CBlock& block, CBlockIndex* pindex, bool fJu
     }
 
     for (const libzerocoin::CoinDenomination& denom : libzerocoin::zerocoinDenomList)
+    {
         LogPrint(BCLog::LEGACYZC, "%s coins for denomination %d pubcoin %s\n", __func__, denom, mapZerocoinSupply.at(denom));
+        //LogPrintf("UpdateZNYEXSupplyConnect : EK ====================> pindex->nHeight %d consensus.height_last_ZC_AccumCheckpoint %d\n", pindex->nHeight, consensus.height_last_ZC_AccumCheckpoint);
+        //LogPrintf("UpdateZNYEXSupplyConnect : EK ====================> denomination %d pubcoin %s\n", denom, mapZerocoinSupply.at(denom));
+
+    }
 
     return true;
 }
@@ -497,7 +502,7 @@ bool UpdateZNYEXSupplyDisconnect(const CBlock& block, CBlockIndex* pindex)
     if (Params().NetworkID() == CBaseChainParams::MAIN && pindex->nHeight == consensus.height_last_ZC_WrappedSerials + 1) {
         for (const libzerocoin::CoinDenomination& denom : libzerocoin::zerocoinDenomList){
             mapZerocoinSupply.at(denom) -= GetWrapppedSerialInflation(denom);
-            //LogPrint(BCLog::LEGACYZC, "UpdateZNYEXSupplyDisconnect : EK ====================> denomination %d pubcoin %s\n", denom, mapZerocoinSupply.at(denom));
+            //LogPrintf("UpdateZNYEXSupplyDisconnect : LOOP 1 %d EK ====================> denomination %d pubcoin %s\n", pindex->nHeight, denom, mapZerocoinSupply.at(denom));
        }
     }
 
@@ -521,8 +526,10 @@ bool UpdateZNYEXSupplyDisconnect(const CBlock& block, CBlockIndex* pindex)
         }
     }
 
-    for (const libzerocoin::CoinDenomination& denom : libzerocoin::zerocoinDenomList)
+    for (const libzerocoin::CoinDenomination& denom : libzerocoin::zerocoinDenomList){
         LogPrint(BCLog::LEGACYZC, "%s coins for denomination %d pubcoin %s\n", __func__, denom, mapZerocoinSupply.at(denom));
+        //LogPrintf("UpdateZNYEXSupplyDisconnect : LOOP 2 %d EK ====================> denomination %d pubcoin %s\n", pindex->nHeight, denom, mapZerocoinSupply.at(denom));
+    }
 
     return true;
 }

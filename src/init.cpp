@@ -1841,6 +1841,7 @@ bool AppInit2()
             else
                 pindexRescan = chainActive.Genesis();
         }
+
         if (chainActive.Tip() && chainActive.Tip() != pindexRescan) {
             uiInterface.InitMessage(_("Rescanning..."));
             LogPrintf("Rescanning last %i blocks (from block %i)...\n", chainActive.Height() - pindexRescan->nHeight, pindexRescan->nHeight);

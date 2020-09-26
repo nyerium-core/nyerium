@@ -1487,8 +1487,6 @@ int64_t GetBlockValue(int nHeight)
 
     }
 
-    const Consensus::Params& consensus = Params().GetConsensus();
-    const bool isPoSActive = consensus.NetworkUpgradeActive(nHeight, Consensus::UPGRADE_POS);
     int64_t nSubsidy = 0;
 	if (nHeight == 0) { nSubsidy = 10000000 * COIN; }
 	else if (nHeight <= 8000) { nSubsidy = 200 * COIN; }
@@ -2138,7 +2136,7 @@ bool ConnectBlock(const CBlock& block, CValidationState& state, CBlockIndex* pin
     }
 
     const bool isPoSActive = consensus.NetworkUpgradeActive(pindex->nHeight, Consensus::UPGRADE_POS);
-    if (pindex->nHeight <= consensus.vUpgrades[Consensus::UPGRADE_POS].nActivationHeight && block.IsProofOfStake())
+    if (!isPoSActive && pindex->nHeight <= consensus.vUpgrades[Consensus::UPGRADE_POS].nActivationHeight && block.IsProofOfStake())
     //if (!isPoSActive && block.IsProofOfStake())
         return state.DoS(100, error("ConnectBlock() : PoS period not active"),
             REJECT_INVALID, "PoS-early");
@@ -2403,15 +2401,15 @@ bool ConnectBlock(const CBlock& block, CValidationState& state, CBlockIndex* pin
     }
 
     // A one-time event where the zNYEX supply was off (due to serial duplication off-chain on main net)
-    if (Params().NetworkID() == CBaseChainParams::MAIN && pindex->nHeight == consensus.height_last_ZC_WrappedSerials + 1
+    /*if (Params().NetworkID() == CBaseChainParams::MAIN && pindex->nHeight == consensus.height_last_ZC_WrappedSerials + 1
             && GetZerocoinSupply() != consensus.ZC_WrappedSerialsSupply + GetWrapppedSerialInflationAmount()) {
         RecalculateNYEXSupply(consensus.vUpgrades[Consensus::UPGRADE_ZC].nActivationHeight, false);
     }
 
     // Add fraudulent funds to the supply and remove any recovered funds.
-    /*if (Params().NetworkID() == CBaseChainParams::MAIN && pindex->nHeight == consensus.height_ZC_RecalcAccumulators) {
+    if (Params().NetworkID() == CBaseChainParams::MAIN && pindex->nHeight == consensus.height_ZC_RecalcAccumulators) {
         LogPrintf("%s : Adding fraudulent funds at height_ZC_RecalcAccumulators\n", __func__);
-        const CAmount nInvalidAmountFiltered = 268200*COIN;    //Amount of invalid coins filtered through exchanges, that should be considered valid
+        const CAmount nInvalidAmountFiltered = 0*COIN;    //Amount of invalid coins filtered through exchanges, that should be considered valid
         nMoneySupply += nInvalidAmountFiltered;
         CAmount nLocked = GetInvalidUTXOValue();
         nMoneySupply -= nLocked;

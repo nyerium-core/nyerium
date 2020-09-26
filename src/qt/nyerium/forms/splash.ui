@@ -6,14 +6,14 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>868</width>
-    <height>541</height>
+    <width>732</width>
+    <height>448</height>
    </rect>
   </property>
   <property name="minimumSize">
    <size>
-    <width>768</width>
-    <height>533</height>
+    <width>732</width>
+    <height>448</height>
    </size>
   </property>
   <property name="maximumSize">
@@ -48,8 +48,8 @@
     <widget class="QFrame" name="frame">
      <property name="minimumSize">
       <size>
-       <width>750</width>
-       <height>520</height>
+       <width>732</width>
+       <height>448</height>
       </size>
      </property>
      <property name="styleSheet">
@@ -134,7 +134,7 @@
             </font>
            </property>
            <property name="styleSheet">
-            <string notr="true">color:white; padding-left:50px;</string>
+            <string notr="true">color:#0b919c; padding-left:50px;</string>
            </property>
            <property name="text">
             <string>Loading…</string>
@@ -158,7 +158,7 @@
             </font>
            </property>
            <property name="styleSheet">
-            <string notr="true">color:white; padding-top:1px;</string>
+            <string notr="true">color:#0b919c; padding-top:1px;</string>
            </property>
            <property name="text">
             <string notr="true">vX.X.X</string>

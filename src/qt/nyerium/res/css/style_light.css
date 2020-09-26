@@ -1779,7 +1779,7 @@ HHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHH*/
 }
 
 *[cssClass="text-stake-nyex-disable"] {
-    color:#e7e5e8;
+    color:#54b2b9;
     font-size:16px;
     padding:10px;
     border-bottom: 5px solid #bfbfbf;
@@ -1793,10 +1793,10 @@ HHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHH*/
 }
 
 *[cssClass="text-stake-znyex-disable"] {
-    color:#e7e5e8;
+    color:#54b2b9;
     font-size:16px;
     padding:10px;
-    border-bottom: 5px solid #e7e5e8;
+    border-bottom: 5px solid #54b2b9;
 }
 
 *[cssClass="legend-chart"] {
@@ -2064,7 +2064,7 @@ HH        RECEIVE
 HHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHH*/
 
 *[cssClass="label-address-box"] {
-    color:#0ebdcc;
+    color:#043a3e;
     background-color: #f2f2f2;
     font-size:22px;
     padding:10px 10px;

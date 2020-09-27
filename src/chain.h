@@ -418,6 +418,7 @@ public:
     uint256 hashNext{};
     uint256 hashPrev{};
     uint64_t nStakeModifier = 0;
+    uint256 hashProofOfStake;
     uint256 nStakeModifierV2{};
     COutPoint prevoutStake{};
     unsigned int nStakeTime = 0;
@@ -437,12 +438,12 @@ public:
         /*if (nSerVersion >= DBI_SER_VERSION_NO_ZC) {
             // no extra serialized field
             return;
-        }
+        }*/
 
         if (!ser_action.ForRead()) {
             // legacy block index shouldn't be used to write
             return;
-        }*/
+        }
         READWRITE(VARINT(nHeight));
         READWRITE(VARINT(nStatus));
         READWRITE(VARINT(nTx));
@@ -484,6 +485,11 @@ public:
             if (IsProofOfStake()) {
                 READWRITE(prevoutStake);
                 READWRITE(nStakeTime);
+            }
+            else{
+                const_cast<CLegacyBlockIndex*>(this)->prevoutStake.SetNull();
+                const_cast<CLegacyBlockIndex*>(this)->nStakeTime = 0;
+                const_cast<CLegacyBlockIndex*>(this)->hashProofOfStake = uint256();
             }
             READWRITE(this->nVersion);
             READWRITE(hashPrev);

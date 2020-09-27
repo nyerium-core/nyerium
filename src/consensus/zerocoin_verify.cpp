@@ -257,7 +257,7 @@ bool RecalculateNYEXSupply(int nHeightStart, bool fSkipZnyex)
         }
 
         // Add fraudulent funds to the supply and remove any recovered funds.
-        if (pindex->nHeight == consensus.height_ZC_RecalcAccumulators) {
+        /*if (pindex->nHeight == consensus.height_ZC_RecalcAccumulators) {
             const CAmount nInvalidAmountFiltered = 0 * COIN;  //268200*COIN;  //Amount of invalid coins filtered through exchanges, that should be considered valid
             LogPrintf("%s : Original money supply=%s\n", __func__, FormatMoney(nMoneySupply));
 
@@ -267,7 +267,7 @@ bool RecalculateNYEXSupply(int nHeightStart, bool fSkipZnyex)
             CAmount nLocked = GetInvalidUTXOValue();
             nMoneySupply -= nLocked;
             LogPrintf("%s : Removing locked from supply - %s : supply=%s\n", __func__, FormatMoney(nLocked), FormatMoney(nMoneySupply));
-        }
+        }*/
 
         assert(pblocktree->WriteBlockIndex(CDiskBlockIndex(pindex)));
 

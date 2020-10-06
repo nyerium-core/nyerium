@@ -1483,7 +1483,7 @@ int64_t GetBlockValue(int nHeight)
 
     if (Params().IsRegTestNet()) {
         if (nHeight == 0)
-            return 250 * COIN;
+            return 500000 * COIN;
 
     }
 
@@ -1538,7 +1538,6 @@ int64_t GetBlockValue(int nHeight)
 int64_t GetMasternodePayment()
 {
     int64_t ret = 0;
-    //return 5 * COIN;
 
     const int nHeight = chainActive.Height();
 
@@ -1546,7 +1545,7 @@ int64_t GetMasternodePayment()
 
     if (Params().NetworkID() == CBaseChainParams::TESTNET) {
         if (nHeight < 200)
-            return 0;
+            return 1000 * COIN;
     }
 
     if (nHeight < 2) { ret = 0; } 
@@ -1557,9 +1556,9 @@ int64_t GetMasternodePayment()
     else if (nHeight <= 2249840) { ret = blockValue * .80; }
     else { ret = blockValue * .50; }
 
-    LogPrintf("main.cpp: GetMasternodePayment: ================> Height = %d ===========> BlockValue = %d =========> Masternode Payment = %d\n", nHeight, blockValue, ret);
+    LogPrintf("main.cpp: GetMasternodePayment: ================> Height = %d ===========> BlockValue = %d =========> Masternode Payment = %d\n", nHeight, blockValue, ret * COIN);
 
-    return ret;
+    return ret * COIN;
 }
 
 bool IsInitialBlockDownload()
@@ -3259,8 +3258,8 @@ bool CheckBlockHeader(const CBlockHeader& block, CValidationState& state, bool f
     if (fCheckPOW && !CheckProofOfWork(block.GetHash(), block.nBits))
         return state.DoS(50, false, REJECT_INVALID, "high-hash", false, "proof of work failed");
 
-    if (Params().IsRegTestNet()) return true;
 
+    if (Params().IsRegTestNet()) return true;
     // Version 4 header must be used after consensus.ZC_TimeStart. And never before.
     if (block.GetBlockTime() > Params().GetConsensus().ZC_TimeStart) {
         if(block.nVersion < 4)
@@ -3280,6 +3279,7 @@ bool CheckColdStakeFreeOutput(const CTransaction& tx, const int nHeight)
 
     const unsigned int outs = tx.vout.size();
     const CTxOut& lastOut = tx.vout[outs-1];
+    //LogPrintf("CheckColdStakeFreeOutput EK ======> Outs %d height %d  lastOut %d\n", outs, nHeight, lastOut.nValue);
     if (outs >=3 && lastOut.scriptPubKey != tx.vout[outs-2].scriptPubKey) {
         if (lastOut.nValue == GetMasternodePayment())
             return true;
@@ -5915,12 +5915,12 @@ bool static ProcessMessage(CNode* pfrom, std::string strCommand, CDataStream& vR
 int ActiveProtocol()
 {
     // SPORK_14 is used for 70919 (v4.1.1)
-    if (sporkManager.IsSporkActive(SPORK_14_NEW_PROTOCOL_ENFORCEMENT))
-            return MIN_PEER_PROTO_VERSION_AFTER_ENFORCEMENT;
+    //if (sporkManager.IsSporkActive(SPORK_14_NEW_PROTOCOL_ENFORCEMENT))
+    //        return MIN_PEER_PROTO_VERSION_AFTER_ENFORCEMENT;
 
     // SPORK_15 was used for 70918 (v4.0, v4.1.0), commented out now.
-    //if (sporkManager.IsSporkActive(SPORK_15_NEW_PROTOCOL_ENFORCEMENT_2))
-    //        return MIN_PEER_PROTO_VERSION_AFTER_ENFORCEMENT;
+    if (sporkManager.IsSporkActive(SPORK_15_NEW_PROTOCOL_ENFORCEMENT_2))
+            return MIN_PEER_PROTO_VERSION_AFTER_ENFORCEMENT;
 
     return MIN_PEER_PROTO_VERSION_BEFORE_ENFORCEMENT;
 }
@@ -5928,6 +5928,9 @@ int ActiveProtocol()
 // requires LOCK(cs_vRecvMsg)
 bool ProcessMessages(CNode* pfrom)
 {
+    //if (fDebug)
+    //    LogPrintf("ProcessMessages(%u messages)\n", pfrom->vRecvMsg.size());
+
     // Message format
     //  (4) message start
     //  (12) command

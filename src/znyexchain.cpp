@@ -412,10 +412,9 @@ int64_t GetZerocoinSupply()
         return 0;
 
     int64_t nTotal = 0;
-    for (auto& denom : libzerocoin::zerocoinDenomList) {
+    for (auto& denom : libzerocoin::zerocoinDenomList)
         nTotal += libzerocoin::ZerocoinDenominationToAmount(denom) * mapZerocoinSupply.at(denom);
-    }
-    //LogPrint(BCLog::LEGACYZC, "int64_t GetZerocoinSupply: EK ====================> %d\n", nTotal);
+    
     return nTotal;
 }
 
@@ -461,9 +460,6 @@ bool UpdateZNYEXSupplyConnect(const CBlock& block, CBlockIndex* pindex, bool fJu
     for (const libzerocoin::CoinDenomination& denom : listDenomsSpent) {
         mapZerocoinSupply.at(denom)--;
         // zerocoin failsafe
-        //LogPrintf("UpdateZNYEXSupplyConnect : EK ====================> pindex->nHeight %d consensus.height_last_ZC_AccumCheckpoint %d\n", pindex->nHeight, consensus.height_last_ZC_AccumCheckpoint);
-        //LogPrintf("UpdateZNYEXSupplyConnect : EK ====================> denomination %d pubcoin %s\n", denom, mapZerocoinSupply.at(denom));
-
         if (mapZerocoinSupply.at(denom) < 0){
             return error("UpdateZNYEXSupplyConnect: Block contains zerocoins that spend more than are in the available supply to spend");
         }
@@ -477,12 +473,7 @@ bool UpdateZNYEXSupplyConnect(const CBlock& block, CBlockIndex* pindex, bool fJu
     }
 
     for (const libzerocoin::CoinDenomination& denom : libzerocoin::zerocoinDenomList)
-    {
         LogPrint(BCLog::LEGACYZC, "%s coins for denomination %d pubcoin %s\n", __func__, denom, mapZerocoinSupply.at(denom));
-        //LogPrintf("UpdateZNYEXSupplyConnect : EK ====================> pindex->nHeight %d consensus.height_last_ZC_AccumCheckpoint %d\n", pindex->nHeight, consensus.height_last_ZC_AccumCheckpoint);
-        //LogPrintf("UpdateZNYEXSupplyConnect : EK ====================> denomination %d pubcoin %s\n", denom, mapZerocoinSupply.at(denom));
-
-    }
 
     return true;
 }
@@ -497,20 +488,15 @@ bool UpdateZNYEXSupplyDisconnect(const CBlock& block, CBlockIndex* pindex)
 
     // Undo Update Wrapped Serials amount
     // A one-time event where only the zNYEX supply was off (due to serial duplication off-chain on main net)
-    //LogPrint(BCLog::LEGACYZC, "UpdateZNYEXSupplyDisconnect : EK ====================> pindex->nHeight %d consensus.height_last_ZC_AccumCheckpoint %d\n", pindex->nHeight, consensus.height_last_ZC_AccumCheckpoint);
-
     if (Params().NetworkID() == CBaseChainParams::MAIN && pindex->nHeight == consensus.height_last_ZC_WrappedSerials + 1) {
-        for (const libzerocoin::CoinDenomination& denom : libzerocoin::zerocoinDenomList){
+        for (const libzerocoin::CoinDenomination& denom : libzerocoin::zerocoinDenomList)
             mapZerocoinSupply.at(denom) -= GetWrapppedSerialInflation(denom);
-            //LogPrintf("UpdateZNYEXSupplyDisconnect : LOOP 1 %d EK ====================> denomination %d pubcoin %s\n", pindex->nHeight, denom, mapZerocoinSupply.at(denom));
-       }
     }
 
     // Re-add spends to zNYEX supply
     std::list<libzerocoin::CoinDenomination> listDenomsSpent = ZerocoinSpendListFromBlock(block, true);
-    for (const libzerocoin::CoinDenomination& denom : listDenomsSpent) {
+    for (const libzerocoin::CoinDenomination& denom : listDenomsSpent)
         mapZerocoinSupply.at(denom)++;
-    }
 
     // Remove mints from zNYEX supply (mints are forever disabled after last checkpoint)
     if (pindex->nHeight < consensus.height_last_ZC_AccumCheckpoint) {
@@ -526,10 +512,8 @@ bool UpdateZNYEXSupplyDisconnect(const CBlock& block, CBlockIndex* pindex)
         }
     }
 
-    for (const libzerocoin::CoinDenomination& denom : libzerocoin::zerocoinDenomList){
+    for (const libzerocoin::CoinDenomination& denom : libzerocoin::zerocoinDenomList)
         LogPrint(BCLog::LEGACYZC, "%s coins for denomination %d pubcoin %s\n", __func__, denom, mapZerocoinSupply.at(denom));
-        //LogPrintf("UpdateZNYEXSupplyDisconnect : LOOP 2 %d EK ====================> denomination %d pubcoin %s\n", pindex->nHeight, denom, mapZerocoinSupply.at(denom));
-    }
 
     return true;
 }

@@ -120,12 +120,17 @@ uint256 CMasternode::GetSignatureHash() const
 
 std::string CMasternode::GetStrMessage() const
 {
-    return (addr.ToString() +
-            std::to_string(sigTime) +
-            pubKeyCollateralAddress.GetID().ToString() +
-            pubKeyMasternode.GetID().ToString() +
-            std::to_string(protocolVersion)
-    );
+    std::string vchPubKey(pubKeyCollateralAddress.begin(), pubKeyCollateralAddress.end());
+    std::string vchPubKey2(pubKeyMasternode.begin(), pubKeyMasternode.end());
+    std::string strMessage = addr.ToString() + std::to_string(sigTime) + vchPubKey + vchPubKey2 + std::to_string(protocolVersion);
+    return(strMessage);
+
+    // return (addr.ToString() +
+    //         std::to_string(sigTime) +
+    //         pubKeyCollateralAddress.GetID().ToString() +
+    //         pubKeyMasternode.GetID().ToString() +
+    //         std::to_string(protocolVersion)
+    // );
 }
 
 //
@@ -214,7 +219,7 @@ void CMasternode::Check(bool forceCheck)
         CMutableTransaction tx = CMutableTransaction();
         CScript dummyScript;
         dummyScript << ToByteVector(pubKeyCollateralAddress) << OP_CHECKSIG;
-        CTxOut vout = CTxOut(9999.99 * COIN, dummyScript);
+        CTxOut vout = CTxOut(9999.99 * COIN, dummyScript); //EK 9999.99 or 24,999 NYEX
         tx.vin.push_back(vin);
         tx.vout.push_back(vout);
         {
@@ -451,17 +456,17 @@ bool CMasternodeBroadcast::Sign(const std::string strSignKey)
 bool CMasternodeBroadcast::CheckSignature() const
 {
     std::string strError = "";
-    // std::string strMessage = (
-    //                         nMessVersion == MessageVersion::MESS_VER_HASH ?
-    //                         GetSignatureHash().GetHex() :
-    //                         GetStrMessage()
-    //                         );
+    std::string strMessage = (
+                            nMessVersion == MessageVersion::MESS_VER_HASH ?
+                            GetSignatureHash().GetHex() :
+                            GetStrMessage()
+                            );
     // For Nyerium the old message type works. We will use it for now until the time to change it has kicked in
-    std::string vchPubKey(pubKeyCollateralAddress.begin(), pubKeyCollateralAddress.end());
-    std::string vchPubKey2(pubKeyMasternode.begin(), pubKeyMasternode.end());
-    std::string strMessage = addr.ToString() + std::to_string(sigTime) + vchPubKey + vchPubKey2 + std::to_string(protocolVersion);
+    // std::string vchPubKey(pubKeyCollateralAddress.begin(), pubKeyCollateralAddress.end());
+    // std::string vchPubKey2(pubKeyMasternode.begin(), pubKeyMasternode.end());
+    // std::string strMessage = addr.ToString() + std::to_string(sigTime) + vchPubKey + vchPubKey2 + std::to_string(protocolVersion);
 
-    //LogPrintf("EYK ===> masternode.cpp CMasternodeBroadcast::CheckSignature MESSAGE=%s pubkey=%s vchSig=%s\n", strMessage, pubKeyCollateralAddress.GetID().ToString(), EncodeBase64(&vchSig[0], vchSig.size()));
+    //LogPrintf("EK ===> masternode.cpp CMasternodeBroadcast::CheckSignature MESSAGE=%s pubkey=%s vchSig=%s\n", strMessage, pubKeyCollateralAddress.GetID().ToString(), EncodeBase64(&vchSig[0], vchSig.size()));
 
     if(!CMessageSigner::VerifyMessage(pubKeyCollateralAddress, vchSig, strMessage, strError))
         return error("%s : VerifyMessage (nMessVersion=%d) failed: %s", __func__, nMessVersion, strError);
@@ -626,7 +631,7 @@ bool CMasternodeBroadcast::CheckInputsAndAdd(int& nDoS)
     }
 
     // verify that sig time is legit in past
-    // should be at least not earlier than block when 1000 NYEX tx got MASTERNODE_MIN_CONFIRMATIONS
+    // should be at least not earlier than block when 25000 NYEX tx got MASTERNODE_MIN_CONFIRMATIONS
     uint256 hashBlock = UINT256_ZERO;
     CTransaction tx2;
     GetTransaction(vin.prevout.hash, tx2, hashBlock, true);

@@ -284,7 +284,7 @@ public:
         consensus.posLimitV2 = ~UINT256_ZERO >> 20;
         consensus.nBudgetCycleBlocks = 144;         // approx 10 cycles per day
         consensus.nBudgetFeeConfirmations = 3;      // (only 8-blocks window for finalization on testnet)
-        consensus.nCoinbaseMaturity = 15;
+        consensus.nCoinbaseMaturity = 5;
         consensus.nFutureTimeDriftPoW = 7200;
         consensus.nFutureTimeDriftPoS = 180;
         consensus.nMasternodeCountDrift = 4;        // num of MN we allow the see-saw payments to be off by
@@ -301,8 +301,8 @@ public:
         // spork keys
         consensus.strSporkPubKey = "04e1af59b5298e695ccfe4cc59600d3b2f00d97183f3c9ef12097bef0a0d4232cb696da0deace6982a416cc0ae77bdb904422f04ff8eccb5b99d370ce8ad7ee710";
         consensus.strSporkPubKeyOld = "04e1af59b5298e695ccfe4cc59600d3b2f00d97183f3c9ef12097bef0a0d4232cb696da0deace6982a416cc0ae77bdb904422f04ff8eccb5b99d370ce8ad7ee710";
-        consensus.nTime_EnforceNewSporkKey = 1566860400;    //!> August 26, 2019 11:00:00 PM GMT
-        consensus.nTime_RejectOldSporkKey = 1569538800;     //!> September 26, 2019 11:00:00 PM GMT
+        consensus.nTime_EnforceNewSporkKey = 1527171315;    //!> August 26, 2019 11:00:00 PM GMT
+        consensus.nTime_RejectOldSporkKey = 2069538800;     //!> September 26, 2019 11:00:00 PM GMT
 
         // height based activations
         consensus.height_last_ZC_AccumCheckpoint = 1106090;
@@ -328,7 +328,7 @@ public:
         consensus.ZC_MinMintConfirmations = 20;
         consensus.ZC_MinMintFee = 1 * CENT;
         consensus.ZC_MinStakeDepth = 200;
-        consensus.ZC_TimeStart = 1528254417;
+        consensus.ZC_TimeStart = 2033366360; //1528254417;
         consensus.ZC_WrappedSerialsSupply = 0;   // WrappedSerials only on main net
 
         // Network upgrades
@@ -337,13 +337,13 @@ public:
         consensus.vUpgrades[Consensus::UPGRADE_TESTDUMMY].nActivationHeight =
                 Consensus::NetworkUpgrade::NO_ACTIVATION_HEIGHT;
         consensus.vUpgrades[Consensus::UPGRADE_POS].nActivationHeight           = 201;
-        consensus.vUpgrades[Consensus::UPGRADE_POS_V2].nActivationHeight        = 51197;
-        consensus.vUpgrades[Consensus::UPGRADE_ZC].nActivationHeight            = 201576;
-        consensus.vUpgrades[Consensus::UPGRADE_ZC_V2].nActivationHeight         = 444020;
-        consensus.vUpgrades[Consensus::UPGRADE_BIP65].nActivationHeight         = 851019;
-        consensus.vUpgrades[Consensus::UPGRADE_ZC_PUBLIC].nActivationHeight     = 1106100;
-        consensus.vUpgrades[Consensus::UPGRADE_V3_4].nActivationHeight          = 1214000;
-        consensus.vUpgrades[Consensus::UPGRADE_V4_0].nActivationHeight          = 1347000;
+        consensus.vUpgrades[Consensus::UPGRADE_POS_V2].nActivationHeight        = 5000;    //51197
+        consensus.vUpgrades[Consensus::UPGRADE_ZC].nActivationHeight            = 10000;   //201576
+        consensus.vUpgrades[Consensus::UPGRADE_ZC_V2].nActivationHeight         = 15000;   //444020
+        consensus.vUpgrades[Consensus::UPGRADE_BIP65].nActivationHeight         = 25000;   //851019
+        consensus.vUpgrades[Consensus::UPGRADE_ZC_PUBLIC].nActivationHeight     = 30000;  //1106100
+        consensus.vUpgrades[Consensus::UPGRADE_V3_4].nActivationHeight          = 40000;  //1214000
+        consensus.vUpgrades[Consensus::UPGRADE_V4_0].nActivationHeight          = 50000;  //1347000
         consensus.vUpgrades[Consensus::UPGRADE_V5_DUMMY].nActivationHeight =
                 Consensus::NetworkUpgrade::NO_ACTIVATION_HEIGHT;
 
@@ -409,7 +409,7 @@ public:
         networkID = CBaseChainParams::REGTEST;
         strNetworkID = "regtest";
 
-        genesis = CreateGenesisBlock(1527171315, 795796, 0x1e0ffff0, 1, 0 * COIN);
+        genesis = CreateGenesisBlock(1527171315, 795796, 0x1e0ffff0, 1, 0 * COIN); //4 nodes
         consensus.hashGenesisBlock = genesis.GetHash();
         assert(consensus.hashGenesisBlock == uint256S("0x00000849fd3704944ef2ef374f70d79dcc3fd58ac29dc459114aa8b0788378f3"));
         assert(genesis.hashMerkleRoot == uint256S("0x1fa76a782dd8eee188cfbe0653fdf81bfd5c105f808bd5c9a42e23cb77635802"));
@@ -420,7 +420,7 @@ public:
         consensus.posLimitV2 = ~UINT256_ZERO >> 20;
         consensus.nBudgetCycleBlocks = 144;         // approx 10 cycles per day
         consensus.nBudgetFeeConfirmations = 3;      // (only 8-blocks window for finalization on regtest)
-        consensus.nCoinbaseMaturity = 100;
+        consensus.nCoinbaseMaturity = 10; // 100 EK reduced for testing purpose
         consensus.nFutureTimeDriftPoW = 7200;
         consensus.nFutureTimeDriftPoS = 180;
         consensus.nMasternodeCountDrift = 4;        // num of MN we allow the see-saw payments to be off by

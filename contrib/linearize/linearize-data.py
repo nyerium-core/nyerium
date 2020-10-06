@@ -264,7 +264,7 @@ if __name__ == '__main__':
 	f.close()
 
 	if 'netmagic' not in settings:
-		settings['netmagic'] = 'f9beb4d9'
+		settings['netmagic'] = '6a4b4c5d' #f9beb4d9
 	if 'input' not in settings:
 		settings['input'] = 'input'
 	if 'hashlist' not in settings:

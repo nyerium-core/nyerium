@@ -1556,8 +1556,6 @@ int64_t GetMasternodePayment()
     else if (nHeight <= 2249840) { ret = blockValue * .80; }
     else { ret = blockValue * .50; }
 
-    LogPrintf("main.cpp: GetMasternodePayment: ================> Height = %d ===========> BlockValue = %d =========> Masternode Payment = %d\n", nHeight, blockValue, ret * COIN);
-
     return ret * COIN;
 }
 

@@ -2399,9 +2399,9 @@ QPushButton[cssClass="ic-step-confirm"] {
     background-image: url("://ic-check-white");
     background-position:center;
     background-repeat:no-repeat;
-    border:  1px solid #6C529D;
+    border:  1px solid #054146;
     border-radius:11px;
-    background-color:#6C529D;
+    background-color:#054146;
 }
 
 
@@ -2823,9 +2823,9 @@ QPushButton[cssClass="ic-step-confirm-welcome"] {
     background-image: url("://ic-check-white");
     background-position:center;
     background-repeat:no-repeat;
-    border:  1px solid #6C529D;
+    border:  1px solid #054146;
     border-radius:11px;
-    background-color:#6C529D;
+    background-color:#054146;
 }
 
 *[cssClass="text-title-welcome"] {

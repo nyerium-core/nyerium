@@ -1545,7 +1545,7 @@ int64_t GetMasternodePayment()
 
     if (Params().NetworkID() == CBaseChainParams::TESTNET) {
         if (nHeight < 200)
-            return 1000 * COIN;
+            return 100 * COIN;
     }
 
     if (nHeight < 2) { ret = 0; } 
@@ -1556,7 +1556,7 @@ int64_t GetMasternodePayment()
     else if (nHeight <= 2249840) { ret = blockValue * .80; }
     else { ret = blockValue * .50; }
 
-    return ret * COIN;
+    return ret;
 }
 
 bool IsInitialBlockDownload()
@@ -3296,6 +3296,7 @@ bool CheckColdStakeFreeOutput(const CTransaction& tx, const int nHeight)
             CAmount amtIn = txPrev.vout[tx.vin[0].prevout.n].nValue + GetBlockValue(nHeight - 1);
             CAmount amtOut = 0;
             for (unsigned int i = 1; i < outs-1; i++) amtOut += tx.vout[i].nValue;
+
             if (amtOut != amtIn)
                 return error("%s: non-free outputs value %d less than required %d", __func__, amtOut, amtIn);
             return true;

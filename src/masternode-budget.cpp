@@ -913,7 +913,7 @@ CAmount CBudgetManager::GetTotalBudget(int nHeight)
     CAmount totalBudget = 0;
     if (chainActive.Tip() == NULL) return totalBudget;
 
-    nSubsidy = GetBlockValue(nHeight);
+    nSubsidy = GetBlockValue(nHeight) * COIN;
     //LogPrint("masternode","CBudgetManager::GetTotalBudget(%d): GetBlockValue(%d) returned %f COINs\n", nHeight, nHeight, nSubsidy / COIN);
 
     // Define governance budget as 10% of the block value
